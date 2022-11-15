@@ -1,8 +1,12 @@
+import Layout from "../components/layout"
+
 const Trial = () => {
   return (
-    <>
-      <h1>This is Trial(トライアル申込フォーム) Page</h1>
-    </>
+    <Layout>
+      <div>
+        <h1>This is Trial(トライアル申込フォーム) Page</h1>
+      </div>
+    </Layout>
   )
 }
 
