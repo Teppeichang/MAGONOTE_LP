@@ -1,8 +1,12 @@
+import Layout from "../components/layout"
+
 const Portfolio = () => {
   return (
-    <>
-      <h1>This is Portfolio(レポートギャラリー) Page</h1>
-    </>
+    <Layout>
+      <div>
+        <h1>This is Portfolio(レポートギャラリー) Page</h1>
+      </div>
+    </Layout>
   )
 }
 
