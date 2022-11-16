@@ -1,9 +1,12 @@
 import Header from "./header";
+import Footer from "./footer";
 
-const Layout = () => {
+const Layout = (props) => {
   return (
     <>
       <Header />
+      {props.children}
+      <Footer />
     </>
   )
 }
