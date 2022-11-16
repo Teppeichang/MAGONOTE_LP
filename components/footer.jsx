@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="absolute inset-x-0 bottom-0 bg-slate-200">
+    <footer className="bottom-0 bg-slate-200">
       <div>
         <h1>MAGONOTE</h1>
       </div>
