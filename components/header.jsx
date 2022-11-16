@@ -24,11 +24,12 @@ function Header(props) {
         <Link href={'/'}>MAGONOTE</Link>
       </Typography>
       <Divider />
-      <List>
-        <Link href={"/pricing"}>料金プラン</Link>
-        <Link href={"/portfolio"}>レポートギャラリー</Link>
-        <Link href={"/contact"}>お問い合わせ</Link>
-        <Link href={"/trial"}>無料で始める</Link>
+      <List sx={{display: "flex", flexDirection: "column"}}>
+      <Link href={"/pricing"}><a className="text-black py-2">料金プラン</a></Link>
+        <Link href={"/portfolio"}><a className="text-black py-2">レポートギャラリー</a></Link>
+        <Link href={"https://next-report.jp/"}><a className="text-black py-2">ブログ</a></Link>
+        <Link href={"/contact"}><a className="text-black py-2">お問い合わせ</a></Link>
+        <Link href={"/trial"}><a className="text-black py-2">無料で始める</a></Link>
       </List>
     </Box>
   );
@@ -36,45 +37,28 @@ function Header(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <header>
+    <header className="sticky top-0 z-50">
       <Box sx={{ display: "flex" }}>
         <AppBar component="nav">
           <Toolbar sx={{ backgroundColor: "#fff" }}>
-            <IconButton
-              className="text-black"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
-            >
+            <IconButton className="text-black" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} sx={{ mr: 2, display: { sm: "none" } }}>
               <MenuIcon />
             </IconButton>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: "none", sm: "block", color: "#000" } }}
-            >
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block", color: "#000" } }}>
               MAGONOTE
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <Link href={"/pricing"}><a className="text-black px-2">料金プラン</a></Link>
               <Link href={"/portfolio"}><a className="text-black px-2">レポートギャラリー</a></Link>
+              <Link href={"https://next-report.jp/"}><a className="text-black px-2">ブログ</a></Link>
               <Link href={"/contact"}><a className="text-black px-2">お問い合わせ</a></Link>
               <Link href={"/trial"}><a className="text-black px-2">無料で始める</a></Link>
             </Box>
           </Toolbar>
         </AppBar>
         <Box component="nav">
-          <Drawer
-            container={container}
-            variant="temporary"
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            ModalProps={{ keepMounted: true }}
-            sx={{
-              display: { xs: "block", sm: "none" },
-              "& .MuiDrawer-paper": { boxSizing: "border-box", width: 240 },
-            }}
+          <Drawer container={container} variant="temporary" open={mobileOpen} onClose={handleDrawerToggle} ModalProps={{ keepMounted: true }}
+            sx={{display: { xs: "block", sm: "none" }, "& .MuiDrawer-paper": { boxSizing: "border-box", width: 240 },}}
           >
             {drawer}
           </Drawer>
