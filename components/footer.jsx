@@ -36,18 +36,18 @@ const Footer = () => {
                 会社概要(運営会社)
               </a>
             </Link>
-            <Link href={"/https://corp.next-stage.biz/recruit/"}>
+            <Link href={"https://corp.next-stage.biz/recruit/"}>
               <a href="" className="text-black py-2">
                 採用情報
               </a>
             </Link>
-            <Link href={"/"}>
-              <a href="" className="text-black py-2">
+            <Link href={"/privacy-policy"}>
+              <a className="text-black py-2">
                 プライバシーポリシー
               </a>
             </Link>
-            <Link href={"/"}>
-              <a href="" className="text-black py-2">
+            <Link href={"/terms"}>
+              <a className="text-black py-2">
                 利用規約
               </a>
             </Link>
