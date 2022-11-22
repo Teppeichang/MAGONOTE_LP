@@ -1,5 +1,5 @@
 import Layout from "../components/layout"
-import TextField from '@mui/material/TextField';
+import { TextField } from "@mui/material"
 
 const Contact = () => {
   return (
@@ -21,7 +21,8 @@ const Contact = () => {
         <TextField required id="outlined-required" label="電話番号" sx={{my: 1}}/>
         <p className="font-semibold">お問い合わせの詳細</p>
         <p>デモや商談をご希望の方は、候補日程を2,3個ご記載ください。担当より日程調整後、ZOOMのミーティングURL（30分〜最大1時間）をメールにてご送付いたします。</p>
-        <TextField id="outlined-multiline-static" label="お問い合わせの詳細" multiline rows={4} defaultValue="Default Value" sx={{my: 1}}/>
+        <TextField id="outlined-multiline-static" label="お問い合わせの詳細" multiline rows={4} sx={{my: 1}}/>
+        <button class="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded" type="submit">送信する</button>
       </form>
     </Layout>
   )

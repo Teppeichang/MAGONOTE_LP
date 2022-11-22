@@ -45,7 +45,7 @@ function Header(props) {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block", color: "#000" } }}>
-              MAGONOTE
+              <Link href={"/"}>MAGONOTE</Link>
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <Link href={"/pricing"}><a className="text-black px-2">料金プラン</a></Link>
