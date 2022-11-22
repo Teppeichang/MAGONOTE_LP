@@ -1,5 +1,5 @@
 {
-  "name": "tmp",
+  "name": "magonote_lp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,9 +15,12 @@
     "@mui/material": "^5.10.13",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
+    "gray-matter": "^4.0.3",
     "next": "^12.3.3",
+    "raw-loader": "^4.0.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
