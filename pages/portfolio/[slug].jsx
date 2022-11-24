@@ -6,7 +6,7 @@ const SinglePortfolio = (props) => {
   console.log(props)
   return (
     <Layout>
-      <div className="m-40">
+      <div className="m-40 prose">
         <h2>{props.frontmatter.title}</h2>
         <ReactMarkdown>{props.markdownBody}</ReactMarkdown>
       </div>
