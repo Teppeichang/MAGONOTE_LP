@@ -3,7 +3,6 @@ import matter from "gray-matter"
 import Link from "next/link"
 
 const Portfolio = (props) => {
-  console.log(props)
   return (
     <Layout>
       <div className="flex m-40">
