@@ -1,8 +1,10 @@
 import Layout from "../components/layout";
+import BreadCrumb from "../components/breadCrumb"
 
 const PrivacyPolicy = () => {
   return (
     <Layout>
+      <BreadCrumb />
       <div className="mt-40 mb-10 mx-10">
         <h2>プライバシーポリシー</h2>
         <p>株式会社Next Stage（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における，ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。</p>
