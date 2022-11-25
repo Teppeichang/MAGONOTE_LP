@@ -1,10 +1,12 @@
 import Layout from "../components/layout"
 import matter from "gray-matter"
 import Link from "next/link"
+import BreadCrumb from "../components/breadCrumb"
 
 const Portfolio = (props) => {
   return (
     <Layout>
+      <BreadCrumb />
       <div className="flex m-40">
         {props.portfolios.map((portfolio, index) =>
           <div key={index}>

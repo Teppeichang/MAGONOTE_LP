@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import { TextField } from "@mui/material";
 import Checkbox from "@mui/material/Checkbox";
 import Image from "next/image";
+import BreadCrumb from "../components/breadCrumb"
 
 const Trial = () => {
   const [checked, setChecked] = useState(false);
@@ -12,6 +13,7 @@ const Trial = () => {
 
   return (
     <Layout>
+      <BreadCrumb />
       <div className="flex flex-row justify-center items-center bg-yellow-400 m-20">
         <div className="bg-white py-12 px-20">
           <p>MAGONOTE</p>

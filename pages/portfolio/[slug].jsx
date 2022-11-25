@@ -2,11 +2,13 @@ import Layout from "../../components/layout"
 import Link from "next/link"
 import matter from "gray-matter"
 import ReactMarkdown from "react-markdown"
+import BreadCrumb from "../components/breadCrumb"
 
 const SinglePortfolio = (props) => {
   console.log(props)
   return (
     <Layout>
+      <BreadCrumb />
       <div className="m-40">
         <h2 className="font-bold text-2xl lg:text-4xl pb-10">{props.frontmatter.title}</h2>
         <button class="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 mb-10 rounded">
