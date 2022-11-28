@@ -2,9 +2,10 @@ import Layout from "../components/layout";
 import BreadCrumb from "../components/breadCrumb"
 
 const Terms = () => {
+  const lists = [{string: "トップページ", path: "/"}, {string: "利用規約", path: "/terms"}]
   return (
     <Layout>
-      <BreadCrumb />
+      <BreadCrumb lists={lists} />
       <div className="mt-40 mb-10 mx-10">
         <h2>利用規約</h2>
         <p>この利用規約（以下、「本規約」といいます。）は、株式会社Next Stage（以下、「当社」といいます。）がウェブサイト上で提供するサービス（以下、「本サービス」といいます。）の利用条件を定めるものです。登録ユーザーのお客様（以下、「ユーザー」といいます。）には、本規約に従って、本サービスをご利用いただきます。</p>
