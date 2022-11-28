@@ -6,6 +6,7 @@ import Image from "next/image";
 import BreadCrumb from "../components/breadCrumb"
 
 const Trial = () => {
+  const lists = [{string: "トップページ", path: "/"}, {string: "無料で始める", path: "/trial"}]
   const [checked, setChecked] = useState(false);
   const handleChange = (event) => {
     setChecked(event.target.checked);
@@ -13,7 +14,7 @@ const Trial = () => {
 
   return (
     <Layout>
-      <BreadCrumb />
+      <BreadCrumb lists={lists} />
       <div className="flex flex-row justify-center items-center bg-yellow-400 m-20">
         <div className="bg-white py-12 px-20">
           <p>MAGONOTE</p>

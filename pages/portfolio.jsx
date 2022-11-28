@@ -4,9 +4,10 @@ import Link from "next/link"
 import BreadCrumb from "../components/breadCrumb"
 
 const Portfolio = (props) => {
+  const lists = [{string: "トップページ", path: "/"}, {string: "レポートギャラリー", path: "/portfolio"}]
   return (
     <Layout>
-      <BreadCrumb />
+      <BreadCrumb lists={lists}/>
       <div className="flex m-40">
         {props.portfolios.map((portfolio, index) =>
           <div key={index}>

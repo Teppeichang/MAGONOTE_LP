@@ -3,9 +3,10 @@ import { TextField } from "@mui/material"
 import BreadCrumb from "../components/breadCrumb"
 
 const Contact = () => {
+  const lists = [{string: "トップページ", path: "/"}, {string: "お問い合わせ", path: "/contact"}]
   return (
     <Layout>
-      <BreadCrumb />
+      <BreadCrumb lists={lists} />
       <div className="mt-40 mx-10">
         <h2>お問い合わせ・デモ予約はこちら</h2>
         <p>こちらのフォームに必要情報のご入力をお願いいたします。担当より1営業日以内にメール、またはお電話にてご連絡させていただきます。（既にご利用中のお客様はサポートへのお問い合わせからご連絡ください）</p>
