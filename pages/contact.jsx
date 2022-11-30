@@ -3,19 +3,25 @@ import { TextField } from "@mui/material"
 import BreadCrumb from "../components/breadCrumb"
 import { useForm } from "@formspree/react"
 import Swal from "sweetalert2"
+import { useRouter } from "next/router"
 
 const Contact = () => {
   const lists = [
     {string: "トップページ", path: "/"},
     {string: "お問い合わせ", path: "/contact"}
   ];
+
+  const router = useRouter();
   const [state, handleSubmit] = useForm('xzbwqlwy');
   if (state.succeeded) {
     Swal.fire({
       title: "送信が完了しました。",
       text: "担当より◯営業日以内にメール、またはお電話にてご連絡させていただきます。",
-      icon: "success"
+      icon: "success",
+      showConfirmButton: false,
+      timer: 1500
     })
+    router.push("/")
   }
 
   return (

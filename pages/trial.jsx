@@ -4,6 +4,8 @@ import Image from "next/image";
 import BreadCrumb from "../components/breadCrumb";
 import { useForm } from "@formspree/react";
 import Swal from "sweetalert2";
+import { useRouter } from "next/router";
+
 
 const Trial = () => {
   const lists = [
@@ -11,13 +13,17 @@ const Trial = () => {
     { string: "無料で始める", path: "/trial" },
   ];
 
+  const router = useRouter();
   const [state, handleSubmit] = useForm("xzbwqlwy");
   if (state.succeeded) {
     Swal.fire({
       title: "送信が完了しました。",
       text: "担当より◯営業日以内にメール、またはお電話にてご連絡させていただきます。",
-      icon: "success"
+      icon: "success",
+      showConfirmButton: false,
+      timer: 1500
     })
+    router.push("/")
   }
 
   const [checked, setChecked] = useState(false);
