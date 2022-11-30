@@ -2,6 +2,7 @@ import Layout from "../components/layout"
 import { TextField } from "@mui/material"
 import BreadCrumb from "../components/breadCrumb"
 import { useForm } from "@formspree/react"
+import Swal from "sweetalert2"
 
 const Contact = () => {
   const lists = [
@@ -9,13 +10,14 @@ const Contact = () => {
     {string: "お問い合わせ", path: "/contact"}
   ];
   const [state, handleSubmit] = useForm('xzbwqlwy');
-  // if (state.succeeded) {
-  //   return (
-  //     <p>フォームは送信されました。お問い合せありがとうございます</p>
-  //   )
-  // }
+  if (state.succeeded) {
+    Swal.fire({
+      title: "送信が完了しました。",
+      text: "担当より◯営業日以内にメール、またはお電話にてご連絡させていただきます。",
+      icon: "success"
+    })
+  }
 
-  console.log(state)
   return (
     <Layout>
       <BreadCrumb lists={lists} />
@@ -24,10 +26,8 @@ const Contact = () => {
         <p>こちらのフォームに必要情報のご入力をお願いいたします。担当より1営業日以内にメール、またはお電話にてご連絡させていただきます。（既にご利用中のお客様はサポートへのお問い合わせからご連絡ください）</p>
       </div>
       <form className="flex flex-col m-10" onSubmit={handleSubmit}>
-        <p className="font-semibold">姓(必須)</p>
-        <TextField required id="outlined-required" label="姓" name="familyName" sx={{my: 1}}/>
-        <p className="font-semibold">名(必須)</p>
-        <TextField required id="outlined-required" label="名" name="lastName" sx={{my: 1}}/>
+        <p className="font-semibold">お名前(必須)</p>
+        <TextField required id="outlined-required" label="お名前" name="name" sx={{my: 1}}/>
         <p className="font-semibold">会社名(必須)</p>
         <TextField required id="outlined-required" label="会社名" name="company" sx={{my: 1}}/>
         <p className="font-semibold">メールアドレス(必須)</p>

@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import BreadCrumb from "../components/breadCrumb";
 import { useForm } from "@formspree/react";
+import Swal from "sweetalert2";
 
 const Trial = () => {
   const lists = [
@@ -10,12 +11,14 @@ const Trial = () => {
     { string: "無料で始める", path: "/trial" },
   ];
 
-  const [state, handleSubmit] = useForm('xzbwqlwy');
-  // if (state.succeeded) {
-  //   return (
-  //     <p>フォームは送信されました。お問い合せありがとうございます</p>
-  //   )
-  // }
+  const [state, handleSubmit] = useForm("xzbwqlwy");
+  if (state.succeeded) {
+    Swal.fire({
+      title: "送信が完了しました。",
+      text: "担当より◯営業日以内にメール、またはお電話にてご連絡させていただきます。",
+      icon: "success"
+    })
+  }
 
   const [checked, setChecked] = useState(false);
   const handleChange = (event) => {
@@ -48,21 +51,13 @@ const Trial = () => {
             <h2>無料トライアルを始めよう</h2>
           </div>
           <form className="m-10" onSubmit={handleSubmit}>
-            <div className="flex flex-row">
-              <input
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
-                placeholder="姓"
-                name="name"
-                required
-              />
-              <input
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
-                placeholder="名"
-                name="name"
-                required
-              />
-            </div>
             <div className="flex flex-col">
+              <input
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
+                placeholder="お名前"
+                name="name"
+                required
+              />
               <input
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
                 placeholder="会社名"
