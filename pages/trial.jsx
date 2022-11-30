@@ -2,12 +2,21 @@ import { useState } from "react";
 import Layout from "../components/layout";
 import Image from "next/image";
 import BreadCrumb from "../components/breadCrumb";
+import { useForm } from "@formspree/react";
 
 const Trial = () => {
   const lists = [
     { string: "トップページ", path: "/" },
     { string: "無料で始める", path: "/trial" },
   ];
+
+  const [state, handleSubmit] = useForm('xzbwqlwy');
+  // if (state.succeeded) {
+  //   return (
+  //     <p>フォームは送信されました。お問い合せありがとうございます</p>
+  //   )
+  // }
+
   const [checked, setChecked] = useState(false);
   const handleChange = (event) => {
     setChecked(event.target.checked);
@@ -38,33 +47,40 @@ const Trial = () => {
           <div className="mt-40 mx-10">
             <h2>無料トライアルを始めよう</h2>
           </div>
-          <form className="m-10">
+          <form className="m-10" onSubmit={handleSubmit}>
             <div className="flex flex-row">
               <input
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block p-2.5 m-2"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
                 placeholder="姓"
+                name="name"
                 required
               />
               <input
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block p-2.5 m-2"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
                 placeholder="名"
+                name="name"
                 required
               />
             </div>
             <div className="flex flex-col">
               <input
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block p-2.5 m-2"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
                 placeholder="会社名"
+                name="company"
                 required
               />
               <input
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block p-2.5 m-2"
+                type="email"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
                 placeholder="メールアドレス"
+                name="email"
                 required
               />
               <input
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block p-2.5 m-2"
+                type="tel"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
                 placeholder="電話番号"
+                name="tel"
                 required
               />
             </div>
@@ -73,13 +89,14 @@ const Trial = () => {
               <input
                 required
                 type="checkbox"
-                value=""
-                class="w-4 h-4 text-black bg-gray-100 rounded border-gray-300 "
+                className="w-4 h-4 text-black bg-gray-100 rounded border-gray-300"
+                name="checkbox"
               />
             </div>
             <button
               className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded"
               type="submit"
+              disabled={state.submitting}
             >
               今すぐ無料で始める
             </button>
