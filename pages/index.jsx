@@ -8,20 +8,20 @@ const Index = () => {
       <div className="flex flex-col justify-center items-center py-28 lg:pt-40 pb-40 bg-slate-100">
         <p className="text-sm lg:text-base pb-10">アクセス解析・広告・SNSなどすべてのレポートに対応</p>
         <h2 className="font-bold text-center text-2xl lg:text-5xl pb-10">すべてのマーケティングレポートを自動化</h2>
-        <button class="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded">
+        <button class="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded mb-10">
           <Link href={"/trial"}>今すぐ無料で始める</Link>
         </button>
         <p className="text-sm lg:text-base">トライアルにクレジットカードの登録は不要です</p>
       </div>
-      <div className="py-40">
+      <div className="pt-40">
         <div className="flex justify-center items-center">
-          <div className="absolute bottom-0">
+          <div className="absolute bottom-40">
             <Image src="/images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg" width={720} height={320} quality={90}/>
           </div>
         </div>
-        <h2 className="font-bold text-center text-2xl lg:text-5xl">カスタマイズ可能な豊富なテンプレート</h2>
+        <h2 className="font-bold text-center text-2xl lg:text-5xl pt-40">カスタマイズ可能な豊富なテンプレート</h2>
       </div>
-      <div className="flex flex-col justify-center items-center p-10">
+      <div className="flex flex-col justify-center items-center lg:px-20 px-10 py-10">
         <p className="text-center text-sm lg:text-base">
           MAGONOTEは、マーケティング担当者のデータ集計やレポート作成にかかる時間を短縮し、改善アクションに時間を使えるように作成されたマーケティングレポート自動化サービスです。
           用途にあわせてレポート・ダッシュボードテンプレートを選び、必要に応じてカスタマイズして（とても簡単です！）ご利用ください
@@ -77,7 +77,7 @@ const Index = () => {
           <p className="py-10">それぞれの管理画面に毎回ログインしてデータをダウンロードしてコピー＆ペーストを繰り返すような面倒な業務はやめましょう。MAGONOTEならAPIを通じて各媒体のデータを毎日自動的に取得するので、日々のデータ更新作業を無くすことができます。</p>
         </div>
         <div className="p-20">
-          <img src="../images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg"></img>
+          <Image src="/images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg" width={960} height={720} quality={90} />
         </div>
       </div>
       <div className="lg:flex lg:flex-row-reverse bg-slate-100">
@@ -89,7 +89,7 @@ const Index = () => {
           </p>
         </div>
         <div className="p-20">
-          <img src="../images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg"></img>
+          <Image src="/images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg" width={960} height={720} quality={90} />
         </div>
       </div>
       <div className="lg:flex">
@@ -98,7 +98,7 @@ const Index = () => {
           <p>レポートやダッシュボードは、社内メンバーやクライアントを招待すれば、招待されたメンバーは常に最新にアップデートされたデータが確認でき、また共同で編集することもできます。</p>
         </div>
         <div className="p-20">
-          <img src="../images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg"></img>
+          <Image src="/images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg" width={960} height={720} quality={90} />
         </div>
       </div>
       <div className="lg:flex flex-row-reverse bg-slate-100">
@@ -110,7 +110,7 @@ const Index = () => {
           </p>
         </div>
         <div className="p-20">
-          <img src="../images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg"></img>
+          <Image src="/images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg" width={960} height={720} quality={90} />
         </div>
       </div>
       <div className="flex flex-col items-center m-10 p-10 bg-yellow-200">
@@ -121,10 +121,10 @@ const Index = () => {
       </div>
       <div className="lg:flex items-center justify-center">
         <div className="p-20">
-          <img src="../images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg"></img>
+          <Image src="/images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg" width={800} height={560} quality={90} />
         </div>
-        <div className="flex flex-col items-center p-20">
-          <h2 className="text-xl font-bold text-center">今すぐレポートを自動化しよう</h2>
+        <div className="flex flex-col p-20">
+          <h2 className="text-xl font-bold pb-5">今すぐレポートを自動化しよう</h2>
           <button class="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded">
             <Link href={"/trial"}>無料で始める</Link>
           </button>
