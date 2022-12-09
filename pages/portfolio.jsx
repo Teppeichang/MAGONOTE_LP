@@ -8,9 +8,13 @@ const Portfolio = (props) => {
   return (
     <Layout>
       <BreadCrumb lists={lists}/>
-      <div className="flex m-40">
+      <div className="mt-10 mx-20">
+        <h2 className="text-2xl font-bold">レポートテンプレート</h2>
+        <p>アナリティクス、SEO、ウェブ広告、ソーシャルメディアなどのレポートテンプレートを豊富にご用意しています。テンプレートをそのまま利用することも、カスタマイズして利用することも両方可能です。</p>
+      </div>
+      <div className="flex justify-between mt-10 mx-20">
         {props.portfolios.map((portfolio, index) =>
-          <div key={index}>
+          <div key={index} className="m-2">
             <h2>{portfolio.frontmatter.title}</h2>
             <Link href={`/portfolio/${portfolio.slug}`}>Read More</Link>
           </div>

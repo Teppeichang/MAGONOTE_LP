@@ -50,7 +50,7 @@ function Header(props) {
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <Link href={"/pricing"}><a className="text-black px-2">料金プラン</a></Link>
               <Link href={"/portfolio"}><a className="text-black px-2">レポートギャラリー</a></Link>
-              <Link href={"https://next-report.jp/"}><a className="text-black px-2">ブログ</a></Link>
+              <Link href={"https://next-report.jp/"}><a className="text-black px-2" target="_blank">ブログ</a></Link>
               <Link href={"/contact"}><a className="text-black px-2">お問い合わせ</a></Link>
               <Link href={"/trial"}><a className="text-black px-2">無料で始める</a></Link>
             </Box>
