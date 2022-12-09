@@ -18,7 +18,7 @@ const Footer = () => {
               <a className="text-black py-2">レポートギャラリー</a>
             </Link>
             <Link href={"https://next-report.jp/"}>
-              <a className="text-black py-2">ブログ</a>
+              <a className="text-black py-2" target="_blank">ブログ</a>
             </Link>
             <Link href={"/contact"}>
               <a className="text-black py-2">お問い合わせ</a>

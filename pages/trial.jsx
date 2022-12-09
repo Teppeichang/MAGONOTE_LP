@@ -34,8 +34,8 @@ const Trial = () => {
   return (
     <Layout>
       <BreadCrumb lists={lists} />
-      <div className="flex flex-row justify-center items-center bg-yellow-400 m-20 p-10">
-        <div className="bg-white py-10 px-10">
+      <div className="flex flex-row justify-center items-center bg-yellow-400 mx-40 my-20 p-5">
+        <div className="bg-white py-5 px-20">
           <p>MAGONOTE</p>
           <div>
             <Image
@@ -52,9 +52,9 @@ const Trial = () => {
             <li>無料のZoomサポート</li>
           </ul>
         </div>
-        <div className="px-20">
-          <div className="mt-40 mx-10">
-            <h2>無料トライアルを始めよう</h2>
+        <div className="px-10">
+          <div className="mt-20 mx-10">
+            <h2 className="text-xl font-bold">無料トライアルを始めよう</h2>
           </div>
           <form className="m-10" onSubmit={handleSubmit}>
             <div className="flex flex-col">
@@ -84,18 +84,18 @@ const Trial = () => {
                 name="tel"
                 required
               />
-            </div>
-            <div className="flex flex-row items-center">
-              <p>利用規約に同意する*</p>
-              <input
-                required
-                type="checkbox"
-                className="w-4 h-4 text-black bg-gray-100 rounded border-gray-300"
-                name="checkbox"
-              />
+              <div className="flex flex-row m-2">
+                <p>利用規約に同意する*</p>
+                <input
+                  required
+                  type="checkbox"
+                  className="w-4 h-4 text-black bg-gray-100 rounded border-gray-300 ml-2"
+                  name="checkbox"
+                />
+              </div>
             </div>
             <button
-              className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded"
+              className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded m-10"
               type="submit"
               disabled={state.submitting}
             >
