@@ -5,24 +5,22 @@ import Layout from "../components/layout";
 const Index = () => {
   return (
     <Layout>
-      <div className="flex flex-col justify-center items-center py-28 lg:pt-40 pb-40 bg-slate-100">
-        <p className="text-sm lg:text-base pb-10">アクセス解析・広告・SNSなどすべてのレポートに対応</p>
+      <div className="flex flex-col justify-center items-center pt-5 bg-slate-100 min-h-screen">
+        <p className="text-sm lg:text-xl pb-10">アクセス解析・広告・SNSなどすべてのレポートに対応</p>
         <h2 className="font-bold text-center text-2xl lg:text-4xl pb-10">すべてのマーケティングレポートを自動化</h2>
         <button class="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded mb-10">
           <Link href={"/trial"}>今すぐ無料で始める</Link>
         </button>
         <p className="text-sm lg:text-base">トライアルにクレジットカードの登録は不要です</p>
       </div>
-      <div className="pt-20">
         <div className="flex justify-center items-center">
-          <div>
+          <div className="absolute">
             <Image src="/images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg" width={720} height={320} quality={90}/>
           </div>
         </div>
-        <h2 className="font-bold text-center text-2xl lg:text-4xl pt-20">カスタマイズ可能な豊富なテンプレート</h2>
-      </div>
-      <div className="flex flex-col justify-center items-center lg:px-20 px-10 py-10">
-        <p className="text-center text-sm lg:text-base">
+      <div className="flex flex-col justify-center items-center lg:px-20 px-10 pt-40 pb-20">
+        <h2 className="font-bold text-center text-2xl lg:text-4xl pt-40">カスタマイズ可能な豊富なテンプレート</h2>
+        <p className="text-center text-sm lg:text-base pt-10">
           MAGONOTEは、マーケティング担当者のデータ集計やレポート作成にかかる時間を短縮し、改善アクションに時間を使えるように作成されたマーケティングレポート自動化サービスです。
           用途にあわせてレポート・ダッシュボードテンプレートを選び、必要に応じてカスタマイズして（とても簡単です！）ご利用ください
         </p>
