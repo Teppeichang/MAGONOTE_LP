@@ -1,18 +1,12 @@
 import { useState } from "react";
 import Layout from "../components/layout";
 import Image from "next/image";
-import BreadCrumb from "../components/breadCrumb";
 import { useForm } from "@formspree/react";
 import Swal from "sweetalert2";
 import { useRouter } from "next/router";
 
 
 const Trial = () => {
-  const lists = [
-    { string: "トップページ", path: "/" },
-    { string: "無料で始める", path: "/trial" },
-  ];
-
   const router = useRouter();
   const [state, handleSubmit] = useForm("xzbwqlwy");
   if (state.succeeded) {
@@ -33,7 +27,6 @@ const Trial = () => {
 
   return (
     <Layout>
-      <BreadCrumb lists={lists} />
       <div className="flex flex-row justify-center items-center bg-yellow-400 mx-40 my-20 p-5">
         <div className="bg-white py-5 px-20">
           <p>MAGONOTE</p>
