@@ -1,51 +1,69 @@
-import Layout from "../components/layout"
-import matter from "gray-matter"
-import Link from "next/link"
-import BreadCrumb from "../components/breadCrumb"
+import Layout from "../components/layout";
+import Link from "next/link";
+import Image from "next/image";
+import BreadCrumb from "../components/breadCrumb";
 
-const Portfolio = (props) => {
-  const lists = [{string: "トップページ", path: "/"}, {string: "レポートギャラリー", path: "/portfolio"}]
+const Portfolio = () => {
+  const lists = [
+    { string: "トップページ", path: "/" },
+    { string: "レポートギャラリー", path: "/portfolio" },
+  ];
   return (
     <Layout>
-      <BreadCrumb lists={lists}/>
-      <div className="mt-10 mx-20">
-        <h2 className="text-2xl font-bold">レポートテンプレート</h2>
-        <p>アナリティクス、SEO、ウェブ広告、ソーシャルメディアなどのレポートテンプレートを豊富にご用意しています。テンプレートをそのまま利用することも、カスタマイズして利用することも両方可能です。</p>
-      </div>
-      <div className="flex justify-between mt-10 mx-20">
-        {props.portfolios.map((portfolio, index) =>
-          <div key={index} className="m-2">
-            <h2>{portfolio.frontmatter.title}</h2>
-            <Link href={`/portfolio/${portfolio.slug}`}>Read More</Link>
+      <BreadCrumb lists={lists} />
+      <div className="min-h-screen">
+        <div className="mt-10 mx-20">
+          <h2 className="text-2xl font-bold">レポートテンプレート</h2>
+          <p>
+            アナリティクス、SEO、ウェブ広告、ソーシャルメディアなどのレポートテンプレートを豊富にご用意しています。テンプレートをそのまま利用することも、カスタマイズして利用することも両方可能です。
+          </p>
+        </div>
+        <div className="flex justify-between mt-10 mx-20">
+          <div className="flex flex-col">
+            <Image
+              src="/images/c63232d34a5f72e41f735c9cb45ec181.png"
+              width={560}
+              height={720}
+              quality={90}
+            />
+            <Link href={"/portfolio/facebook-report"}>Facebook広告レポート</Link>
           </div>
-        )}
+          <div className="flex flex-col">
+            <Image
+              src="/images/4da13f27211a8ffbdd9d1ff88f877952.png"
+              alt="LINE広告レポート"
+              width={560}
+              height={720}
+              quality={90}
+            />
+            <Link href={"/portfolio/line-report"}>LINE広告レポート</Link>
+          </div>
+        </div>
+        <div className="flex justify-between mt-10 mx-20">
+          <div className="flex flex-col">
+            <Image
+              src="/images/5dd2e69e7ca524605f094ecb720bd83e.png"
+              alt="TikTok広告レポート"
+              width={560}
+              height={720}
+              quality={90}
+            />
+            <Link href={"/portfolio/tiktok-report"}>TikTok広告レポート</Link>
+          </div>
+          <div className="flex flex-col">
+            <Image
+              src="/images/db9717065f66815dee7c256ed7cd2705.png"
+              alt="Google & YouTube広告レポート"
+              width={560}
+              height={720}
+              quality={90}
+            />
+            <Link href={"/portfolio/google-and-youtube-report"}>Google&YouTube広告レポート</Link>
+          </div>
+        </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 export default Portfolio;
-
-export async function getStaticProps () {
-  const portfolios = ((context) => {
-    const keys = context.keys()
-    const values = keys.map(context)
-
-    const data = keys.map((key, index) => {
-      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
-      const value = values[index]
-      const document = matter(value.default)
-      return {
-        frontmatter: document.data,
-        slug: slug
-      }
-    })
-    return data
-  })(require.context('../data', true, /\.md$/))
-
-  return {
-    props: {
-      portfolios: portfolios
-    },
-  }
-}
