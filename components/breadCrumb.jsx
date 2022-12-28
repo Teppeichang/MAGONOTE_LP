@@ -13,7 +13,7 @@ const BreadCrumb = ({lists}) => {
           {lists.length - 1 !== index
           ?
           <>
-            <Link href={path}>{string}</Link>
+            <Link href={path}><a className="underline">{string}</a></Link>
             <ChevronRightIcon aria-hidden="true" />
           </>
           :
