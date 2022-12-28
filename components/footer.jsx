@@ -31,13 +31,13 @@ const Footer = () => {
         <div className="flex flex-col py-10 px-10">
           <h2 className="text-xl font-semibold">運営会社</h2>
           <List sx={{ display: "flex", flexDirection: "column" }}>
-            <Link href={"https://next-stage.biz/"}>
-              <a href="" className="text-black py-2">
+            <Link href={"https://corp.next-stage.biz/"}>
+              <a className="text-black py-2">
                 会社概要(運営会社)
               </a>
             </Link>
             <Link href={"https://corp.next-stage.biz/recruit/"}>
-              <a href="" className="text-black py-2">
+              <a className="text-black py-2">
                 採用情報
               </a>
             </Link>
