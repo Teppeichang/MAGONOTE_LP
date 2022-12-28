@@ -6,12 +6,13 @@ import Swal from "sweetalert2";
 import { useRouter } from "next/router";
 
 const Contact = () => {
+  const router = useRouter();
+
   const lists = [
     { string: "トップページ", path: "/" },
     { string: "お問い合わせ", path: "/contact" },
   ];
 
-  const router = useRouter();
   const [state, handleSubmit] = useForm("xzbwqlwy");
   if (state.succeeded) {
     Swal.fire({
@@ -27,14 +28,14 @@ const Contact = () => {
   return (
     <Layout>
       <BreadCrumb lists={lists} />
-      <div className="min-h-screen">
-        <div className="mt-10 mx-20">
+      <div className="min-h-screen px-10 lg:px-20">
+        <div className="mt-10">
           <h2 className="text-2xl font-bold">お問い合わせ・デモ予約はこちら</h2>
           <p className="mt-5">
             こちらのフォームに必要情報のご入力をお願いいたします。担当より1営業日以内にメール、またはお電話にてご連絡させていただきます。（既にご利用中のお客様はサポートへのお問い合わせからご連絡ください）
           </p>
         </div>
-        <form className="flex flex-col mt-10 mb-20 mx-20" onSubmit={handleSubmit}>
+        <form className="flex flex-col mt-10 mb-20" onSubmit={handleSubmit}>
           <p className="font-semibold">
             お名前<span className="text-red-600">(必須)</span>
           </p>
