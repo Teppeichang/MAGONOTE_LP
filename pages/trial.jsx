@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 
 const Trial = () => {
   const router = useRouter();
+
   const [state, handleSubmit] = useForm("xzbwqlwy");
   if (state.succeeded) {
     Swal.fire({
@@ -26,9 +27,9 @@ const Trial = () => {
 
   return (
     <Layout>
-      <div className="min-h-screen mt-40">
-        <div className="flex flex-row justify-center items-center bg-yellow-400 mx-40 p-5">
-          <div className="bg-white py-5 px-20">
+      <div className="min-h-screen mt-20 mb-10 mx-2 lg:mt-40 lg:mx-5">
+        <div className="flex flex-col justify-center items-center bg-yellow-400 p-2 lg:flex-row lg:mx-40">
+          <div className="bg-white py-4 px-1 lg:py-12 lg:px-28">
             <p>MAGONOTE</p>
             <div>
               <Image
@@ -38,41 +39,41 @@ const Trial = () => {
                 quality={90}
               />
             </div>
-            <ul className="list-disc list-inside">
-              <li>クレジットカード登録不要</li>
-              <li>Googleアナリティクスの無料テンプレート（期間制限なし）</li>
-              <li>ウェブ広告・SNSレポートを14日間無料でお試し</li>
-              <li>無料のZoomサポート</li>
+            <ul className="list-disc list-inside ml-7">
+              <li className="-indent-6">クレジットカード登録不要</li>
+              <li className="-indent-6">Googleアナリティクスの無料テンプレート（期間制限なし）</li>
+              <li className="-indent-6">ウェブ広告・SNSレポートを14日間無料でお試し</li>
+              <li className="-indent-6">無料のZoomサポート</li>
             </ul>
           </div>
           <div className="px-10">
-            <div className="mt-20 mx-10">
-              <h2 className="text-xl font-bold">無料トライアルを始めよう</h2>
+            <div className="mt-20">
+              <h2 className="text-xl text-center font-bold">無料トライアルを始めよう</h2>
             </div>
             <form className="m-10" onSubmit={handleSubmit}>
-              <div className="flex flex-col">
+              <div className="flex flex-col items-center">
                 <input
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block py-2.5 px-5 m-2"
                   placeholder="お名前"
                   name="name"
                   required
                 />
                 <input
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block py-2.5 px-5 m-2"
                   placeholder="会社名"
                   name="company"
                   required
                 />
                 <input
                   type="email"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block py-2.5 px-5 m-2"
                   placeholder="メールアドレス"
                   name="email"
                   required
                 />
                 <input
                   type="tel"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block p-2.5 m-2"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block py-2.5 px-5 m-2"
                   placeholder="電話番号"
                   name="tel"
                   required
@@ -86,14 +87,14 @@ const Trial = () => {
                     name="checkbox"
                   />
                 </div>
+                <button
+                  className="bg-black hover:bg-slate-700 text-white font-medium rounded mt-2 px-8 py-2"
+                  type="submit"
+                  disabled={state.submitting}
+                >
+                  今すぐ無料で始める
+                </button>
               </div>
-              <button
-                className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded m-10"
-                type="submit"
-                disabled={state.submitting}
-              >
-                今すぐ無料で始める
-              </button>
             </form>
           </div>
         </div>
