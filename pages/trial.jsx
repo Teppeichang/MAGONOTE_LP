@@ -1,11 +1,61 @@
 import { useState } from "react";
+import { useRef } from "react";
 import Layout from "../components/layout";
 import Image from "next/image";
 import { useForm } from "@formspree/react";
 import Swal from "sweetalert2";
 import { useRouter } from "next/router";
+import { TextField } from "@mui/material";
 
 const Trial = () => {
+  const emailValidatePattern =
+    "^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}.[A-Za-z0-9]{1,}$";
+
+  const nameRef = useRef(null);
+  const companyRef = useRef(null);
+  const emailRef = useRef(null);
+  const telNumberRef = useRef(null);
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [telNumber, setTelNumber] = useState("");
+  const [nameError, setNameError] = useState(false);
+  const [companyError, setCompanyError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [telNumberError, setTelNumberError] = useState(false);
+
+  const formValidation = () => {
+    let valid = true;
+
+    const isNameRefExists = nameRef?.current;
+    if (isNameRefExists) {
+      const isNameValid = isNameRefExists.validity.valid;
+      setNameError(!isNameValid);
+      valid &&= isNameValid;
+    }
+
+    const isCompanyRefExists = companyRef?.current;
+    if (isCompanyRefExists) {
+      const isCompanyValid = isCompanyRefExists.validity.valid;
+      setCompanyError(!isCompanyValid);
+      valid &&= isCompanyValid;
+    }
+
+    const isEmailRefExists = emailRef?.current;
+    if (isEmailRefExists) {
+      const isEmailValid = isEmailRefExists.validity.valid;
+      setEmailError(!isEmailValid);
+      valid &&= isEmailValid;
+    }
+
+    const isTelNumberRefExists = telNumberRef?.current;
+    if (isTelNumberRefExists) {
+      const isTelNumberValid = isTelNumberRefExists.validity.valid;
+      setTelNumberError(!isTelNumberValid);
+      valid &&= isTelNumberValid;
+    }
+  };
+
   const router = useRouter();
 
   const [state, handleSubmit] = useForm("xzbwqlwy");
@@ -52,31 +102,50 @@ const Trial = () => {
             </div>
             <form className="m-10" onSubmit={handleSubmit}>
               <div className="flex flex-col items-center">
-                <input
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block py-2.5 px-5 m-2"
-                  placeholder="お名前"
+                <TextField
+                  label="お名前"
                   name="name"
-                  required
+                  inputRef={nameRef}
+                  value={name}
+                  error={nameError}
+                  helperText={nameError && nameRef?.current?.validationMessage}
+                  inputProps={{ required: true }}
+                  onChange={(event) => setName(event.target.value)}
+                  sx={{ m: 1, input: {background: "white"} }}
                 />
-                <input
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block py-2.5 px-5 m-2"
-                  placeholder="会社名"
+                <TextField
+                  label="会社名"
                   name="company"
-                  required
+                  inputRef={companyRef}
+                  value={company}
+                  error={companyError}
+                  helperText={companyError && companyRef?.current?.validationMessage}
+                  inputProps={{ required: true }}
+                  onChange={(event) => setCompany(event.target.value)}
+                  sx={{ m: 1, input: {background: "white"} }}
                 />
-                <input
-                  type="email"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block py-2.5 px-5 m-2"
-                  placeholder="メールアドレス"
+                <TextField
+                  label="メールアドレス"
                   name="email"
-                  required
+                  inputRef={emailRef}
+                  value={email}
+                  error={emailError}
+                  helperText={emailError && emailRef?.current?.validationMessage}
+                  inputProps={{ required: true, pattern: emailValidatePattern }}
+                  onChange={(event) => setEmail(event.target.value)}
+                  sx={{ m: 1, input: {background: "white"} }}
                 />
-                <input
+                <TextField
+                  label="電話番号"
                   type="tel"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm block py-2.5 px-5 m-2"
-                  placeholder="電話番号"
                   name="tel"
-                  required
+                  inputRef={telNumberRef}
+                  value={telNumber}
+                  error={telNumberError}
+                  helperText={telNumberError && telNumberRef?.current?.validationMessage}
+                  inputProps={{ required: true }}
+                  onChange={(event) => setTelNumber(event.target.value)}
+                  sx={{ m: 1, input: {background: "white"} }}
                 />
                 <div className="flex flex-row m-2">
                   <p>利用規約に同意する*</p>
@@ -88,9 +157,10 @@ const Trial = () => {
                   />
                 </div>
                 <button
-                  className="bg-black hover:bg-slate-700 text-white font-medium rounded mt-2 px-8 py-2"
+                  className="bg-black hover:bg-slate-700 text-white font-medium rounded mt-2 px-7 py-2"
                   type="submit"
                   disabled={state.submitting}
+                  onClick={() => formValidation()}
                 >
                   今すぐ無料で始める
                 </button>
