@@ -150,6 +150,7 @@ const Trial = () => {
                 <div className="flex flex-row m-2">
                   <p>利用規約に同意する*</p>
                   <input
+                    aria-label="利用規約に同意する"
                     required
                     type="checkbox"
                     className="w-4 h-4 text-black bg-gray-100 rounded border-gray-300 ml-2"
@@ -157,6 +158,7 @@ const Trial = () => {
                   />
                 </div>
                 <button
+                  aria-label="今すぐ無料で始める"
                   className="bg-black hover:bg-slate-700 text-white font-medium rounded mt-2 px-7 py-2"
                   type="submit"
                   disabled={state.submitting}

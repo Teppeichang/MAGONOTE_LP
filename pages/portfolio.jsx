@@ -26,6 +26,7 @@ const Portfolio = () => {
                   width={560}
                   height={720}
                   quality={90}
+                  aria-label="facebook-report"
                 />
               </a>
               <a href={"/portfolio/facebook-report"} className="font-bold lg:text-xl">Facebook広告レポート</a>
@@ -38,6 +39,7 @@ const Portfolio = () => {
                   width={560}
                   height={720}
                   quality={90}
+                  aria-label="line-report"
                 />
               </a>
               <a href={"/portfolio/line-report"} className="font-bold lg:text-xl">LINE広告レポート</a>
@@ -50,6 +52,7 @@ const Portfolio = () => {
                   width={560}
                   height={720}
                   quality={90}
+                  aria-label="tiktok-report"
                 />
               </a>
               <a href={"/portfolio/tiktok-report"} className="font-bold lg:text-xl">TikTok広告レポート</a>
@@ -62,6 +65,7 @@ const Portfolio = () => {
                   width={560}
                   height={720}
                   quality={90}
+                  aria-label="google-and-youtube-report"
                 />
               </a>
               <a href={"/portfolio/google-and-youtube-report"} className="font-bold lg:text-xl">Google&YouTube広告レポート</a>
