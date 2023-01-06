@@ -25,11 +25,11 @@ function Header(props) {
       </Typography>
       <Divider />
       <List sx={{display: "flex", flexDirection: "column"}}>
-      <Link href={"/pricing"}><a className="text-black py-2">料金プラン</a></Link>
-        <Link href={"/portfolio"}><a className="text-black py-2">レポートギャラリー</a></Link>
-        <Link href={"https://next-report.jp/"}><a className="text-black py-2">ブログ</a></Link>
-        <Link href={"/contact"}><a className="text-black py-2">お問い合わせ</a></Link>
-        <Link href={"/trial"}><a className="text-black py-2">無料で始める</a></Link>
+        <Link href={"/pricing"}><a className="text-black py-2" data-testid="header-pricing-link-sp">料金プラン</a></Link>
+        <Link href={"/portfolio"}><a className="text-black py-2" data-testid="header-portfolio-link-sp">レポートギャラリー</a></Link>
+        <Link href={"https://next-report.jp/"}><a className="text-black py-2" target="_blank" data-testid="header-blog-link-sp">ブログ</a></Link>
+        <Link href={"/contact"}><a className="text-black py-2" data-testid="header-contact-link-sp">お問い合わせ</a></Link>
+        <Link href={"/trial"}><a className="text-black py-2" data-testid="header-trial-link-sp">無料で始める</a></Link>
       </List>
     </Box>
   );
@@ -48,11 +48,11 @@ function Header(props) {
               <Link href={"/"}>MAGONOTE</Link>
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              <Link href={"/pricing"}><a className="text-black px-2">料金プラン</a></Link>
-              <Link href={"/portfolio"}><a className="text-black px-2">レポートギャラリー</a></Link>
-              <Link href={"https://next-report.jp/"}><a className="text-black px-2" target="_blank">ブログ</a></Link>
-              <Link href={"/contact"}><a className="text-black px-2">お問い合わせ</a></Link>
-              <Link href={"/trial"}><a className="text-black px-2">無料で始める</a></Link>
+              <Link href={"/pricing"}><a className="text-black px-2" data-testid="header-pricing-link">料金プラン</a></Link>
+              <Link href={"/portfolio"}><a className="text-black px-2" data-testid="header-portfolio-link">レポートギャラリー</a></Link>
+              <Link href={"https://next-report.jp/"}><a className="text-black px-2" target="_blank" data-testid="header-blog-link">ブログ</a></Link>
+              <Link href={"/contact"}><a className="text-black px-2" data-testid="header-contact-link">お問い合わせ</a></Link>
+              <Link href={"/trial"}><a className="text-black px-2" data-testid="header-trial-link">無料で始める</a></Link>
             </Box>
           </Toolbar>
         </AppBar>

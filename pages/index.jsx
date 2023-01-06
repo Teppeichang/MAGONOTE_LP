@@ -8,7 +8,7 @@ const Index = () => {
       <div className="flex flex-col justify-center items-center bg-slate-100 min-h-screen px-2">
         <p className="text-xl text-center pb-10">アクセス解析・広告・SNSなど<br className="lg:hidden"/>すべてのレポートに対応</p>
         <h2 className="font-bold text-center text-2xl lg:text-5xl pb-10">すべてのマーケティングレポートを自動化</h2>
-        <button class="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded mb-10">
+        <button className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded mb-10">
           <Link href={"/trial"}>今すぐ無料で始める</Link>
         </button>
         <p className="text-sm lg:text-base">トライアルにクレジットカードの登録は不要です</p>
@@ -61,7 +61,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <button class="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded">
+        <button className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded">
           <Link href={"/portfolio"}>すべてのレポートを見る</Link>
         </button>
       </div>
@@ -115,7 +115,7 @@ const Index = () => {
         <h2 className="font-bold text-center text-xl lg:text-2xl">
           今すぐレポートを自動化し、<br className="lg:hidden"/>改善アクションに時間を使おう
         </h2>
-        <button class="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded m-5">
+        <button className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded m-5">
           <Link href={"/trial"}>今すぐ無料で始める</Link>
         </button>
       </div>
@@ -125,7 +125,7 @@ const Index = () => {
         </div>
         <div className="flex flex-col p-10 lg:p-20">
           <h2 className="text-xl font-bold pb-5">今すぐレポートを自動化しよう</h2>
-          <button class="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded">
+          <button className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded">
             <Link href={"/trial"}>無料で始める</Link>
           </button>
         </div>
