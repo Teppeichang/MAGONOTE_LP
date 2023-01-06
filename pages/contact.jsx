@@ -155,6 +155,7 @@ const Contact = () => {
             sx={{ my: 1 }}
           />
           <button
+            aria-label="送信する"
             className="bg-black hover:bg-slate-700 text-white font-medium mt-5 py-2 px-4 rounded w-max"
             type="submit"
             disabled={state.submitting}
