@@ -20,4 +20,4 @@ describe('Indexに配置したリンク付きボタンのページ遷移テス�
     userEvent.click(portfolioLink)
     expect(render(<Portfolio />))
   });
-})
+});
