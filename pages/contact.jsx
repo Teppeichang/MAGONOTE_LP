@@ -68,8 +68,6 @@ const Contact = () => {
     router.push("/");
   }
 
-  console.log(state)
-
   const lists = [
     { string: "トップページ", path: "/" },
     { string: "お問い合わせ", path: "/contact" },
