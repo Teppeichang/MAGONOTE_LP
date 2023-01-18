@@ -77,9 +77,9 @@ const Trial = () => {
 
   return (
     <Layout>
-      <div className="min-h-screen mt-20 mb-10 mx-2 lg:mt-40 lg:mx-5">
-        <div className="flex flex-col justify-center items-center bg-yellow-400 p-2 lg:flex-row lg:mx-40">
-          <div className="bg-white py-4 px-1 lg:py-12 lg:px-28">
+      <div className="flex flex-col min-h-screen justify-center items-center mt-20 mb-10 px-5 lg:flex-row lg:mt-20 lg:mx-5">
+        <div className="bg-yellow-400 flex flex-col justify-center items-center lg:flex-row">
+          <div className="bg-white my-1 mx-1 z-10 lg:py-10 lg:px-20">
             <p>MAGONOTE</p>
             <div>
               <Image
@@ -96,11 +96,9 @@ const Trial = () => {
               <li className="-indent-6">無料のZoomサポート</li>
             </ul>
           </div>
-          <div className="px-10">
-            <div className="mt-20">
-              <h2 className="text-xl text-center font-bold">無料トライアルを始めよう</h2>
-            </div>
-            <form className="m-10" onSubmit={handleSubmit}>
+          <div className="lg:px-28">
+            <h2 className="text-xl text-center font-bold mt-20">無料トライアルを始めよう</h2>
+            <form className="m-10 lg:m-5" onSubmit={handleSubmit}>
               <div className="flex flex-col items-center">
                 <TextField
                   label="お名前"
@@ -111,7 +109,7 @@ const Trial = () => {
                   helperText={nameError && nameRef?.current?.validationMessage}
                   inputProps={{ required: true }}
                   onChange={(event) => setName(event.target.value)}
-                  sx={{ m: 1, input: {background: "white"} }}
+                  sx={{ m: 1, input: { background: "white" } }}
                 />
                 <TextField
                   label="会社名"
@@ -122,7 +120,7 @@ const Trial = () => {
                   helperText={companyError && companyRef?.current?.validationMessage}
                   inputProps={{ required: true }}
                   onChange={(event) => setCompany(event.target.value)}
-                  sx={{ m: 1, input: {background: "white"} }}
+                  sx={{ m: 1, input: { background: "white" } }}
                 />
                 <TextField
                   label="メールアドレス"
@@ -133,7 +131,7 @@ const Trial = () => {
                   helperText={emailError && emailRef?.current?.validationMessage}
                   inputProps={{ required: true, pattern: emailValidatePattern }}
                   onChange={(event) => setEmail(event.target.value)}
-                  sx={{ m: 1, input: {background: "white"} }}
+                  sx={{ m: 1, input: { background: "white" } }}
                 />
                 <TextField
                   label="電話番号"
@@ -145,7 +143,7 @@ const Trial = () => {
                   helperText={telNumberError && telNumberRef?.current?.validationMessage}
                   inputProps={{ required: true }}
                   onChange={(event) => setTelNumber(event.target.value)}
-                  sx={{ m: 1, input: {background: "white"} }}
+                  sx={{ m: 1, input: { background: "white" } }}
                 />
                 <div className="flex flex-row m-2">
                   <p>利用規約に同意する*</p>
