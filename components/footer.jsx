@@ -6,10 +6,10 @@ const Footer = () => {
     <footer className="bottom-0 bg-slate-200">
       <div className="lg:flex justify-center">
         <div>
-          <h1 className="py-10 px-40">MAGONOTE</h1>
+          <p className="py-10 px-40 text-center">MAGONOTE</p>
         </div>
         <div className="flex flex-col py-10 px-10">
-          <h2 className="text-xl font-semibold">サービス</h2>
+          <p className="text-xl font-semibold">サービス</p>
           <List sx={{ display: "flex", flexDirection: "column" }}>
             <Link href={"/pricing"}>
               <a className="text-black py-2" data-testid="footer-pricing-link">料金プラン</a>
