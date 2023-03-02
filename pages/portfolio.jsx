@@ -12,9 +12,10 @@ const Portfolio = () => {
       <BreadCrumb lists={lists} />
       <div className="min-h-screen">
         <div className="mt-10 mx-10 lg:mx-20">
-          <h2 className="text-2xl font-bold">レポートテンプレート</h2>
+          <h2 className="text-2xl font-bold">無料レポートテンプレート</h2>
           <p>
-            アナリティクス、SEO、ウェブ広告、ソーシャルメディアなどのレポートテンプレートを豊富にご用意しています。テンプレートをそのまま利用することも、カスタマイズして利用することも両方可能です。
+            アナリティクス、SEO、ウェブ広告、ソーシャルメディアなどのレポートテンプレートを豊富にご用意しています。
+            もちろんテンプレートはカスタマイズして利用することも可能です。
           </p>
         </div>
         <div className="my-10 mx-10 lg:mx-20">
@@ -29,7 +30,9 @@ const Portfolio = () => {
                   aria-label="facebook-report"
                 />
               </a>
-              <a href={"/portfolio/facebook-report"} className="font-bold lg:text-xl">Facebook広告レポート</a>
+              <a href={"/portfolio/facebook-report"} className="font-bold lg:text-xl">
+                Facebook広告レポート
+              </a>
             </div>
             <div className="flex flex-col m-5 lg:m-10">
               <a href={"/portfolio/line-report"}>
@@ -42,7 +45,9 @@ const Portfolio = () => {
                   aria-label="line-report"
                 />
               </a>
-              <a href={"/portfolio/line-report"} className="font-bold lg:text-xl">LINE広告レポート</a>
+              <a href={"/portfolio/line-report"} className="font-bold lg:text-xl">
+                LINE広告レポート
+              </a>
             </div>
             <div className="flex flex-col m-5 lg:m-10">
               <a href={"/portfolio/tiktok-report"}>
@@ -55,7 +60,9 @@ const Portfolio = () => {
                   aria-label="tiktok-report"
                 />
               </a>
-              <a href={"/portfolio/tiktok-report"} className="font-bold lg:text-xl">TikTok広告レポート</a>
+              <a href={"/portfolio/tiktok-report"} className="font-bold lg:text-xl">
+                TikTok広告レポート
+              </a>
             </div>
             <div className="flex flex-col m-5 lg:m-10">
               <a href={"/portfolio/google-and-youtube-report"}>
@@ -68,7 +75,9 @@ const Portfolio = () => {
                   aria-label="google-and-youtube-report"
                 />
               </a>
-              <a href={"/portfolio/google-and-youtube-report"} className="font-bold lg:text-xl">Google&YouTube広告レポート</a>
+              <a href={"/portfolio/google-and-youtube-report"} className="font-bold lg:text-xl">
+                Google&YouTube広告レポート
+              </a>
             </div>
           </div>
         </div>
