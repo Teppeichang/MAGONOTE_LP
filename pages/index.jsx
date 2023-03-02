@@ -122,6 +122,16 @@ const Index = () => {
           <Link href={"/portfolio"}>すべてのレポートを見る</Link>
         </button>
       </div>
+      <div className="flex flex-col items-center bg-yellow-200 p-10 my-5 lg:m-5">
+        <h2 className="font-bold text-center text-xl lg:text-2xl">
+          今すぐ無料でレポートを自動化し、
+          <br className="lg:hidden" />
+          改善アクションに時間を使おう
+        </h2>
+        <button className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded m-5">
+          <Link href={"/trial"}>今すぐ無料で始める</Link>
+        </button>
+      </div>
       <div className="flex flex-col justify-center items-center bg-slate-100 p-10 lg:p-20">
         <h2 className="font-bold text-center text-2xl lg:text-4xl">
           マーケティング担当者自らがノーコードで使える機能
@@ -196,31 +206,10 @@ const Index = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center bg-yellow-200 p-10 my-5 lg:m-5">
-        <h2 className="font-bold text-center text-xl lg:text-2xl">
-          今すぐ無料でレポートを自動化し、
-          <br className="lg:hidden" />
-          改善アクションに時間を使おう
-        </h2>
-        <button className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded m-5">
-          <Link href={"/trial"}>今すぐ無料で始める</Link>
-        </button>
-      </div>
       <div className="lg:flex items-center justify-center">
-        <div className="p-10 lg:p-20">
-          <Image
-            src="/images/sincerely-media-xJlc_Ke3oNI-unsplash.jpg"
-            width={800}
-            height={560}
-            quality={90}
-          />
-        </div>
-        <div className="flex flex-col p-10 lg:p-20">
-          <h2 className="text-xl font-bold pb-5">今すぐレポートを自動化しよう</h2>
-          <button className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded">
-            <Link href={"/trial"}>無料で始める</Link>
-          </button>
-        </div>
+        <button className="bg-black hover:bg-slate-700 text-white font-medium py-2 px-4 rounded">
+          <Link href={"/trial"}>無料で始める</Link>
+        </button>
       </div>
     </Layout>
   );
