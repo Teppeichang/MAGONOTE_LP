@@ -10,7 +10,17 @@ module.exports = {
   },
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        slate: {
+          50: '#FBFBFB',
+          700: '#242424',
+        },
+        purple: {
+          800: '#6C0ECA',
+        },
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
