@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import Toolbar from "@mui/material/Toolbar";
 
 function Header(props) {
@@ -18,13 +18,17 @@ function Header(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }} className="container">
-      <Image
-        src="/images/header_logo.svg"
-        alt="MAGONOTE"
-        width={262}
-        height={40}
-        quality={90}
-      />
+      <Link href={"/"}>
+        <a>
+          <Image
+            src="/images/header_logo.svg"
+            alt="MAGONOTE"
+            width={262}
+            height={40}
+            quality={90}
+          />
+        </a>
+      </Link>
       <List sx={{ display: "flex", flexDirection: "column" }}>
         <Link href={"/pricing"}>
           <a className="text-black py-2" data-testid="header-pricing-link-sp">
@@ -67,10 +71,14 @@ function Header(props) {
             onClick={handleDrawerToggle}
             sx={{ display: { sm: "none" } }}
           >
-            <MenuRoundedIcon sx={{width: 48, height: 40}} />
+            <MenuRoundedIcon sx={{ width: 48, height: 40 }} />
           </IconButton>
           <div className="relative w-40 h-6 lg:w-64 lg:h-10">
-            <Image src="/images/header_logo.svg" alt="MAGONOTE" layout="fill" />
+            <Link href={"/"}>
+              <a>
+                <Image src="/images/header_logo.svg" alt="MAGONOTE" layout="fill" />
+              </a>
+            </Link>
           </div>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Link href={"/portfolio"}>
