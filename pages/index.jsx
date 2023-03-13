@@ -11,7 +11,7 @@ const Index = () => {
         </h2>
         <p className="text-center text-xl">アクセス解析・広告・SNSまで幅広いレポートに対応完全無料ですぐはじめられます。</p>
         <p className="text-center text-xl">レポート対応メディアは順次追加予定</p>
-        <button className="bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 font-medium py-2 px-4 rounded-full mt-6 lg:w-96 lg:h-16">
+        <button className="bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 font-bold text-2xl py-2 px-4 rounded-full mt-6 lg:w-96 lg:h-16">
           <Link href={"/trial"}>今すぐ無料で始める</Link>
         </button>
       </div>
@@ -26,7 +26,7 @@ const Index = () => {
           />
         </div>
       </div>
-      <div className="bg-purple-800 px-10 pb-20 lg:px-20 lg:pt-40"></div>
+      <div className="bg-purple-800 px-10 pb-20 w-screen lg:px-20 lg:pt-40"></div>
       <div className="flex flex-col justify-center items-center bg-slate-50 pt-20 lg:flex-row">
         <Image
           src="/images/top_about.png"
@@ -65,10 +65,10 @@ const Index = () => {
               <h2 className="text-xl font-bold mb-4 lg:px-10">Facebook広告レポート</h2>
               <div className="lg:px-5">
                 <Image
-                  src="/images/c63232d34a5f72e41f735c9cb45ec181.png"
+                  src="/images/top_facebook.png"
                   alt="Facebook広告レポートイメージ画像"
-                  width={560}
-                  height={720}
+                  width={540}
+                  height={560}
                   quality={90}
                 />
               </div>
@@ -82,10 +82,10 @@ const Index = () => {
               <h2 className="text-xl font-bold mb-5 lg:px-10">LINE広告レポート</h2>
               <div className="lg:px-5">
                 <Image
-                  src="/images/4da13f27211a8ffbdd9d1ff88f877952.png"
+                  src="/images/top_line.png"
                   alt="LINE広告レポートイメージ画像"
-                  width={560}
-                  height={720}
+                  width={540}
+                  height={560}
                   quality={90}
                 />
               </div>
@@ -101,10 +101,10 @@ const Index = () => {
               <h2 className="text-xl font-bold mb-5 lg:px-10">TikTok広告レポート</h2>
               <div className="lg:px-5">
                 <Image
-                  src="/images/5dd2e69e7ca524605f094ecb720bd83e.png"
+                  src="/images/top_tiktok.png"
                   alt="TikTok広告レポートイメージ画像"
-                  width={560}
-                  height={720}
+                  width={540}
+                  height={560}
                   quality={90}
                 />
               </div>
@@ -118,10 +118,10 @@ const Index = () => {
               <h2 className="text-xl font-bold mb-5 lg:px-10">Google & YouTube広告レポート</h2>
               <div className="lg:px-5">
                 <Image
-                  src="/images/db9717065f66815dee7c256ed7cd2705.png"
+                  src="/images/top_google_and_youtube.png"
                   alt="Google & YouTube広告レポートイメージ画像"
-                  width={560}
-                  height={720}
+                  width={540}
+                  height={560}
                   quality={90}
                 />
               </div>
@@ -132,17 +132,17 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <button className="bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 font-medium py-2 px-4 rounded-full mb-10 w-44">
+        <button className="bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 font-bold py-2 px-4 rounded-full mb-10 w-44">
           <Link href={"/portfolio"}>レポートを見る</Link>
         </button>
       </div>
-      <div className="flex flex-col items-center bg-gradient-to-r from-purple-800 to-purple-600">
+      <div className="flex flex-col items-center bg-gradient-to-r from-purple-800 to-purple-600 w-screen">
         <h2 className="font-bold text-center text-2xl text-white mt-20">
           今すぐ無料でレポートを自動化し、
           <br className="lg:hidden" />
           改善アクションに時間を使おう
         </h2>
-        <button className="bg-white text-purple-800 font-medium py-2 px-4 rounded-full mt-8 mb-20 w-52">
+        <button className="bg-white text-purple-800 font-bold py-2 px-4 rounded-full mt-8 mb-20 w-52">
           <Link href={"/trial"}>今すぐ無料で始める</Link>
         </button>
       </div>
@@ -154,7 +154,7 @@ const Index = () => {
           実務を理解したマーケティング担当者自らがノーコードで使える機能を活用してスマートにビジネスを成長させましょう。
         </p>
       </div>
-      <div className="bg-slate-50 lg:flex justify-center">
+      <div className="bg-slate-50 lg:flex lg:justify-center">
         <div className="max-w-lg p-10 lg:p-20">
           <h2 className="text-2xl font-bold mb-6">すべてのデータを一元化</h2>
           <p className="text-base">
@@ -172,7 +172,7 @@ const Index = () => {
           />
         </div>
       </div>
-      <div className="bg-slate-50 lg:flex justify-center flex-row-reverse">
+      <div className="bg-slate-50 lg:flex lg:justify-center lg:flex-row-reverse">
         <div className="max-w-lg p-10 lg:p-20">
           <h2 className="text-2xl font-bold mb-6">手間なくレポート作成</h2>
           <p className="text-base">
@@ -190,7 +190,7 @@ const Index = () => {
           />
         </div>
       </div>
-      <div className="bg-slate-50 lg:flex justify-center">
+      <div className="bg-slate-50 lg:flex lg:justify-center">
         <div className="max-w-lg p-10 lg:p-20">
           <h2 className="text-2xl font-bold mb-6">簡単にレポートを共有</h2>
           <p className="text-base">
@@ -207,7 +207,7 @@ const Index = () => {
           />
         </div>
       </div>
-      <div className="bg-slate-50 lg:flex justify-center flex-row-reverse">
+      <div className="bg-slate-50 lg:flex lg:justify-center lg:flex-row-reverse">
         <div className="max-w-lg p-10 lg:p-20">
           <h2 className="text-2xl font-bold mb-6">自由自在にカスタマイズ</h2>
           <p className="text-base">
