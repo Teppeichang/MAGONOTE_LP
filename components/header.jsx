@@ -1,12 +1,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
-import MenuIcon from "@mui/icons-material/Menu";
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import Toolbar from "@mui/material/Toolbar";
 
 function Header(props) {
@@ -21,7 +20,7 @@ function Header(props) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }} className="container">
       <Image
         src="/images/header_logo.svg"
-        alt="MAGONOTEロゴ"
+        alt="MAGONOTE"
         width={262}
         height={40}
         quality={90}
@@ -60,34 +59,31 @@ function Header(props) {
 
   return (
     <header>
-      <div className="fixed left-20 right-20 z-10 rounded-full bg-white border border-black mt-20">
-        <Toolbar className="flex justify-between py-4">
+      <div className="fixed left-5 right-5 z-10 rounded-full bg-white border border-black mt-10 lg:fixed lg:left-20 lg:right-20 lg:mt-20">
+        <Toolbar className="flex flex-row-reverse justify-between lg:flex lg:flex-row lg:justify-between lg:py-4">
           <IconButton
-            className="text-black"
+            className="text-purple-800 p-0"
             aria-label="open drawer"
-            edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ display: { sm: "none" } }}
           >
-            <MenuIcon />
+            <MenuRoundedIcon sx={{width: 48, height: 40}} />
           </IconButton>
-          <Box sx={{display: { xs: "none", sm: "block" } }}>
-            <Image
-              src="/images/header_logo.svg"
-              alt="MAGONOTEロゴ"
-              width={262}
-              height={40}
-              quality={90}
-            />
-          </Box>
-          <Box sx={{display: { xs: "none", sm: "block" } }}>
+          <div className="relative w-40 h-6 lg:w-64 lg:h-10">
+            <Image src="/images/header_logo.svg" alt="MAGONOTE" layout="fill" />
+          </div>
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Link href={"/portfolio"}>
               <a className="text-black font-semibold px-2" data-testid="header-portfolio-link">
                 レポートギャラリー
               </a>
             </Link>
             <Link href={"https://next-report.jp/"}>
-              <a className="text-black font-semibold px-2" target="_blank" data-testid="header-blog-link">
+              <a
+                className="text-black font-semibold px-2"
+                target="_blank"
+                data-testid="header-blog-link"
+              >
                 ブログ
               </a>
             </Link>
