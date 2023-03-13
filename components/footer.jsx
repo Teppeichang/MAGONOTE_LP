@@ -5,8 +5,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bottom-0 bg-slate-700 w-screen">
-      <div className="lg:flex justify-center">
-        <div className="pt-48 mr-96">
+      <div className="lg:flex lg:justify-center">
+        <div className="pt-24 px-16 lg:pt-48 lg:mr-96">
           <Image
           src="/images/footer_logo_wh.svg"
           alt="MAGONOTEロゴ"
@@ -15,7 +15,7 @@ const Footer = () => {
           quality={90}
           />
         </div>
-        <div className="flex flex-col pt-24">
+        <div className="flex flex-col px-24 pt-9 text-center lg:text-left lg:pt-24 lg:px-0">
           <p className="text-white text-xl font-semibold">サービス</p>
           <List sx={{ display: "flex", flexDirection: "column" }}>
             <Link href={"/pricing"}>
@@ -35,8 +35,8 @@ const Footer = () => {
             </Link>
           </List>
         </div>
-        <div className="flex flex-col ml-20 pt-24">
-          <h2 className="text-white text-xl font-semibold">運営会社</h2>
+        <div className="flex flex-col px-24 pt-9 text-center lg:text-left lg:pt-24 lg:ml-20 ">
+          <p className="text-white text-xl font-semibold">運営会社</p>
           <List sx={{ display: "flex", flexDirection: "column" }}>
             <Link href={"https://corp.next-stage.biz/"}>
               <a className="text-white py-2" target="_blank" data-testid="footer-company-link">
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="pb-6 mt-16">
-        <p className="text-white text-center">© 2022 Next stage,Inc. All Rights Reserved.</p>
+        <p className="text-white text-center">© 2022 Next stage,Inc. All Rights <br className="lg:hidden" /> Reserved.</p>
       </div>
     </footer>
   );
