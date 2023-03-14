@@ -2,7 +2,6 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import '@testing-library/jest-dom/extend-expect';
 import Layout from "../components/layout";
-import Pricing from "../pages/pricing";
 import Portfolio from "../pages/portfolio";
 import Contact from "../pages/contact";
 import Trial from "../pages/trial";
@@ -10,13 +9,6 @@ import PrivacyPolicy from "../pages/privacy-policy";
 import Terms from "../pages/terms";
 
 describe("ヘッダーリンクのページ遷移テスト", () => {
-  it("料金プランページへ遷移する", () => {
-    render(<Layout />);
-    userEvent.click(screen.getByTestId("footer-pricing-link"));
-    expect(render(<Pricing />));
-    expect(screen.getByRole('img', {name: "youtube-pricing"}));
-    expect(screen.getByRole('img', {name: "listing-and-display-pricing"}));
-  });
   it("レポートギャラリーページへ遷移する", () => {
     render(<Layout />);
     userEvent.click(screen.getByTestId("footer-portfolio-link"));

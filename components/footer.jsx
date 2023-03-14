@@ -18,9 +18,6 @@ const Footer = () => {
         <div className="flex flex-col px-24 pt-9 text-center lg:text-left lg:pt-24 lg:px-0">
           <p className="text-white text-xl font-semibold">サービス</p>
           <List sx={{ display: "flex", flexDirection: "column" }}>
-            <Link href={"/pricing"}>
-              <a className="text-white py-2" data-testid="footer-pricing-link">料金プラン</a>
-            </Link>
             <Link href={"/portfolio"}>
               <a className="text-white py-2" data-testid="footer-portfolio-link">レポートギャラリー</a>
             </Link>
