@@ -7,9 +7,9 @@ const BreadCrumb = ({lists}) => {
   }
 
   return (
-    <div className="mt-24 mx-10 lg:mx-20 flex flex-row">
+    <div className="flex mt-32 ml-9 lg:mt-48 lg:ml-20">
       {lists.map(({string, path}, index) => (
-        <li className="flex items-center text-sm" key={index}>
+        <li className="flex text-sm" key={index}>
           {lists.length - 1 !== index
           ?
           <>
