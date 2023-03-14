@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import BreadCrumb from "../../components/breadCrumb";
 import Image from "next/image";
+import Link from "next/link";
 
 const TikTokReport = () => {
   const lists = [
@@ -11,9 +12,9 @@ const TikTokReport = () => {
   return (
     <Layout>
       <BreadCrumb lists={lists} />
-      <div className="min-h-screen mt-10 lg:flex lg:justify-center">
-        <div className="px-20">
-          <h2 className="font-bold text-xl py-5">TikTok広告レポートの概要</h2>
+      <div className="flex justify-center mx-10">
+        <div className="flex flex-col max-w-xl m-6">
+          <p className="font-bold text-2xl py-5">TikTok広告レポートの概要</p>
           <p className="pb-5">
             TikTok広告レポートをルッカースタジオ（旧Googleデータポータル）で自動化。TikTok広告APIを使って自動でデータ更新。
           </p>
@@ -21,22 +22,50 @@ const TikTokReport = () => {
             <li>広告クリエイティブレポート付き</li>
             <li>広告代理店向けの手数料設定</li>
           </ul>
-          <p className="pb-5 underline font-bold">デモレポートを見る</p>
-          <h2 className="font-bold text-xl py-5">TikTok広告レポートの基本情報</h2>
+          <button className="bg-purple-800 text-white w-64 h-12 mt-6 font-bold rounded-full hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800">
+            <Link href={"/trial"}>デモレポートを見る</Link>
+          </button>
+        </div>
+        <div className="m-6">
+          <Image
+            src="/images/tiktok_report_template_3.png"
+            alt="TikTokレポートテンプレート_キャンペーン"
+            width={600}
+            height={450}
+            quality={90}
+          />
+        </div>
+      </div>
+      <div className="flex justify-center mx-16">
+        <div className="flex flex-col max-w-xl mr-14">
+          <p className="font-bold text-2xl py-5">TikTok広告レポートの基本情報</p>
           <ul className="list-disc list-inside pb-5">
             <li>データソース：TikTok広告</li>
             <li>出力先：ルッカースタジオ（旧Googleデータポータル）</li>
             <li>更新頻度：日次</li>
             <li>自動更新タイミング：深夜0時~午前6の間に前日までのデータを更新</li>
           </ul>
-          <h2 className="font-bold text-xl py-5">TikTok広告レポートの導入の流れ</h2>
+          <p className="font-bold text-2xl py-5">tiktok広告レポートの導入の流れ</p>
           <ul className="list-disc list-inside pb-5">
             <li>お申し込み（お客様）</li>
             <li>権限付与とフォーム連絡（お客様）</li>
             <li>レポートの作成と共有（MAGONOTE）【通常1営業日で完成】</li>
             <li>必要に応じてレポートのカスタマイズ（お客様）</li>
           </ul>
-          <h2 className="font-bold text-xl py-5">TikTok広告レポートに含まれるレポート一覧</h2>
+        </div>
+        <div className="ml-14">
+          <Image
+            src="/images/tiktok_report_template_4.png"
+            alt="TikTokレポートテンプレート_広告グループ"
+            width={600}
+            height={450}
+            quality={90}
+          />
+        </div>
+      </div>
+      <div className="flex justify-center mx-10">
+        <div className="flex flex-col max-w-xl m-6">
+          <p className="font-bold text-2xl py-5">TikTok広告レポートに含まれるレポート一覧</p>
           <ul className="list-disc list-inside pb-5">
             <li>日別レポート</li>
             <li>週別レポート</li>
@@ -46,15 +75,21 @@ const TikTokReport = () => {
             <li>クリエイティブレポート</li>
             <li>広告ごとの累計フリークエンシーレポート</li>
           </ul>
-          <h2 className="font-bold text-xl py-5">TikTok広告レポートに含まれるディメンションと指標</h2>
+          <p className="font-bold text-2xl py-5">
+            TikTok広告レポートに含まれるディメンションと指標
+          </p>
           <p>
             TikTok広告の管理画面で使えるほぼすべての項目が利用可能です。詳しくは無料トライアルの実際のレポートでご確認ください。また、項目の不足があれば追加も可能ですのでお問合せください。
           </p>
         </div>
-        <div className="px-20 pb-20">
-          <Image src="/images/5dd2e69e7ca524605f094ecb720bd83e.png" width={640} height={720} quality={90} objectFit="contain"></Image>
-          <Image src="/images/5dd2e69e7ca524605f094ecb720bd83e.png" width={640} height={720} quality={90} objectFit="contain"></Image>
-          <Image src="/images/5dd2e69e7ca524605f094ecb720bd83e.png" width={640} height={720} quality={90} objectFit="contain"></Image>
+        <div className="m-6">
+          <Image
+            src="/images/tiktok_report_template_5.png"
+            alt="TikTokレポート_広告クリエイティブ"
+            width={600}
+            height={450}
+            quality={90}
+          />
         </div>
       </div>
     </Layout>
