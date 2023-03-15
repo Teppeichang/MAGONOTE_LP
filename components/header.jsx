@@ -31,27 +31,27 @@ function Header(props) {
       </Link>
       <List sx={{ display: "flex", flexDirection: "column" }}>
         <Link href={"/pricing"}>
-          <a className="text-black py-2" data-testid="header-pricing-link-sp">
+          <a className="text-black py-2 tracking-wide lg:tracking-wider" data-testid="header-pricing-link-sp">
             料金プラン
           </a>
         </Link>
         <Link href={"/portfolio"}>
-          <a className="text-black py-2" data-testid="header-portfolio-link-sp">
+          <a className="text-black py-2 tracking-wide lg:tracking-wider" data-testid="header-portfolio-link-sp">
             レポートギャラリー
           </a>
         </Link>
         <Link href={"https://next-report.jp/"}>
-          <a className="text-black py-2" target="_blank" data-testid="header-blog-link-sp">
+          <a className="text-black py-2 tracking-wide lg:tracking-wider" target="_blank" data-testid="header-blog-link-sp">
             ブログ
           </a>
         </Link>
         <Link href={"/contact"}>
-          <a className="text-black py-2" data-testid="header-contact-link-sp">
+          <a className="text-black py-2 tracking-wide lg:tracking-wider" data-testid="header-contact-link-sp">
             お問い合わせ
           </a>
         </Link>
         <Link href={"/trial"}>
-          <a className="text-black py-2" data-testid="header-trial-link-sp">
+          <a className="text-black py-2 tracking-wide lg:tracking-wider" data-testid="header-trial-link-sp">
             無料で始める
           </a>
         </Link>
@@ -82,13 +82,13 @@ function Header(props) {
           </div>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Link href={"/portfolio"}>
-              <a className="text-black font-semibold px-2" data-testid="header-portfolio-link">
+              <a className="text-black font-semibold px-2 tracking-wide lg:tracking-wider" data-testid="header-portfolio-link">
                 レポートギャラリー
               </a>
             </Link>
             <Link href={"https://next-report.jp/"}>
               <a
-                className="text-black font-semibold px-2"
+                className="text-black font-semibold px-2 tracking-wide lg:tracking-wider"
                 target="_blank"
                 data-testid="header-blog-link"
               >
@@ -96,13 +96,13 @@ function Header(props) {
               </a>
             </Link>
             <Link href={"/contact"}>
-              <a className="text-black font-semibold px-2" data-testid="header-contact-link">
+              <a className="text-black font-semibold px-2 tracking-wide lg:tracking-wider" data-testid="header-contact-link">
                 お問い合わせ
               </a>
             </Link>
             <Link href={"/trial"}>
               <a
-                className="bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 font-bold py-2 px-12 rounded-full mb-10 ml-4 w-48"
+                className="bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 font-bold py-2 px-12 rounded-full mb-10 ml-4 w-48 tracking-wide lg:tracking-wider"
                 data-testid="header-trial-link"
               >
                 無料で始める
