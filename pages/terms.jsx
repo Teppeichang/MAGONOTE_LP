@@ -271,7 +271,7 @@ const Terms = () => {
           </p>
         </div>
         <div className="mb-10">
-          <p>附則 令和**年**月**日 作成・施行</p>
+          <p>附則 令和5年4月1日 作成・施行</p>
           <p>本規約の問い合わせ先：株式会社Next Stage（info@next-stage.biz）</p>
         </div>
       </div>
