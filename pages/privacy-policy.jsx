@@ -161,9 +161,9 @@ const PrivacyPolicy = () => {
         <div className="mb-10">
           <h2 className="text-2xl font-bold mb-2">第10条（お問い合わせ窓口）</h2>
           <p>本ポリシーに関するお問い合わせは、下記の窓口までお願いいたします。</p>
-          <p>住所：〒170-0003 東京都豊島区駒込2-6-3 大和駒込ビル2F</p>
+          <p>住所：〒114-0003 東京都北区豊島1-15-3 セントラル王子901</p>
           <p>社名：株式会社Next Stage</p>
-          <p>メールアドレス：test@example.co.jp</p>
+          <p>メールアドレス：info@next-stage.biz</p>
         </div>
       </div>
     </Layout>
