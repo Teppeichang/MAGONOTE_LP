@@ -12,14 +12,14 @@ const Portfolio = () => {
       <BreadCrumb lists={lists} />
       <div className="min-h-screen">
         <div className="mt-10 mx-6 lg:mx-10">
-          <h2 className="text-2xl font-bold mb-1 lg:mb-2 lg:text-5xl lg:text-center">レポートテンプレート</h2>
-          <p className="lg:text-center">アナリティクス、SEO、ウェブ広告、ソーシャルメディアなどのレポートテンプレートを豊富にご用意しています。</p>
-          <p className="lg:text-center">テンプレートをそのまま利用することも、カスタマイズして利用することも両方可能です。</p>
+          <p className="text-2xl font-bold mb-1 tracking-wide lg:tracking-wider lg:mb-2 lg:text-5xl lg:text-center">レポートテンプレート</p>
+          <p className="tracking-wide lg:tracking-wider lg:text-center">アナリティクス、SEO、ウェブ広告、ソーシャルメディアなどのレポートテンプレートを豊富にご用意しています。</p>
+          <p className="tracking-wide lg:tracking-wider lg:text-center">テンプレートをそのまま利用することも、カスタマイズして利用することも両方可能です。</p>
         </div>
         <div className="my-10 mx-6 lg:mx-10">
           <div className="flex flex-col justify-center items-center lg:flex lg:flex-row lg:flex-wrap">
             <div className="flex flex-col max-w-lg lg:m-5">
-              <a href={"/portfolio/facebook-report"} className="font-bold text-xl mb-4">
+              <a href={"/portfolio/facebook-report"} className="font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
                 Facebook広告レポート
               </a>
               <a href={"/portfolio/facebook-report"}>
@@ -33,7 +33,7 @@ const Portfolio = () => {
               </a>
             </div>
             <div className="flex flex-col max-w-lg mt-4 lg:m-5">
-              <a href={"/portfolio/line-report"} className="font-bold text-xl mb-4">
+              <a href={"/portfolio/line-report"} className="font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
                 LINE広告レポート
               </a>
               <a href={"/portfolio/line-report"}>
@@ -48,7 +48,7 @@ const Portfolio = () => {
               </a>
             </div>
             <div className="flex flex-col max-w-lg mt-4 lg:m-5">
-              <a href={"/portfolio/tiktok-report"} className="font-bold text-xl mb-4">
+              <a href={"/portfolio/tiktok-report"} className="font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
                 TikTok広告レポート
               </a>
               <a href={"/portfolio/tiktok-report"}>
@@ -63,7 +63,7 @@ const Portfolio = () => {
               </a>
             </div>
             <div className="flex flex-col max-w-lg mt-4 lg:m-5">
-              <a href={"/portfolio/google-and-youtube-report"} className="font-bold text-xl mb-4">
+              <a href={"/portfolio/google-and-youtube-report"} className="font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
                 Google&YouTube広告レポート
               </a>
               <a href={"/portfolio/google-and-youtube-report"}>

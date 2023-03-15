@@ -14,15 +14,15 @@ const TikTokReport = () => {
       <BreadCrumb lists={lists} />
       <div className="flex flex-col justify-center mx-6 mt-20 lg:flex lg:flex-row lg:justify-center lg:mx-10">
         <div className="flex flex-col max-w-xl lg:m-6">
-          <p className="font-bold text-xl py-5 lg:text-2xl">TikTok広告レポートの概要</p>
-          <p className="pb-5">
+          <p className="font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">TikTok広告レポートの概要</p>
+          <p className="pb-5 tracking-wide lg:tracking-wider">
             TikTok広告レポートをルッカースタジオ（旧Googleデータポータル）で自動化。TikTok広告APIを使って自動でデータ更新。
           </p>
-          <ul className="list-disc list-inside pb-5 pl-2">
+          <ul className="list-disc list-inside pb-5 pl-2 tracking-wide lg:tracking-wider">
             <li>広告クリエイティブレポート付き</li>
             <li>広告代理店向けの手数料設定</li>
           </ul>
-          <button className="bg-purple-800 text-white w-64 h-12 mt-6 font-bold rounded-full hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800">
+          <button className="bg-purple-800 text-white w-64 h-12 mt-6 font-bold rounded-full tracking-wide hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 lg:tracking-wider">
             <Link href={"/trial"}>デモレポートを見る</Link>
           </button>
         </div>
@@ -38,14 +38,14 @@ const TikTokReport = () => {
       </div>
       <div className="flex flex-col justify-center mx-6 lg:flex lg:flex-row lg:justify-center lg:mx-16">
         <div className="flex flex-col max-w-xl lg:mr-14">
-          <p className="font-bold text-xl py-5 lg:text-2xl">TikTok広告レポートの基本情報</p>
-          <ul className="list-disc list-inside pb-5 pl-2">
+          <p className="font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">TikTok広告レポートの基本情報</p>
+          <ul className="list-disc list-inside pb-5 pl-2 tracking-wide lg:tracking-wider">
             <li className="pl-5 -indent-5">データソース：TikTok広告</li>
             <li className="pl-5 -indent-5">出力先：ルッカースタジオ（旧Googleデータポータル）</li>
             <li className="pl-5 -indent-5">更新頻度：日次</li>
             <li className="pl-5 -indent-5">自動更新タイミング：深夜0時~午前6の間に前日までのデータを更新</li>
           </ul>
-          <p className="font-bold text-xl py-5 lg:text-2xl">tiktok広告レポートの導入の流れ</p>
+          <p className="font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">tiktok広告レポートの導入の流れ</p>
           <ul className="list-disc list-inside pb-5 pl-2">
             <li className="pl-5 -indent-5">お申し込み（お客様）</li>
             <li className="pl-5 -indent-5">権限付与とフォーム連絡（お客様）</li>
@@ -65,8 +65,8 @@ const TikTokReport = () => {
       </div>
       <div className="flex flex-col justify-center mx-6 mb-20 lg:flex lg:flex-row lg:justify-center lg:mx-10">
         <div className="flex flex-col max-w-xl lg:m-6">
-          <p className="font-bold text-xl py-5 lg:text-2xl">TikTok広告レポートに含まれるレポート一覧</p>
-          <ul className="list-disc list-inside pb-5 pl-2">
+          <p className="font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">TikTok広告レポートに含まれるレポート一覧</p>
+          <ul className="list-disc list-inside pb-5 pl-2 tracking-wide lg:tracking-wider">
             <li>日別レポート</li>
             <li>週別レポート</li>
             <li>月別レポート</li>
@@ -75,10 +75,10 @@ const TikTokReport = () => {
             <li>クリエイティブレポート</li>
             <li>広告ごとの累計フリークエンシーレポート</li>
           </ul>
-          <p className="font-bold text-xl py-5 lg:text-2xl">
+          <p className="font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">
             TikTok広告レポートに含まれるディメンションと指標
           </p>
-          <p>
+          <p className="tracking-wide lg:tracking-wider">
             TikTok広告の管理画面で使えるほぼすべての項目が利用可能です。詳しくは無料トライアルの実際のレポートでご確認ください。また、項目の不足があれば追加も可能ですのでお問合せください。
           </p>
         </div>
