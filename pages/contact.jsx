@@ -10,11 +10,12 @@ const Contact = () => {
   return (
     <Layout>
       <BreadCrumb lists={lists} />
-      <div className="min-h-screen my-20 mx-5">
+      <div className="flex justify-center items-center min-h-screen">
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSePg4vBgw_AWsStvyQcUfJUk6rhUTRf9DnS5paIAPRQMwuYNw/viewform?embedded=true"
-          height="1104"
-          className="w-full my-10"
+          height="1200"
+          width="1200"
+          className="my-10 mx-6"
         >
           読み込んでいます…
         </iframe>
