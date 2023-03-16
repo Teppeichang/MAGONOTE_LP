@@ -11,64 +11,71 @@ const Portfolio = () => {
     <Layout>
       <BreadCrumb lists={lists} />
       <div className="min-h-screen">
-        <div className="mt-10 mx-10 lg:mx-20">
-          <h2 className="text-2xl font-bold">レポートテンプレート</h2>
-          <p>
-            アナリティクス、SEO、ウェブ広告、ソーシャルメディアなどのレポートテンプレートを豊富にご用意しています。テンプレートをそのまま利用することも、カスタマイズして利用することも両方可能です。
-          </p>
+        <div className="mt-10 mx-6 lg:mx-10">
+          <p className="font-mPlus2c text-2xl font-bold mb-1 tracking-wide lg:tracking-wider lg:mb-2 lg:text-5xl lg:text-center">レポートテンプレート</p>
+          <p className="font-mPlus2c tracking-wide lg:tracking-wider lg:text-center">アナリティクス、SEO、ウェブ広告、ソーシャルメディアなどのレポートテンプレートを豊富にご用意しています。</p>
+          <p className="font-mPlus2c tracking-wide lg:tracking-wider lg:text-center">テンプレートをそのまま利用することも、カスタマイズして利用することも両方可能です。</p>
         </div>
-        <div className="my-10 mx-10 lg:mx-20">
-          <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center items-center">
-            <div className="flex flex-col m-5 lg:m-10">
+        <div className="my-10 mx-6 lg:mx-10">
+          <div className="flex flex-col justify-center items-center lg:flex lg:flex-row lg:flex-wrap">
+            <div className="flex flex-col max-w-lg lg:m-5">
+              <a href={"/portfolio/facebook-report"} className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
+                Facebook広告レポート
+              </a>
               <a href={"/portfolio/facebook-report"}>
                 <Image
-                  src="/images/c63232d34a5f72e41f735c9cb45ec181.png"
-                  width={560}
-                  height={720}
+                  src="/images/top_facebook.png"
+                  width={540}
+                  height={540}
                   quality={90}
                   aria-label="facebook-report"
                 />
               </a>
-              <a href={"/portfolio/facebook-report"} className="font-bold lg:text-xl">Facebook広告レポート</a>
             </div>
-            <div className="flex flex-col m-5 lg:m-10">
+            <div className="flex flex-col max-w-lg mt-4 lg:m-5">
+              <a href={"/portfolio/line-report"} className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
+                LINE広告レポート
+              </a>
               <a href={"/portfolio/line-report"}>
                 <Image
-                  src="/images/4da13f27211a8ffbdd9d1ff88f877952.png"
+                  src="/images/top_line.png"
                   alt="LINE広告レポート"
-                  width={560}
-                  height={720}
+                  width={540}
+                  height={540}
                   quality={90}
                   aria-label="line-report"
                 />
               </a>
-              <a href={"/portfolio/line-report"} className="font-bold lg:text-xl">LINE広告レポート</a>
             </div>
-            <div className="flex flex-col m-5 lg:m-10">
+            <div className="flex flex-col max-w-lg mt-4 lg:m-5">
+              <a href={"/portfolio/tiktok-report"} className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
+                TikTok広告レポート
+              </a>
               <a href={"/portfolio/tiktok-report"}>
                 <Image
-                  src="/images/5dd2e69e7ca524605f094ecb720bd83e.png"
+                  src="/images/top_tiktok.png"
                   alt="TikTok広告レポート"
-                  width={560}
-                  height={720}
+                  width={540}
+                  height={540}
                   quality={90}
                   aria-label="tiktok-report"
                 />
               </a>
-              <a href={"/portfolio/tiktok-report"} className="font-bold lg:text-xl">TikTok広告レポート</a>
             </div>
-            <div className="flex flex-col m-5 lg:m-10">
+            <div className="flex flex-col max-w-lg mt-4 lg:m-5">
+              <a href={"/portfolio/google-and-youtube-report"} className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
+                Google&YouTube広告レポート
+              </a>
               <a href={"/portfolio/google-and-youtube-report"}>
                 <Image
-                  src="/images/db9717065f66815dee7c256ed7cd2705.png"
+                  src="/images/top_google_and_youtube.png"
                   alt="Google & YouTube広告レポート"
-                  width={560}
-                  height={720}
+                  width={540}
+                  height={540}
                   quality={90}
                   aria-label="google-and-youtube-report"
                 />
               </a>
-              <a href={"/portfolio/google-and-youtube-report"} className="font-bold lg:text-xl">Google&YouTube広告レポート</a>
             </div>
           </div>
         </div>

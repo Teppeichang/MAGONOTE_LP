@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: false, // 'media' or 'class',
-  // purgeすることでビルド生成時の未使用のスタイルを除外する(=パフォーマンス向上)
   purge: {
     content: [
       './pages/**/*.{js,ts,jsx,tsx}',
@@ -10,7 +8,20 @@ module.exports = {
   },
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        slate: {
+          50: '#FBFBFB',
+          700: '#242424',
+        },
+        purple: {
+          800: '#6C0ECA',
+        },
+      },
+      fontFamily: {
+        mPlus2c: ['m-plus-2c', 'sans-serif'],
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
