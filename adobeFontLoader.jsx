@@ -1,5 +1,5 @@
 const adobeFontLoader = (d) => {
-  var config = {
+  let config = {
       kitId: process.env.NEXT_PUBLIC_KIT_ID,
       scriptTimeout: 3000,
       async: true,
