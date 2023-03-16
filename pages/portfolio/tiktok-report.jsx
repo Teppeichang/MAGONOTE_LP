@@ -36,8 +36,8 @@ const TikTokReport = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center mx-6 lg:flex lg:flex-row lg:justify-center lg:mx-16">
-        <div className="flex flex-col max-w-xl lg:mr-14">
+      <div className="flex flex-col justify-center mx-6 lg:flex lg:flex-row lg:justify-center lg:mx-10">
+        <div className="flex flex-col max-w-xl lg:m-6">
           <p className="font-mPlus2c font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">TikTok広告レポートの基本情報</p>
           <ul className="font-mPlus2c list-disc list-inside pb-5 pl-2 tracking-wide lg:tracking-wider">
             <li className="pl-5 -indent-5">データソース：TikTok広告</li>
@@ -53,7 +53,7 @@ const TikTokReport = () => {
             <li className="pl-5 -indent-5">必要に応じてレポートのカスタマイズ（お客様）</li>
           </ul>
         </div>
-        <div className="lg:ml-14">
+        <div className="mt-5 lg:m-6">
           <Image
             src="/images/tiktok_report_template_4.png"
             alt="TikTokレポートテンプレート_広告グループ"

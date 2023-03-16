@@ -37,8 +37,8 @@ const GoogleAndYouTubeReport = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center mx-6 lg:flex lg:flex-row lg:justify-center lg:mx-16">
-        <div className="flex flex-col max-w-xl lg:mr-14">
+      <div className="flex flex-col justify-center mx-6 lg:flex lg:flex-row lg:justify-center lg:mx-10">
+        <div className="flex flex-col max-w-xl lg:m-6">
           <p className="font-mPlus2c font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">Google & Youtube広告レポートの基本情報</p>
           <ul className="font-mPlus2c list-disc list-inside pb-5 pl-2 tracking-wide lg:tracking-wider">
             <li className="pl-5 -indent-5">データソース：Google広告(YouTube広告含む)</li>
@@ -54,7 +54,7 @@ const GoogleAndYouTubeReport = () => {
             <li className="pl-5 -indent-5">必要に応じてレポートのカスタマイズ（お客様）</li>
           </ul>
         </div>
-        <div className="lg:ml-20">
+        <div className="mt-5 lg:m-6">
           <Image
             src="/images/google_and_youtube_report_template_4.png"
             alt="Google&YouTubeレポートテンプレート_広告グループ"
