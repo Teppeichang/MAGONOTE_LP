@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: false, // 'media' or 'class',
   purge: {
     content: [
       './pages/**/*.{js,ts,jsx,tsx}',
@@ -18,6 +17,9 @@ module.exports = {
         purple: {
           800: '#6C0ECA',
         },
+      },
+      fontFamily: {
+        mPlus2c: ['m-plus-2c', 'sans-serif'],
       },
     },
   },
