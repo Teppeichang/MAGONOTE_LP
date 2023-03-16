@@ -6,9 +6,7 @@ import { DefaultSeo, ProductJsonLd } from "next-seo";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    if (process.browser) {
-      adobeFontLoader(document);
-    }
+    adobeFontLoader(document);
   }, []);
 
   return (
