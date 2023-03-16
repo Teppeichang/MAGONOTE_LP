@@ -13,7 +13,7 @@ const LineReport = () => {
     <Layout>
       <BreadCrumb lists={lists} />
       <div className="flex flex-col justify-center mx-6 mt-20 lg:flex lg:flex-row lg:justify-center lg:mx-10">
-        <div className="flex flex-col max-w-xl lg:m-6">
+        <div className="flex flex-col max-w-xl lg:mr-7">
           <p className="font-mPlus2c font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">LINE広告レポートの概要</p>
           <p className="font-mPlus2c pb-5 tracking-wide lg:tracking-wider">
             LINE広告レポートをルッカースタジオ（旧Googleデータポータル）で自動化。LINE広告APIを使って自動でデータ更新。
@@ -26,7 +26,7 @@ const LineReport = () => {
             <Link href={"/trial"}>デモレポートを見る</Link>
           </button>
         </div>
-        <div className="mt-5 lg:m-6">
+        <div className="mt-5 lg:ml-7">
           <Image
             src="/images/line_report_template_3.png"
             alt="LINEレポートテンプレート_キャンペーン"
@@ -37,7 +37,7 @@ const LineReport = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center mx-6 lg:flex lg:flex-row lg:justify-center lg:mx-10">
-        <div className="flex flex-col max-w-xl lg:m-6">
+        <div className="flex flex-col max-w-xl lg:mr-10">
           <p className="font-mPlus2c font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">LINE広告レポートの基本情報</p>
           <ul className="font-mPlus2c list-disc list-inside pb-5 pl-2 tracking-wide lg:tracking-wider">
             <li className="pl-5 -indent-5">データソース：LINE広告</li>
@@ -53,7 +53,7 @@ const LineReport = () => {
             <li className="pl-5 -indent-5">必要に応じてレポートのカスタマイズ（お客様）</li>
           </ul>
         </div>
-        <div className="mt-5 lg:m-6">
+        <div className="mt-5 lg:ml-10">
           <Image
             src="/images/line_report_template_4.png"
             alt="LINEレポートテンプレート_広告グループ"
@@ -64,7 +64,7 @@ const LineReport = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center mx-6 mb-20 lg:flex lg:flex-row lg:justify-center lg:mx-10">
-        <div className="flex flex-col max-w-xl lg:m-6">
+        <div className="flex flex-col max-w-xl lg:mr-7">
           <p className="font-mPlus2c font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">LINE広告レポートに含まれるレポート一覧</p>
           <ul className="font-mPlus2c list-disc list-inside pb-5 pl-2 tracking-wide lg:tracking-wider">
             <li>日別レポート</li>
@@ -80,7 +80,7 @@ const LineReport = () => {
             LINE広告の管理画面で使えるほぼすべての項目が利用可能です。詳しくは無料トライアルの実際のレポートでご確認ください。また、項目の不足があれば追加も可能ですのでお問合せください。
           </p>
         </div>
-        <div className="mt-5 lg:m-6">
+        <div className="mt-5 lg:ml-7">
           <Image
             src="/images/line_report_template_5.png"
             alt="LINEレポート_広告クリエイティブ"
