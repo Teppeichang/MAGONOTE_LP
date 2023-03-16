@@ -1,8 +1,16 @@
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
+import adobeFontLoader from "../adobeFontLoader";
+import { useEffect } from "react";
 import { DefaultSeo, ProductJsonLd } from "next-seo";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    if (process.browser) {
+      adobeFontLoader(document);
+    }
+  }, []);
+
   return (
     <>
       <DefaultSeo
