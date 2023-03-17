@@ -22,7 +22,7 @@ const Index = () => {
           レポート対応メディアは順次追加予定
         </p>
         <Link href={"/trial"}>
-          <button className="font-mPlus2c bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 transform active:scale-75 transition-transform font-bold py-2 px-4 rounded-full mt-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16">
+          <button className="font-mPlus2c bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 transform active:scale-90 transition-transform font-bold py-2 px-4 rounded-full mt-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16">
             今すぐ無料で始める
           </button>
         </Link>
@@ -164,18 +164,22 @@ const Index = () => {
             </div>
           </Reveal>
         </div>
-        <button className="font-mPlus2c bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 font-bold py-2 px-4 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider lg:mb-10">
-          <Link href={"/portfolio"}>レポートを見る</Link>
-        </button>
+        <Link href={"/portfolio"}>
+          <button className="font-mPlus2c bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 transform active:scale-90 transition-transform font-bold py-2 px-4 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider lg:mb-10">
+            レポートを見る
+          </button>
+        </Link>
       </div>
       <Reveal animation={Animation.FadeIn}>
         <div className="flex flex-col items-center bg-gradient-to-r from-purple-800 to-purple-600 mx-3 lg:mx-0 lg:w-screen">
           <p className="font-mPlus2c font-bold text-center text-2xl text-white mt-14 mx-4 tracking-wide lg:tracking-wider lg:mt-20 lg:mx-0">
             今すぐ無料でレポートを自動化し、改善アクションに時間を使おう
           </p>
-          <button className="font-mPlus2c bg-white text-purple-800 font-bold py-2 px-4 rounded-full mt-8 mb-14 w-52 tracking-wide lg:tracking-wider lg:mb-20">
-            <Link href={"/trial"}>今すぐ無料で始める</Link>
-          </button>
+          <Link href={"/trial"}>
+            <button className="font-mPlus2c bg-white text-purple-800 font-bold py-2 px-4 rounded-full mt-8 mb-14 w-52 transform active:scale-90 transition-transform tracking-wide lg:tracking-wider lg:mb-20">
+              今すぐ無料で始める
+            </button>
+          </Link>
         </div>
       </Reveal>
       <Reveal animation={Animation.FadeIn}>
