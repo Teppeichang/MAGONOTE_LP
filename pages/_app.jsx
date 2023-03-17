@@ -1,5 +1,7 @@
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
+import "animate.css";
+import { ReactGenieAnimations } from "react-genie-styled-components";
 import adobeFontLoader from "../adobeFontLoader";
 import { useEffect } from "react";
 import { DefaultSeo, ProductJsonLd } from "next-seo";
@@ -44,6 +46,7 @@ function MyApp({ Component, pageProps }) {
         ]}
         description="Google広告・YouTube広告レポートをルッカースタジオ（旧Googleデータポータル）で作成。自動でデータ更新します。"
       />
+      <ReactGenieAnimations />
       <Component {...pageProps} />
     </>
   );
