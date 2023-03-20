@@ -2,6 +2,7 @@ import { Reveal } from "react-genie";
 import { Animation } from "react-genie-styled-components";
 import Layout from "../components/layout";
 import Image from "next/image";
+import Link from "next/link";
 import BreadCrumb from "../components/breadCrumb";
 
 const Portfolio = () => {
@@ -28,81 +29,85 @@ const Portfolio = () => {
           <div className="flex flex-col justify-center items-center lg:flex lg:flex-row lg:flex-wrap">
             <Reveal animation={Animation.FadeInUp}>
               <div className="flex flex-col max-w-lg lg:m-5">
-                <a
-                  href={"/portfolio/facebook-report"}
-                  className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider"
-                >
-                  Facebook広告レポート
-                </a>
-                <a href={"/portfolio/facebook-report"}>
-                  <Image
-                    src="/images/top_facebook.png"
-                    width={540}
-                    height={540}
-                    quality={90}
-                    aria-label="facebook-report"
-                  />
-                </a>
+                <Link href={"/portfolio/facebook-report"}>
+                  <a className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
+                    Facebook広告レポート
+                  </a>
+                </Link>
+                <Link href={"/portfolio/facebook-report"}>
+                  <a>
+                    <Image
+                      src="/images/top_facebook.png"
+                      width={540}
+                      height={540}
+                      quality={90}
+                      aria-label="facebook-report"
+                    />
+                  </a>
+                </Link>
               </div>
             </Reveal>
             <Reveal animation={Animation.FadeInUp}>
               <div className="flex flex-col max-w-lg mt-4 lg:m-5">
-                <a
-                  href={"/portfolio/line-report"}
-                  className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider"
-                >
-                  LINE広告レポート
-                </a>
-                <a href={"/portfolio/line-report"}>
-                  <Image
-                    src="/images/top_line.png"
-                    alt="LINE広告レポート"
-                    width={540}
-                    height={540}
-                    quality={90}
-                    aria-label="line-report"
-                  />
-                </a>
+                <Link href={"/portfolio/line-report"}>
+                  <a className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
+                    LINE広告レポート
+                  </a>
+                </Link>
+                <Link href={"/portfolio/line-report"}>
+                  <a>
+                    <Image
+                      src="/images/top_line.png"
+                      alt="LINE広告レポート"
+                      width={540}
+                      height={540}
+                      quality={90}
+                      aria-label="line-report"
+                    />
+                  </a>
+                </Link>
               </div>
             </Reveal>
             <Reveal animation={Animation.FadeInUp}>
               <div className="flex flex-col max-w-lg mt-4 lg:m-5">
-                <a
-                  href={"/portfolio/tiktok-report"}
-                  className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider"
-                >
-                  TikTok広告レポート
-                </a>
-                <a href={"/portfolio/tiktok-report"}>
-                  <Image
-                    src="/images/top_tiktok.png"
-                    alt="TikTok広告レポート"
-                    width={540}
-                    height={540}
-                    quality={90}
-                    aria-label="tiktok-report"
-                  />
-                </a>
+                <Link href={"/portfolio/tiktok-report"}>
+                  <a className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
+                    TikTok広告レポート
+                  </a>
+                </Link>
+                <Link href={"/portfolio/tiktok-report"}>
+                  <a>
+                    <Image
+                      src="/images/top_tiktok.png"
+                      alt="TikTok広告レポート"
+                      width={540}
+                      height={540}
+                      quality={90}
+                      aria-label="tiktok-report"
+                    />
+                  </a>
+                </Link>
               </div>
             </Reveal>
             <Reveal animation={Animation.FadeInUp}>
               <div className="flex flex-col max-w-lg mt-4 lg:m-5">
-                <a
-                  href={"/portfolio/google-and-youtube-report"}
-                  className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider"
-                >
-                  Google&YouTube広告レポート
-                </a>
-                <a href={"/portfolio/google-and-youtube-report"}>
-                  <Image
-                    src="/images/top_google_and_youtube.png"
-                    alt="Google & YouTube広告レポート"
-                    width={540}
-                    height={540}
-                    quality={90}
-                    aria-label="google-and-youtube-report"
-                  />
-                </a>
+                <Link href={"/portfolio/google-and-youtube-report"}>
+                  <a className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
+                    Google&YouTube広告レポート
+                  </a>
+                </Link>
+                <Link href={"/portfolio/google-and-youtube-report"}>
+                  <a>
+                    <Image
+                      src="/images/top_google_and_youtube.png"
+                      alt="Google & YouTube広告レポート"
+                      width={540}
+                      height={540}
+                      quality={90}
+                      aria-label="google-and-youtube-report"
+                    />
+                  </a>
+                </Link>
               </div>
             </Reveal>
           </div>
