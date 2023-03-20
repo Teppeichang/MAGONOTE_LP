@@ -4,8 +4,8 @@ import Image from "next/image";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import Toolbar from "@mui/material/Toolbar";
 
 function Header(props) {
@@ -17,30 +17,19 @@ function Header(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }} className="container">
-      <Link href={"/"}>
-        <a>
-          <Image
-            src="/images/header_logo.svg"
-            alt="MAGONOTE"
-            width={262}
-            height={40}
-            quality={90}
-          />
-        </a>
-      </Link>
-      <List sx={{ display: "flex", flexDirection: "column" }}>
-        <Link href={"/pricing"}>
-          <a
-            className="font-mPlus2c text-black py-2 tracking-wide lg:tracking-wider"
-            data-testid="header-pricing-link-sp"
-          >
-            料金プラン
-          </a>
-        </Link>
+    <div className="flex flex-col min-h-screen">
+      <div className="flex justify-end">
+        <CloseRoundedIcon
+          className="text-purple-800 p-0"
+          aria-label="close drawer"
+          onClick={handleDrawerToggle}
+          sx={{ textAlign: "right", mt: 6, mr: 3, width: 48, height: 40 }}
+        />
+      </div>
+      <div className="flex flex-col justify-center items-left mt-4 mx-auto">
         <Link href={"/portfolio"}>
           <a
-            className="font-mPlus2c text-black py-2 tracking-wide lg:tracking-wider"
+            className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider"
             data-testid="header-portfolio-link-sp"
           >
             レポートギャラリー
@@ -48,7 +37,7 @@ function Header(props) {
         </Link>
         <Link href={"https://next-report.jp/"}>
           <a
-            className="font-mPlus2c text-black py-2 tracking-wide lg:tracking-wider"
+            className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider"
             target="_blank"
             data-testid="header-blog-link-sp"
           >
@@ -57,22 +46,33 @@ function Header(props) {
         </Link>
         <Link href={"/contact"}>
           <a
-            className="font-mPlus2c text-black py-2 tracking-wide lg:tracking-wider"
+            className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider"
             data-testid="header-contact-link-sp"
           >
             お問い合わせ
           </a>
         </Link>
         <Link href={"/trial"}>
-          <a
-            className="font-mPlus2c text-black py-2 tracking-wide lg:tracking-wider"
-            data-testid="header-trial-link-sp"
+          <button
+            className="font-mPlus2c bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 transform active:scale-90 transition-transform font-bold my-6 py-2 rounded-full  w-44 tracking-wide lg:tracking-wider"
+            data-testid="header-trial-link"
           >
             無料で始める
-          </a>
+          </button>
         </Link>
-      </List>
-    </Box>
+      </div>
+      <div className="flex justify-center items-center mt-20">
+        <Link href={"/"}>
+          <Image
+            src="/images/header_logo.svg"
+            alt="MAGONOTE"
+            width={262}
+            height={40}
+            quality={90}
+          />
+        </Link>
+      </div>
+    </div>
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
@@ -136,12 +136,13 @@ function Header(props) {
           <Drawer
             container={container}
             variant="temporary"
+            anchor="top"
             open={mobileOpen}
             onClose={handleDrawerToggle}
             ModalProps={{ keepMounted: true }}
             sx={{
               display: { xs: "block", sm: "none" },
-              "& .MuiDrawer-paper": { boxSizing: "border-box", width: 240 },
+              "& .MuiDrawer-paper": { boxSizing: "border-box" },
             }}
           >
             {drawer}
