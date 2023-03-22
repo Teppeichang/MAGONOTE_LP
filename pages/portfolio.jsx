@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import Link from "next/link";
 import BreadCrumb from "../components/breadCrumb";
+import { BreadcrumbJsonLd } from "next-seo";
 
 const Portfolio = () => {
   const lists = [
@@ -12,6 +13,20 @@ const Portfolio = () => {
   ];
   return (
     <Layout>
+      <BreadcrumbJsonLd
+        itemListElements={[
+          {
+            position: 1,
+            name: "トップページ",
+            item: "https://magonote.shop",
+          },
+          {
+            position: 2,
+            name: "レポートギャラリー",
+            item: "https://magonote.shop/portfolio",
+          },
+        ]}
+      />
       <BreadCrumb lists={lists} />
       <div className="min-h-screen">
         <div className="animate__animated animate__fadeIn mt-10 mx-6 lg:mx-10">

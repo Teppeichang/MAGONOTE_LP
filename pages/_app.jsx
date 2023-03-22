@@ -4,7 +4,7 @@ import "animate.css";
 import { ReactGenieAnimations } from "react-genie-styled-components";
 import adobeFontLoader from "../adobeFontLoader";
 import { useEffect } from "react";
-import { DefaultSeo, ProductJsonLd } from "next-seo";
+import { DefaultSeo } from "next-seo";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
