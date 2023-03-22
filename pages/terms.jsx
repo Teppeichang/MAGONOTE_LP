@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import BreadCrumb from "../components/breadCrumb";
+import { BreadcrumbJsonLd } from "next-seo";
 
 const Terms = () => {
   const lists = [
@@ -8,17 +9,35 @@ const Terms = () => {
   ];
   return (
     <Layout>
+      <BreadcrumbJsonLd
+        itemListElements={[
+          {
+            position: 1,
+            name: "トップページ",
+            item: "https://magonote.shop",
+          },
+          {
+            position: 2,
+            name: "利用規約",
+            item: "https://magonote.shop/terms",
+          },
+        ]}
+      />
       <BreadCrumb lists={lists} />
       <div className="min-h-screen px-10 lg:px-20">
         <div className="my-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">利用規約</p>
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            利用規約
+          </p>
           <p className="font-mPlus2c tracking-wide lg:tracking-wider">
             この利用規約（以下、「本規約」といいます。）は、株式会社Next
             Stage（以下、「当社」といいます。）がウェブサイト上で提供するサービス（以下、「本サービス」といいます。）の利用条件を定めるものです。登録ユーザーのお客様（以下、「ユーザー」といいます。）には、本規約に従って、本サービスをご利用いただきます。
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第1条（適用）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第1条（適用）
+          </p>
           <p className="font-mPlus2c tracking-wide lg:tracking-wider">
             本規約は、ユーザーと当社との間の本サービスの利用に関わる一切の関係に適用されるものとします。
             ユーザーおよび当社は、個別契約において協議のうえ、本規約と異なる定めをすることができるものとし、
@@ -26,7 +45,9 @@ const Terms = () => {
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第2条（利用登録）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第2条（利用登録）
+          </p>
           <p className="font-mPlus2c tracking-wide lg:tracking-wider">
             登録希望者が当社の定める方法によって利用登録を申請し、当社がこれを承認することによって、利用登録が完了するものとします。
             当社は、利用登録の申請者に以下の事由があると判断した場合、利用登録の申請を承認しないことがあり、その理由については一切の開示義務を負わないものとします。
@@ -44,21 +65,27 @@ const Terms = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第3条（ユーザーIDおよびパスワードの管理）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第3条（ユーザーIDおよびパスワードの管理）
+          </p>
           <p className="font-mPlus2c">
             ユーザーは、自己の責任において、本サービスのユーザーIDおよびパスワードを管理するものとします。
             ユーザーは、いかなる場合にも、ユーザーIDおよびパスワードを第三者に譲渡または貸与することはできません。当社は、ユーザーIDとパスワードの組み合わせが登録情報と一致してログインされた場合には、そのユーザーIDを登録しているユーザー自身による利用とみなします。
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第4条（利用料金および支払方法）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第4条（利用料金および支払方法）
+          </p>
           <p className="font-mPlus2c">
             ユーザーは、本サービス利用の対価として、当社が別途定め、本ウェブサイトに表示する利用料金を、当社が指定する方法により支払うものとします。
             ユーザーが利用料金の支払を遅滞した場合には、ユーザーは法令の定める範囲内の利息を加算した遅延損害金を支払うものとします。
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第5条（禁止事項）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第5条（禁止事項）
+          </p>
           <p>ユーザーは、本サービスの利用にあたり、以下の行為をしてはならないものとします。</p>
           <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
@@ -67,26 +94,37 @@ const Terms = () => {
             <ul className="font-mPlus2c list-none list-inside ml-7 tracking-wide lg:tracking-wider">
               <li className="-indent-6">a. 犯罪行為若しくは犯罪行為に結びつく行為</li>
               <li className="-indent-6">
-                b. 当社または第三者の著作権、商標権その他の知的財産権、プライバシー権、名誉等の権利を侵害する行為
+                b.
+                当社または第三者の著作権、商標権その他の知的財産権、プライバシー権、名誉等の権利を侵害する行為
               </li>
               <li className="-indent-6">c. 当社または第三者を差別または誹謗中傷する行為</li>
               <li className="-indent-6">
-                d. 本サイトおよび本サービスを営利または商業目的で利用する行為（但し、当社が認める場合を除きます。)
+                d.
+                本サイトおよび本サービスを営利または商業目的で利用する行為（但し、当社が認める場合を除きます。)
               </li>
               <li className="-indent-6">
-                e. 本サービスの提供のためのシステムへの不正アクセス、スパム行為等、本サービスの運営を妨げる行為
+                e.
+                本サービスの提供のためのシステムへの不正アクセス、スパム行為等、本サービスの運営を妨げる行為
               </li>
               <li className="-indent-6">
-                f. 本サイトおよび本コンテンツの全部または一部を当社に無断で、複製、複写、転載、転送、蓄積、販売、出版、その他ユーザー個人の私的利用の範囲を超えて利用する行為
+                f.
+                本サイトおよび本コンテンツの全部または一部を当社に無断で、複製、複写、転載、転送、蓄積、販売、出版、その他ユーザー個人の私的利用の範囲を超えて利用する行為
               </li>
-              <li className="-indent-6">g. 本サイトの利用権を第三者に再許諾、譲渡し、または、担保に供する行為</li>
               <li className="-indent-6">
-                h. 本サイトのリバースエンジニアリング、逆コンパイル、逆アセンブル、その他これらに準じる行為
+                g. 本サイトの利用権を第三者に再許諾、譲渡し、または、担保に供する行為
+              </li>
+              <li className="-indent-6">
+                h.
+                本サイトのリバースエンジニアリング、逆コンパイル、逆アセンブル、その他これらに準じる行為
               </li>
               <li className="-indent-6">i. 当社または第三者の信用を損なう行為</li>
-              <li className="-indent-6">j. 他人になりすまして、本サイトおよび本サービスを利用する行為</li>
+              <li className="-indent-6">
+                j. 他人になりすまして、本サイトおよび本サービスを利用する行為
+              </li>
               <li className="-indent-6">k. 法令、公序良俗若しくは本利用規約に違反する行為</li>
-              <li className="-indent-6">l. 当社の承認した以外の方法により、本サイトおよび本サービスを利用する行為</li>
+              <li className="-indent-6">
+                l. 当社の承認した以外の方法により、本サイトおよび本サービスを利用する行為
+              </li>
               <li className="-indent-6">m. 当社または第三者に対する迷惑行為</li>
               <li className="-indent-6">n. その他当社が不適切と判断する行為</li>
             </ul>
@@ -96,7 +134,9 @@ const Terms = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第6条（保証の否認および免責等）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第6条（保証の否認および免責等）
+          </p>
           <ul className="font-mPlus2c list-decimal list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               当社は、本サイトおよび本サービスならびにこれらによって提供される情報について、正確性、最新性、完全性、有用性等いかなる事項についても保証いたしません。
@@ -116,17 +156,21 @@ const Terms = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第7条（本サービスの提供の停止等）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第7条（本サービスの提供の停止等）
+          </p>
           <ul className="font-mPlus2c list-decimal list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               当社は、以下のいずれかの事由があると判断した場合、ユーザーに事前に通知することなく本サービスの全部または一部の提供を停止または中断することができるものとします。
             </li>
             <ul className="font-mPlus2c list-none list-inside ml-7 tracking-wide lg:tracking-wider">
               <li className="-indent-6">
-                a. 本サービスにかかるコンピュータシステム（クラウドサービスを含みます。）の保守点検または更新を行う場合
+                a.
+                本サービスにかかるコンピュータシステム（クラウドサービスを含みます。）の保守点検または更新を行う場合
               </li>
               <li className="-indent-6">
-                b. 地震、落雷、火災、停電または天災などの不可抗力により、本サービスの提供が困難となった場合
+                b.
+                地震、落雷、火災、停電または天災などの不可抗力により、本サービスの提供が困難となった場合
               </li>
               <li className="-indent-6">c. コンピュータまたは通信回線等が事故により停止した場合</li>
               <li className="-indent-6">d. その他、当社が本サービスの提供が困難と判断した場合</li>
@@ -137,22 +181,30 @@ const Terms = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第8条（知的財産権等）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第8条（知的財産権等）
+          </p>
           <p className="font-mPlus2c tracking-wide lg:tracking-wider">
             本サイト、および、本サービスにおいて当社が提供する文章、画像、プログラムその他のデータ等のコンテンツ（以下「本コンテンツ」といいます。）についての一切の権利（所有権、知的財産権、肖像権、パブリシティー権等）は、当社または当該権利を有する第三者に帰属するものとし、ユーザーは、方法または形態の如何を問わず、これらを当社に無断で複製、複写、転載、転送、蓄積、販売、出版その他ユーザー個人の私的利用の範囲を超えて使用してはならないものとします。
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第9条（利用制限および登録抹消）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第9条（利用制限および登録抹消）
+          </p>
           <p className="font-mPlus2c tracking-wide lg:tracking-wider">
             当社は、以下の場合には、事前の通知なく、データを削除し、ユーザーに対して本サービスの全部もしくは一部の利用を制限しまたはユーザーとしての登録を抹消することができるものとします。
           </p>
           <ul className="font-mPlus2c list-decimal list-inside ml-7 my-2 tracking-wide lg:tracking-wider">
             <li className="-indent-6">本規約のいずれかの条項に違反した場合</li>
             <li className="-indent-6">登録事項に虚偽の事実があることが判明した場合</li>
-            <li className="-indent-6">破産、民事再生、会社更生または特別清算の手続開始決定等の申立がなされたとき</li>
+            <li className="-indent-6">
+              破産、民事再生、会社更生または特別清算の手続開始決定等の申立がなされたとき
+            </li>
             <li className="-indent-6">1年間以上本サービスの利用がない場合</li>
-            <li className="-indent-6">当社からの問い合わせその他の回答を求める連絡に対して30日間以上応答がない場合</li>
+            <li className="-indent-6">
+              当社からの問い合わせその他の回答を求める連絡に対して30日間以上応答がない場合
+            </li>
             <li className="-indent-6">その他、当社が本サービスの利用を適当でないと判断した場合</li>
           </ul>
           <p className="font-mPlus2c tracking-wide lg:tracking-wider">
@@ -161,13 +213,17 @@ const Terms = () => {
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第10条（サービス内容の変更等）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第10条（サービス内容の変更等）
+          </p>
           <p className="font-mPlus2c tracking-wide lg:tracking-wider">
             当社は、ユーザーに通知することなく、本サービスの内容を変更しまたは本サービスの提供を中止することができるものとし、これによってユーザーに生じた損害について一切の責任を負いません。
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第11条（秘密保持）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第11条（秘密保持）
+          </p>
           <p className="font-mPlus2c tracking-wide lg:tracking-wider">
             当社は、本サービスに登録されるユーザーの個人情報および投稿データについて、以下の場合を除き、秘密に取り扱うものとします。
           </p>
@@ -183,7 +239,9 @@ const Terms = () => {
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第12条（個人情報・本情報の取扱い）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第12条（個人情報・本情報の取扱い）
+          </p>
           <ul className="font-mPlus2c list-decimal list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               当社は、ユーザーのプライバシーを尊重し、ユーザーの個人情報の管理に細心の注意を払い、当社が定めるプライバシーポリシーに従ってユーザーの個人情報を取り扱うものとします。
@@ -197,17 +255,21 @@ const Terms = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第13条（反社会的勢力）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第13条（反社会的勢力）
+          </p>
           <ul className="font-mPlus2c list-decimal list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               ユーザーは、現在、暴力団、暴力団員、暴力団員でなくなった時から５年を経過しない者、暴力団準構成員、暴力団関係企業、総会屋等、社会運動等標ぼうゴロまたは特殊知能暴力集団等、その他これらに準ずる者（以下これらを「暴力団員等」といいます。）に該当しないこと、および次の各号のいずれにも該当しないことを表明し、かつ将来にわたっても該当しないことを確約するものとします。
             </li>
             <ul className="font-mPlus2c list-none list-inside ml-7 tracking-wide lg:tracking-wider">
               <li className="-indent-6">
-                a. 暴力団員等が経営を支配または実質的に関与していると認められる団体その他これらに準ずる者と関係を有すること
+                a.
+                暴力団員等が経営を支配または実質的に関与していると認められる団体その他これらに準ずる者と関係を有すること
               </li>
               <li className="-indent-6">
-                b. 自己もしくは第三者の不正の利益を図る目的または第三者に損害を加える目的をもってするなど、不当に暴力団員等を利用していると認められる関係を有すること
+                b.
+                自己もしくは第三者の不正の利益を図る目的または第三者に損害を加える目的をもってするなど、不当に暴力団員等を利用していると認められる関係を有すること
               </li>
               <li className="-indent-6">
                 c.暴力団員等に対して資金等を提供し、または便宜を供与するなどの関与をしていると認められる関係を有すること
@@ -219,16 +281,21 @@ const Terms = () => {
             <ul className="font-mPlus2c list-none list-inside ml-7 tracking-wide lg:tracking-wider">
               <li className="-indent-6">a. 暴力的な要求行為</li>
               <li className="-indent-6">b. 法的な責任を超えた不当な要求行為</li>
-              <li className="-indent-6">c. 取引に関して、脅迫的な言動をし、または暴力を用いる行為</li>
               <li className="-indent-6">
-                d. 風説を流布し、偽計を用いまたは威力を用いて相手方の信用を毀損し、または相手方の業務を妨害する行為
+                c. 取引に関して、脅迫的な言動をし、または暴力を用いる行為
+              </li>
+              <li className="-indent-6">
+                d.
+                風説を流布し、偽計を用いまたは威力を用いて相手方の信用を毀損し、または相手方の業務を妨害する行為
               </li>
               <li className="-indent-6">e. その他前各号に準ずる行為</li>
             </ul>
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第14条（利用規約の変更）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第14条（利用規約の変更）
+          </p>
           <ul className="font-mPlus2c list-decimal list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               当社は、当社の判断により、本利用規約をいつでも任意の理由で変更することができるものとします。
@@ -242,7 +309,9 @@ const Terms = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第15条（本利用規約およびその他の利用規約等の有効性）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第15条（本利用規約およびその他の利用規約等の有効性）
+          </p>
           <ul className="font-mPlus2c list-decimal list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               利用規約の一部の規定が法令に基づいて無効と判断されても、本利用規約のその他の規定は有効とします。
@@ -253,7 +322,9 @@ const Terms = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第16条（権利義務の譲渡の禁止）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第16条（権利義務の譲渡の禁止）
+          </p>
           <ul className="font-mPlus2c list-decimal list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               ユーザーは、本利用規約に別段の定めがある場合を除いて、当社の事前の書面による承諾なしに、本利用規約により生じた権利義務を、第三者に譲渡し、貸与し、または担保に供することはできないものとします。
@@ -264,15 +335,21 @@ const Terms = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">第17条（準拠法・裁判管轄）</p>
+          <p className="font-mPlus2c font-bold mb-2 tracking-wide lg:tracking-wider">
+            第17条（準拠法・裁判管轄）
+          </p>
           <p className="font-mPlus2c tracking-wide lg:tracking-wider">
             本規約の解釈にあたっては、日本法を準拠法とします。
             本サービスに関して紛争が生じた場合には、東京地方裁判所を専属的合意管轄とします。
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c tracking-wide lg:tracking-wider">附則 令和5年4月1日 作成・施行</p>
-          <p className="font-mPlus2c tracking-wide lg:tracking-wider">本規約の問い合わせ先：株式会社Next Stage（info@next-stage.biz）</p>
+          <p className="font-mPlus2c tracking-wide lg:tracking-wider">
+            附則 令和5年4月1日 作成・施行
+          </p>
+          <p className="font-mPlus2c tracking-wide lg:tracking-wider">
+            本規約の問い合わせ先：株式会社Next Stage（info@next-stage.biz）
+          </p>
         </div>
       </div>
     </Layout>
