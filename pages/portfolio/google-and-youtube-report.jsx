@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import BreadCrumb from "../../components/breadCrumb";
 import Image from "next/image";
 import Link from "next/link";
+import { BreadcrumbJsonLd, ProductJsonLd } from "next-seo";
 
 const GoogleAndYouTubeReport = () => {
   const lists = [
@@ -13,6 +14,32 @@ const GoogleAndYouTubeReport = () => {
   ];
   return (
     <Layout>
+      <BreadcrumbJsonLd
+        itemListElements={[
+          {
+            position: 1,
+            name: "トップページ",
+            item: "https://magonote.shop",
+          },
+          {
+            position: 2,
+            name: "レポートギャラリー",
+            item: "https://magonote.shop/portfolio",
+          },
+          {
+            position: 3,
+            name: "Google&YouTube広告レポート",
+            item: "https://magonote.shop/portfolio/google-and-youtube-report",
+          },
+        ]}
+      />
+      <ProductJsonLd
+        productName="Google&YouTube広告レポート"
+        images={[
+          "https://magonote.shop/_next/image?url=%2Fimages%2Ftop_google_and_youtube.png&w=1080&q=90",
+        ]}
+        description="Google広告/YouTube広告のレポートが作成可能です。 Looker Studioのデフォルト機能を利用してメディアパフォーマンスを自動で取得します。"
+      />
       <BreadCrumb lists={lists} />
       <Reveal animation={Animation.FadeInUp}>
         <div className="flex flex-col justify-center mx-6 mt-20 lg:flex lg:flex-row lg:justify-center lg:mx-10">

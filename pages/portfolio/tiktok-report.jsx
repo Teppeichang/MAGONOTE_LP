@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import BreadCrumb from "../../components/breadCrumb";
 import Image from "next/image";
 import Link from "next/link";
+import { BreadcrumbJsonLd, ProductJsonLd } from "next-seo";
 
 const TikTokReport = () => {
   const lists = [
@@ -13,6 +14,30 @@ const TikTokReport = () => {
   ];
   return (
     <Layout>
+      <BreadcrumbJsonLd
+        itemListElements={[
+          {
+            position: 1,
+            name: "トップページ",
+            item: "https://magonote.shop",
+          },
+          {
+            position: 2,
+            name: "レポートギャラリー",
+            item: "https://magonote.shop/portfolio",
+          },
+          {
+            position: 3,
+            name: "TikTok広告レポート",
+            item: "https://magonote.shop/portfolio/tiktok-report",
+          },
+        ]}
+      />
+      <ProductJsonLd
+        productName="TikTok広告レポート"
+        images={["https://magonote.shop/_next/image?url=%2Fimages%2Ftop_tiktok.png&w=1080&q=90"]}
+        description="TikTok広告のレポートが作成可能です。 独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。 APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。"
+      />
       <BreadCrumb lists={lists} />
       <Reveal animation={Animation.FadeInUp}>
         <div className="flex flex-col justify-center mx-6 mt-20 lg:flex lg:flex-row lg:justify-center lg:mx-10">
