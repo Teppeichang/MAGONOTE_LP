@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import BreadCrumb from "../components/breadCrumb";
+import { BreadcrumbJsonLd } from "next-seo";
 
 const Contact = () => {
   const lists = [
@@ -9,6 +10,20 @@ const Contact = () => {
 
   return (
     <Layout>
+      <BreadcrumbJsonLd
+        itemListElements={[
+          {
+            position: 1,
+            name: "トップページ",
+            item: "https://magonote.shop",
+          },
+          {
+            position: 2,
+            name: "お問い合わせ",
+            item: "https://magonote.shop/contact",
+          },
+        ]}
+      />
       <BreadCrumb lists={lists} />
       <div className="flex justify-center items-center min-h-screen">
         <iframe
