@@ -87,7 +87,7 @@ function Header(props) {
             onClick={handleDrawerToggle}
             sx={{ display: { sm: "none" } }}
           >
-            <MenuRoundedIcon sx={{ width: 48, height: 40 }} />
+            <MenuRoundedIcon sx={{ width: 48, height: 40 }} className="text-purple-800 p-0" />
           </IconButton>
           <div className="relative w-40 h-6 lg:w-64 lg:h-10">
             <Link href={"/"}>
