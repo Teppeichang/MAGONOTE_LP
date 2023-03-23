@@ -219,7 +219,7 @@ const Index = () => {
         </Link>
       </div>
       <Reveal animation={Animation.FadeIn}>
-        <div className="flex flex-col items-center bg-gradient-to-r from-purple-800 to-purple-600 mx-3 lg:mx-0 lg:w-screen">
+        <div className="flex flex-col items-center bg-gradient-to-r from-purple-800 to-purple-600 lg:w-screen">
           <p className="font-mPlus2c font-bold text-center text-2xl text-white mt-14 mx-4 tracking-wide lg:tracking-wider lg:mt-20 lg:mx-0">
             今すぐ無料でレポートを自動化し、改善アクションに時間を使おう
           </p>
