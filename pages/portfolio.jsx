@@ -41,7 +41,7 @@ const Portfolio = () => {
       />
       <BreadCrumb lists={lists} />
       <div className="min-h-screen">
-        <div className="animate__animated animate__fadeIn mt-10 mx-6 lg:mx-10">
+        <div className="animate__animated animate__fadeIn mt-10 mx-6 lg:mx-0">
           <p className="font-mPlus2c text-2xl font-bold mb-1 tracking-wide lg:tracking-wider lg:mb-2 lg:text-5xl lg:text-center">
             レポートテンプレート
           </p>
