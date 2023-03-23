@@ -107,11 +107,11 @@ const Index = () => {
       </div>
       <div className="flex flex-col justify-center items-center bg-slate-50 mt-28 mx-6 py-10 lg:mt-20 lg:py-20 lg:mx-0">
         <Reveal animation={Animation.FadeIn}>
-          <p className="font-mPlus2c font-bold text-center pb-10 text-3xl tracking-wide lg:tracking-wider lg:text-4xl">
+          <p className="font-mPlus2c font-bold text-center text-3xl tracking-wide lg:tracking-wider lg:text-4xl">
             利用できるレポートのテンプレート
           </p>
         </Reveal>
-        <div className="lg:py-10">
+        <div className="py-10">
           <Reveal animation={Animation.FadeInUp}>
             <div className="flex flex-col lg:flex lg:flex-row">
               <div className="max-w-lg">
