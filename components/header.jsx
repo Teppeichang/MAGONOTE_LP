@@ -97,9 +97,17 @@ function Header(props) {
             </Link>
           </div>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Link href={"/"}>
+              <a
+                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
+                data-testid="header-home-link"
+              >
+                ホーム
+              </a>
+            </Link>
             <Link href={"/portfolio"}>
               <a
-                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider"
+                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
                 data-testid="header-portfolio-link"
               >
                 レポートギャラリー
@@ -107,7 +115,7 @@ function Header(props) {
             </Link>
             <Link href={"https://next-report.jp/"}>
               <a
-                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider"
+                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
                 target="_blank"
                 data-testid="header-blog-link"
               >
@@ -116,7 +124,7 @@ function Header(props) {
             </Link>
             <Link href={"/contact"}>
               <a
-                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider"
+                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
                 data-testid="header-contact-link"
               >
                 お問い合わせ

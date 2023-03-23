@@ -57,7 +57,7 @@ const Index = () => {
           <Reveal animation={Animation.SlideInRight}>
             <div className="flex flex-col max-w-lg mt-0 ml-10">
               <p className="font-mPlus2c font-bold text-left text-4xl tracking-wider">
-                カスタマイズ可能な豊富なテンプレート
+                カスタマイズ可能な豊富な<br />テンプレート
               </p>
               <div className="flex items-center mt-0.5">
                 <Image
@@ -67,9 +67,9 @@ const Index = () => {
                   height={2}
                   quality={90}
                 />
-                <p className="font-mPlus2c text-base ml-3 tracking-wider">About</p>
+                <p className="font-mPlus2c text-base ml-3 tracking-wider font-medium">About</p>
               </div>
-              <p className="font-mPlus2c text-base mt-10 tracking-wider">
+              <p className="font-mPlus2c text-base mt-10 tracking-wider font-medium leading-loose">
                 MAGONOTEは、マーケティング担当者のデータ集計やレポート作成に
                 かかる時間を短縮し、改善アクションに時間を使えるように作成された
                 マーケティングレポート自動化サービスです。Looker Studioで描写しており、
