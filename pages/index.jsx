@@ -43,7 +43,7 @@ const Index = () => {
         </div>
       </div>
       <div className="bg-purple-800 w-screen h-44 lg:h-80"></div>
-      {isDesktopOrLaptop &&
+      {isDesktopOrLaptop && (
         <div className="flex flex-row justify-center bg-slate-50 pt-20 mx-6">
           <Reveal animation={Animation.SlideInLeft}>
             <Image
@@ -57,7 +57,9 @@ const Index = () => {
           <Reveal animation={Animation.SlideInRight}>
             <div className="flex flex-col max-w-lg mt-0 ml-10">
               <p className="font-mPlus2c font-bold text-left text-4xl tracking-wider">
-                カスタマイズ可能な豊富な<br />テンプレート
+                カスタマイズ可能な豊富な
+                <br />
+                テンプレート
               </p>
               <div className="flex items-center mt-0.5">
                 <Image
@@ -78,7 +80,7 @@ const Index = () => {
             </div>
           </Reveal>
         </div>
-      }
+      )}
       <div className="flex flex-col justify-center items-center bg-slate-50 pt-24 mx-6 lg:hidden">
         <Reveal animation={Animation.FadeInUp}>
           <Image
@@ -117,13 +119,17 @@ const Index = () => {
                   Facebook広告レポート
                 </p>
                 <div className="lg:px-5">
-                  <Image
-                    src="/images/top_facebook.png"
-                    alt="Facebook広告レポートイメージ画像"
-                    width={540}
-                    height={560}
-                    quality={90}
-                  />
+                  <Link href={"portfolio/facebook-report"}>
+                    <a>
+                      <Image
+                        src="/images/top_facebook.png"
+                        alt="Facebook広告レポートイメージ画像"
+                        width={540}
+                        height={560}
+                        quality={90}
+                      />
+                    </a>
+                  </Link>
                 </div>
                 <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
                   Facebook・Instagram広告のレポートが作成可能です。
@@ -136,13 +142,17 @@ const Index = () => {
                   LINE広告レポート
                 </p>
                 <div className="lg:px-5">
-                  <Image
-                    src="/images/top_line.png"
-                    alt="LINE広告レポートイメージ画像"
-                    width={540}
-                    height={560}
-                    quality={90}
-                  />
+                  <Link href={"/portfolio/line-report"}>
+                    <a>
+                      <Image
+                        src="/images/top_line.png"
+                        alt="LINE広告レポートイメージ画像"
+                        width={540}
+                        height={560}
+                        quality={90}
+                      />
+                    </a>
+                  </Link>
                 </div>
                 <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
                   LINE広告のレポートが作成可能です。
@@ -159,13 +169,17 @@ const Index = () => {
                   TikTok広告レポート
                 </p>
                 <div className="lg:px-5">
-                  <Image
-                    src="/images/top_tiktok.png"
-                    alt="TikTok広告レポートイメージ画像"
-                    width={540}
-                    height={560}
-                    quality={90}
-                  />
+                  <Link href={"/portfolio/tiktok-report"}>
+                    <a>
+                      <Image
+                        src="/images/top_tiktok.png"
+                        alt="TikTok広告レポートイメージ画像"
+                        width={540}
+                        height={560}
+                        quality={90}
+                      />
+                    </a>
+                  </Link>
                 </div>
                 <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
                   TikTok広告のレポートが作成可能です。
@@ -178,13 +192,17 @@ const Index = () => {
                   Google & YouTube広告レポート
                 </h2>
                 <div className="lg:px-5">
-                  <Image
-                    src="/images/top_google_and_youtube.png"
-                    alt="Google & YouTube広告レポートイメージ画像"
-                    width={540}
-                    height={560}
-                    quality={90}
-                  />
+                  <Link href={"/portfolio/google-and-youtube-report"}>
+                    <a>
+                      <Image
+                        src="/images/top_google_and_youtube.png"
+                        alt="Google & YouTube広告レポートイメージ画像"
+                        width={540}
+                        height={560}
+                        quality={90}
+                      />
+                    </a>
+                  </Link>
                 </div>
                 <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
                   Google広告/YouTube広告のレポートが作成可能です。 Looker
@@ -224,7 +242,7 @@ const Index = () => {
           </p>
         </div>
       </Reveal>
-      {isDesktopOrLaptop &&
+      {isDesktopOrLaptop && (
         <div className="flex flex-row justify-center bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInLeft}>
             <div className="max-w-lg px-20 py-20 mx-0">
@@ -249,7 +267,7 @@ const Index = () => {
             </div>
           </Reveal>
         </div>
-      }
+      )}
       <div className="flex flex-col-reverse bg-slate-50 mt-4 lg:hidden">
         <Reveal animation={Animation.FadeInUp}>
           <div className="max-w-lg mx-6">
@@ -274,7 +292,7 @@ const Index = () => {
           </div>
         </Reveal>
       </div>
-      {isDesktopOrLaptop &&
+      {isDesktopOrLaptop && (
         <div className="flex justify-center flex-row-reverse bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInRight}>
             <div className="max-w-lg px-20 py-20 mx-0">
@@ -299,7 +317,7 @@ const Index = () => {
             </div>
           </Reveal>
         </div>
-      }
+      )}
       <div className="flex flex-col-reverse bg-slate-50 mt-4 lg:hidden">
         <Reveal animation={Animation.FadeInUp}>
           <div className="max-w-lg mx-6">
@@ -324,7 +342,7 @@ const Index = () => {
           </div>
         </Reveal>
       </div>
-      {isDesktopOrLaptop &&
+      {isDesktopOrLaptop && (
         <div className="flex flex-row justify-center bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInLeft}>
             <div className="max-w-lg px-20 py-20 mx-0">
@@ -348,7 +366,7 @@ const Index = () => {
             </div>
           </Reveal>
         </div>
-      }
+      )}
       <div className="flex flex-col-reverse bg-slate-50 mt-4 lg:hidden">
         <Reveal animation={Animation.FadeInUp}>
           <div className="max-w-lg mx-6">
@@ -372,7 +390,7 @@ const Index = () => {
           </div>
         </Reveal>
       </div>
-      {isDesktopOrLaptop &&
+      {isDesktopOrLaptop && (
         <div className="flex justify-center flex-row-reverse bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInRight}>
             <div className="max-w-lg px-20 py-20 mx-0">
@@ -396,7 +414,7 @@ const Index = () => {
             </div>
           </Reveal>
         </div>
-      }
+      )}
       <div className="flex flex-col-reverse bg-slate-50 mt-4 lg:hidden">
         <Reveal animation={Animation.FadeInUp}>
           <div className="max-w-lg mx-6">
