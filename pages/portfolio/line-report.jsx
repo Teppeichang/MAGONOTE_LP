@@ -66,7 +66,7 @@ const LineReport = () => {
               <li>広告代理店向けの手数料設定</li>
             </ul>
             <Link href={"/trial"}>
-              <button className="font-mPlus2c bg-purple-800 text-white w-64 h-12 mt-4 font-bold rounded-full tracking-wide hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 transform active:scale-90 transition-transform lg:tracking-wider">
+              <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white w-64 h-12 mt-4 font-bold rounded-full tracking-wide transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-90 transition-transform lg:tracking-wider">
                 デモレポートを見る
               </button>
             </Link>

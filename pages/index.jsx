@@ -26,7 +26,7 @@ const Index = () => {
           レポート対応メディアは順次追加予定
         </p>
         <Link href={"/trial"}>
-          <button className="font-mPlus2c bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 transform active:scale-90 transition-transform font-bold py-2 px-4 rounded-full mt-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16">
+          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-90 transition-transform font-bold py-2 px-4 rounded-full mt-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16">
             今すぐ無料で始める
           </button>
         </Link>
@@ -195,7 +195,7 @@ const Index = () => {
           </Reveal>
         </div>
         <Link href={"/portfolio"}>
-          <button className="font-mPlus2c bg-purple-800 text-white hover:bg-white hover:text-purple-800 hover:border-solid hover:border hover:border-purple-800 transform active:scale-90 transition-transform font-bold py-2 px-4 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider lg:mb-10">
+          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-90 transition-transform font-bold py-2 px-4 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider lg:mb-10">
             レポートを見る
           </button>
         </Link>
