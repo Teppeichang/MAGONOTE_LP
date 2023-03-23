@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import Link from "next/link";
 import BreadCrumb from "../components/breadCrumb";
-import { BreadcrumbJsonLd } from "next-seo";
+import { NextSeo, BreadcrumbJsonLd } from "next-seo";
 
 const Portfolio = () => {
   const lists = [
@@ -13,6 +13,18 @@ const Portfolio = () => {
   ];
   return (
     <Layout>
+      <NextSeo
+        title="MAGONOTE レポートギャラリー"
+        description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 レポートギャラリー"
+        canonical="https://magonote.shop/portfolio"
+        openGraph={{
+          type: "website",
+          title: "MAGONOTE レポートギャラリー",
+          description: "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 レポートギャラリー",
+          siteName: "MAGONOTE",
+          url: "https://magonote.shop/portfolio",
+        }}
+      />
       <BreadcrumbJsonLd
         itemListElements={[
           {

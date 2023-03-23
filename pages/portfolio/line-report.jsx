@@ -4,7 +4,7 @@ import Layout from "../../components/layout";
 import BreadCrumb from "../../components/breadCrumb";
 import Image from "next/image";
 import Link from "next/link";
-import { BreadcrumbJsonLd, ProductJsonLd } from "next-seo";
+import { NextSeo, BreadcrumbJsonLd, ProductJsonLd } from "next-seo";
 
 const LineReport = () => {
   const lists = [
@@ -14,6 +14,19 @@ const LineReport = () => {
   ];
   return (
     <Layout>
+      <NextSeo
+        title="MAGONOTE LINE広告レポート"
+        description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 LINE広告レポート概要"
+        canonical="https://magonote.shop/portfolio/line-report"
+        openGraph={{
+          type: "website",
+          title: "MAGONOTE LINE広告レポート概要",
+          description:
+            "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 LINE広告レポート概要",
+          siteName: "MAGONOTE",
+          url: "https://magonote.shop/portfolio/line-report",
+        }}
+      />
       <BreadcrumbJsonLd
         itemListElements={[
           {
