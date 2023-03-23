@@ -29,7 +29,7 @@ function Header(props) {
       <div className="flex flex-col justify-center items-left mt-4 mx-auto">
         <Link href={"/portfolio"}>
           <a
-            className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider"
+            className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider hover:text-purple-800"
             data-testid="header-portfolio-link-sp"
           >
             レポートギャラリー
@@ -37,7 +37,7 @@ function Header(props) {
         </Link>
         <Link href={"https://next-report.jp/"}>
           <a
-            className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider"
+            className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider hover:text-purple-800"
             target="_blank"
             data-testid="header-blog-link-sp"
           >
@@ -46,7 +46,7 @@ function Header(props) {
         </Link>
         <Link href={"/contact"}>
           <a
-            className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider"
+            className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider hover:text-purple-800"
             data-testid="header-contact-link-sp"
           >
             お問い合わせ

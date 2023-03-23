@@ -19,10 +19,10 @@ const Index = () => {
           <br className="lg:hidden" />
           をご提供
         </p>
-        <p className="font-mPlus2c text-base tracking-wide lg:tracking-wider lg:text-center lg:text-xl">
+        <p className="font-mPlus2c font-medium  tracking-wide lg:tracking-wider lg:text-center lg:text-xl">
           アクセス解析・広告・SNSまで幅広いレポートに対応完全無料ですぐはじめられます。
         </p>
-        <p className="font-mPlus2c tracking-wide lg:tracking-wider lg:text-center lg:text-xl">
+        <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider lg:text-center lg:text-xl">
           レポート対応メディアは順次追加予定
         </p>
         <Link href={"/trial"}>
@@ -67,9 +67,9 @@ const Index = () => {
                   height={2}
                   quality={90}
                 />
-                <p className="font-mPlus2c text-base ml-3 tracking-wider font-medium">About</p>
+                <p className="font-mPlus2c font-medium ml-3 tracking-wider">About</p>
               </div>
-              <p className="font-mPlus2c text-base mt-10 tracking-wider font-medium leading-loose">
+              <p className="font-mPlus2c font-medium mt-10 tracking-wider leading-loose">
                 MAGONOTEは、マーケティング担当者のデータ集計やレポート作成に
                 かかる時間を短縮し、改善アクションに時間を使えるように作成された
                 マーケティングレポート自動化サービスです。Looker Studioで描写しており、
@@ -94,7 +94,7 @@ const Index = () => {
             <p className="font-mPlus2c font-bold text-center text-3xl tracking-wide">
               カスタマイズ可能な豊富なテンプレート
             </p>
-            <p className="font-mPlus2c text-base mt-4 tracking-wide">
+            <p className="font-mPlus2c font-medium mt-4 tracking-wide">
               MAGONOTEは、マーケティング担当者のデータ集計やレポート作成に
               かかる時間を短縮し、改善アクションに時間を使えるように作成された
               マーケティングレポート自動化サービスです。Looker Studioで描写しており、
@@ -125,7 +125,7 @@ const Index = () => {
                     quality={90}
                   />
                 </div>
-                <p className="font-mPlus2c pb-10 tracking-wide lg:tracking-wider lg:px-10">
+                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
                   Facebook・Instagram広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
@@ -144,7 +144,7 @@ const Index = () => {
                     quality={90}
                   />
                 </div>
-                <p className="font-mPlus2c pb-10 tracking-wide lg:tracking-wider lg:px-10">
+                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
                   LINE広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
@@ -167,7 +167,7 @@ const Index = () => {
                     quality={90}
                   />
                 </div>
-                <p className="font-mPlus2c pb-10 tracking-wide lg:tracking-wider lg:px-10">
+                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
                   TikTok広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
@@ -186,7 +186,7 @@ const Index = () => {
                     quality={90}
                   />
                 </div>
-                <p className="font-mPlus2c pb-10 tracking-wide lg:tracking-wider lg:px-10">
+                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
                   Google広告/YouTube広告のレポートが作成可能です。 Looker
                   Studioのデフォルト機能を利用してメディアパフォーマンスを自動で取得します。
                 </p>
@@ -217,7 +217,7 @@ const Index = () => {
           <p className="font-mPlus2c font-bold text-center text-3xl tracking-wide lg:tracking-wider lg:text-4xl">
             マーケティング担当者自らがノーコードで使える機能
           </p>
-          <p className="font-mPlus2c text-center mt-4 tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c font-medium text-center mt-4 tracking-wide lg:tracking-wider">
             実務を理解したマーケティング担当者自らがノーコードで使える機能を活用して
             <br />
             スマートにビジネスを成長させましょう。
@@ -231,7 +231,7 @@ const Index = () => {
               <p className="font-mPlus2c text-2xl font-bold mt-4 tracking-wider text-left">
                 すべてのデータを一元化
               </p>
-              <p className="font-mPlus2c mt-2 text-base tracking-wider">
+              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
                 それぞれの管理画面に毎回ログインしてデータをダウンロードしてコピー＆ペーストを繰り返すような面倒な業務はもう卒業。
                 MAGONOTEならAPIを通じて各媒体のデータを毎日自動的に取得するので、日々のデータ更新作業をそのものを無くす事できます。
               </p>
@@ -256,7 +256,7 @@ const Index = () => {
             <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
               すべてのデータを一元化
             </p>
-            <p className="font-mPlus2c mt-2 text-base tracking-wide">
+            <p className="font-mPlus2c font-medium mt-2 text-base tracking-wide">
               それぞれの管理画面に毎回ログインしてデータをダウンロードしてコピー＆ペーストを繰り返すような面倒な業務はもう卒業。
               MAGONOTEならAPIを通じて各媒体のデータを毎日自動的に取得するので、日々のデータ更新作業をそのものを無くす事できます。
             </p>
@@ -281,7 +281,7 @@ const Index = () => {
               <p className="font-mPlus2c text-left text-2xl font-bold mt-4 tracking-wider">
                 手間なくレポート作成
               </p>
-              <p className="font-mPlus2c mt-2 text-base tracking-wider">
+              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
                 レポートやダッシュボードのテンプレートがあらかじめ用意されているので、毎回ゼロから新しいレポートを作る必要はありません。テンプレートを選び、権限を付与してMAGONOTEに依頼するだけで、1営業日で完成したレポートが手元に届きます。
                 そのレポートをベースに必要に応じてカスタマイズしてご利用ください。
               </p>
@@ -306,7 +306,7 @@ const Index = () => {
             <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
               手間なくレポート作成
             </p>
-            <p className="font-mPlus2c mt-2 text-base tracking-wide">
+            <p className="font-mPlus2c font-medium mt-2 text-base tracking-wide">
               レポートやダッシュボードのテンプレートがあらかじめ用意されているので、毎回ゼロから新しいレポートを作る必要はありません。テンプレートを選び、権限を付与してMAGONOTEに依頼するだけで、1営業日で完成したレポートが手元に届きます。
               そのレポートをベースに必要に応じてカスタマイズしてご利用ください。
             </p>
@@ -331,7 +331,7 @@ const Index = () => {
               <p className="font-mPlus2c text-left text-2xl font-bold mt-4 tracking-wider">
                 簡単にレポートを共有
               </p>
-              <p className="font-mPlus2c mt-2 text-base tracking-wider">
+              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
                 レポートやダッシュボードは、社内メンバーやクライアントを招待すれば、招待されたメンバーは常に最新にアップデートされたデータが確認でき、また共同で編集することもできます。
               </p>
             </div>
@@ -355,7 +355,7 @@ const Index = () => {
             <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
               簡単にレポートを共有
             </p>
-            <p className="font-mPlus2c mt-2 text-base tracking-wide">
+            <p className="font-mPlus2c font-medium mt-2 text-base tracking-wide">
               レポートやダッシュボードは、社内メンバーやクライアントを招待すれば、招待されたメンバーは常に最新にアップデートされたデータが確認でき、また共同で編集することもできます。
             </p>
           </div>
@@ -379,7 +379,7 @@ const Index = () => {
               <p className="font-mPlus2c text-left text-2xl font-bold mt-4 tracking-wider">
                 自由自在にカスタマイズ
               </p>
-              <p className="font-mPlus2c mt-2 text-base tracking-wider">
+              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
                 レポートやダッシュボードは一度作成したものを変更なしで利用し続ける方法では浸透しない場合が多く、活用されるものにするためには利用ユーザーの声を随時反映していくことが重要です。MAGONOTEは、LookerStudio（旧Googleデータポータル）やGoogleスプレッドシートなどの既に利用者が多くまたノーコードで使えるサービスを活用することで、誰でも簡単にカスタマイズできるようにしています。
               </p>
             </div>
@@ -403,7 +403,7 @@ const Index = () => {
             <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
               自由自在にカスタマイズ
             </p>
-            <p className="font-mPlus2c mt-2 text-base tracking-wide">
+            <p className="font-mPlus2c font-medium mt-2 text-base tracking-wide">
               レポートやダッシュボードは一度作成したものを変更なしで利用し続ける方法では浸透しない場合が多く、活用されるものにするためには利用ユーザーの声を随時反映していくことが重要です。MAGONOTEは、LookerStudio（旧Googleデータポータル）やGoogleスプレッドシートなどの既に利用者が多くまたノーコードで使えるサービスを活用することで、誰でも簡単にカスタマイズできるようにしています。
             </p>
           </div>

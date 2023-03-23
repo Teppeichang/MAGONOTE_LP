@@ -45,10 +45,10 @@ const Portfolio = () => {
           <p className="font-mPlus2c text-2xl font-bold mb-1 tracking-wide lg:tracking-wider lg:mb-2 lg:text-5xl lg:text-center">
             レポートテンプレート
           </p>
-          <p className="font-mPlus2c tracking-wide lg:tracking-wider lg:text-center">
+          <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider lg:text-center">
             アナリティクス、SEO、ウェブ広告、ソーシャルメディアなどのレポートテンプレートを豊富にご用意しています。
           </p>
-          <p className="font-mPlus2c tracking-wide lg:tracking-wider lg:text-center">
+          <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider lg:text-center">
             テンプレートをそのまま利用することも、カスタマイズして利用することも両方可能です。
           </p>
         </div>
