@@ -69,7 +69,7 @@ const Index = () => {
                   height={2}
                   quality={90}
                 />
-                <p className="font-mPlus2c font-medium ml-3 tracking-wider">About</p>
+                <p className="font-mPlus2c font-bold ml-3 tracking-wider">About</p>
               </div>
               <p className="font-mPlus2c font-medium mt-10 tracking-wider leading-loose">
                 MAGONOTEは、マーケティング担当者のデータ集計やレポート作成に
