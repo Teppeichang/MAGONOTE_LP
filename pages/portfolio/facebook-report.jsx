@@ -4,7 +4,7 @@ import Layout from "../../components/layout";
 import BreadCrumb from "../../components/breadCrumb";
 import Image from "next/image";
 import Link from "next/link";
-import { BreadcrumbJsonLd, ProductJsonLd } from "next-seo";
+import { NextSeo, BreadcrumbJsonLd, ProductJsonLd } from "next-seo";
 
 const FacebookReport = () => {
   const lists = [
@@ -14,24 +14,37 @@ const FacebookReport = () => {
   ];
   return (
     <Layout>
+      <NextSeo
+        title="MAGONOTE Facebook広告レポート"
+        description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 Facebook広告レポート概要"
+        canonical="https://magonote.shop/portfolio/facebook-report"
+        openGraph={{
+          type: "website",
+          title: "MAGONOTE Facebook広告レポート概要",
+          description:
+            "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 Facebook広告レポート概要",
+          siteName: "MAGONOTE",
+          url: "https://magonote.shop/portfolio/facebook-report",
+        }}
+      />
       <BreadcrumbJsonLd
-      itemListElements={[
-        {
-          position: 1,
-          name: "トップページ",
-          item: "https://magonote.shop"
-        },
-        {
-          position: 2,
-          name: "レポートギャラリー",
-          item: "https://magonote.shop/portfolio"
-        },
-        {
-          position: 3,
-          name: "Facebook広告レポート",
-          item: "https://magonote.shop/portfolio/facebook-report"
-        }
-      ]}
+        itemListElements={[
+          {
+            position: 1,
+            name: "トップページ",
+            item: "https://magonote.shop",
+          },
+          {
+            position: 2,
+            name: "レポートギャラリー",
+            item: "https://magonote.shop/portfolio",
+          },
+          {
+            position: 3,
+            name: "Facebook広告レポート",
+            item: "https://magonote.shop/portfolio/facebook-report",
+          },
+        ]}
       />
       <ProductJsonLd
         productName="Facebook広告レポート"

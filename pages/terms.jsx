@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import BreadCrumb from "../components/breadCrumb";
-import { BreadcrumbJsonLd } from "next-seo";
+import { NextSeo, BreadcrumbJsonLd } from "next-seo";
 
 const Terms = () => {
   const lists = [
@@ -9,6 +9,19 @@ const Terms = () => {
   ];
   return (
     <Layout>
+      <NextSeo
+        title="MAGONOTE 利用規約"
+        description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 の利用規約"
+        canonical="https://magonote.shop/terms"
+        openGraph={{
+          type: "website",
+          title: "MAGONOTE 利用規約",
+          description:
+            "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 の利用規約",
+          siteName: "MAGONOTE",
+          url: "https://magonote.shop/terms",
+        }}
+      />
       <BreadcrumbJsonLd
         itemListElements={[
           {

@@ -4,7 +4,7 @@ import Layout from "../../components/layout";
 import BreadCrumb from "../../components/breadCrumb";
 import Image from "next/image";
 import Link from "next/link";
-import { BreadcrumbJsonLd, ProductJsonLd } from "next-seo";
+import { NextSeo, BreadcrumbJsonLd, ProductJsonLd } from "next-seo";
 
 const TikTokReport = () => {
   const lists = [
@@ -14,6 +14,19 @@ const TikTokReport = () => {
   ];
   return (
     <Layout>
+      <NextSeo
+        title="MAGONOTE TikTok広告レポート"
+        description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 TikTok広告レポート概要"
+        canonical="https://magonote.shop/portfolio/tiktok-report"
+        openGraph={{
+          type: "website",
+          title: "MAGONOTE TikTok広告レポート概要",
+          description:
+            "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 TikTok広告レポート概要",
+          siteName: "MAGONOTE",
+          url: "https://magonote.shop/portfolio/tiktok-report",
+        }}
+      />
       <BreadcrumbJsonLd
         itemListElements={[
           {

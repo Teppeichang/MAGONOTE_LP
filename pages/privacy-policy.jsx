@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import BreadCrumb from "../components/breadCrumb";
-import { BreadcrumbJsonLd } from "next-seo";
+import { NextSeo, BreadcrumbJsonLd } from "next-seo";
 
 const PrivacyPolicy = () => {
   const lists = [
@@ -9,6 +9,19 @@ const PrivacyPolicy = () => {
   ];
   return (
     <Layout>
+      <NextSeo
+        title="MAGONOTE プライバシーポリシー"
+        description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 プライバシーポリシー"
+        canonical="https://magonote.shop/privacy-policy"
+        openGraph={{
+          type: "website",
+          title: "MAGONOTE プライバシーポリシー",
+          description:
+            "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 プライバシーポリシー",
+          siteName: "MAGONOTE",
+          url: "https://magonote.shop/privacy-policy",
+        }}
+      />
       <BreadcrumbJsonLd
         itemListElements={[
           {

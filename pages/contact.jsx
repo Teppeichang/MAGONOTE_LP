@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import BreadCrumb from "../components/breadCrumb";
-import { BreadcrumbJsonLd } from "next-seo";
+import { NextSeo, BreadcrumbJsonLd } from "next-seo";
 
 const Contact = () => {
   const lists = [
@@ -10,6 +10,19 @@ const Contact = () => {
 
   return (
     <Layout>
+      <NextSeo
+        title="MAGONOTE お問い合わせフォーム"
+        description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 に関するお問い合わせフォーム"
+        canonical="https://magonote.shop/contact"
+        openGraph={{
+          type: "website",
+          title: "MAGONOTE お問い合わせフォーム",
+          description:
+            "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 に関するお問い合わせフォーム",
+          siteName: "MAGONOTE",
+          url: "https://magonote.shop/portfolio/contact",
+        }}
+      />
       <BreadcrumbJsonLd
         itemListElements={[
           {
