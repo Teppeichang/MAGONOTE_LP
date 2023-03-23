@@ -55,7 +55,7 @@ const Index = () => {
             />
           </Reveal>
           <Reveal animation={Animation.SlideInRight}>
-            <div className="flex flex-col max-w-lg mt-0 ml-10">
+            <div className="flex flex-col max-w-lg my-12 ml-10">
               <p className="font-mPlus2c font-bold text-left text-4xl tracking-wider">
                 カスタマイズ可能な豊富な
                 <br />
