@@ -20,7 +20,8 @@ const Portfolio = () => {
         openGraph={{
           type: "website",
           title: "MAGONOTE レポートギャラリー",
-          description: "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 レポートギャラリー",
+          description:
+            "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 レポートギャラリー",
           siteName: "MAGONOTE",
           url: "https://magonote.shop/portfolio",
         }}
@@ -95,6 +96,8 @@ const Portfolio = () => {
                 </Link>
               </div>
             </Reveal>
+          </div>
+          <div className="flex flex-col justify-center items-center lg:flex lg:flex-row lg:flex-wrap">
             <Reveal animation={Animation.FadeInUp}>
               <div className="flex flex-col max-w-lg mt-4 lg:m-5">
                 <Link href={"/portfolio/tiktok-report"}>
