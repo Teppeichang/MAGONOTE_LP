@@ -246,7 +246,7 @@ const Index = () => {
         <div className="flex flex-row justify-center bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInLeft}>
             <div className="max-w-lg px-20 py-20">
-              <p className="font-mPlus2c text-2xl font-bold mt-4 tracking-wider text-left">
+              <p className="font-mPlus2c text-2xl font-bold tracking-wider text-left">
                 すべてのデータを一元化
               </p>
               <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
@@ -256,12 +256,12 @@ const Index = () => {
             </div>
           </Reveal>
           <Reveal animation={Animation.FadeInRight}>
-            <div className="px-20 py-10">
+            <div className="px-10 pt-10">
               <Image
-                src="/images/top_about.png"
-                alt="レポートのイメージ画像"
-                width={480}
-                height={360}
+                src="/images/top_illust_1.png"
+                alt="すべてのデータを一元化"
+                width={450}
+                height={300}
                 quality={90}
               />
             </div>
@@ -281,12 +281,12 @@ const Index = () => {
           </div>
         </Reveal>
         <Reveal animation={Animation.FadeInUp}>
-          <div className="mx-6 lg:px-20 lg:py-10">
+          <div className="mx-6">
             <Image
-              src="/images/top_about.png"
-              alt="レポートのイメージ画像"
-              width={480}
-              height={360}
+              src="/images/top_illust_sp_1.png"
+              alt="すべてのデータを一元化"
+              width={450}
+              height={300}
               quality={90}
             />
           </div>
@@ -295,8 +295,8 @@ const Index = () => {
       {isDesktopOrLaptop && (
         <div className="flex justify-center flex-row-reverse bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInRight}>
-            <div className="max-w-lg px-20 py-20">
-              <p className="font-mPlus2c text-left text-2xl font-bold mt-4 tracking-wider">
+            <div className="max-w-lg px-20 py-10">
+              <p className="font-mPlus2c text-left text-2xl font-bold tracking-wider">
                 手間なくレポート作成
               </p>
               <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
@@ -306,12 +306,12 @@ const Index = () => {
             </div>
           </Reveal>
           <Reveal animation={Animation.FadeInLeft}>
-            <div className="px-20">
+            <div className="px-10">
               <Image
-                src="/images/top_about.png"
-                alt="レポートのイメージ画像"
-                width={480}
-                height={360}
+                src="/images/top_illust_2.png"
+                alt="手間なくレポート作成"
+                width={450}
+                height={300}
                 quality={90}
               />
             </div>
@@ -331,12 +331,12 @@ const Index = () => {
           </div>
         </Reveal>
         <Reveal animation={Animation.FadeInUp}>
-          <div className="mx-6 lg:px-20">
+          <div className="mx-6">
             <Image
-              src="/images/top_about.png"
-              alt="レポートのイメージ画像"
-              width={480}
-              height={360}
+              src="/images/top_illust_sp_2.png"
+              alt="手間なくレポート作成"
+              width={450}
+              height={300}
               quality={90}
             />
           </div>
@@ -345,8 +345,8 @@ const Index = () => {
       {isDesktopOrLaptop && (
         <div className="flex flex-row justify-center bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInLeft}>
-            <div className="max-w-lg px-20 py-20">
-              <p className="font-mPlus2c text-left text-2xl font-bold mt-4 tracking-wider">
+            <div className="max-w-lg px-20 py-10">
+              <p className="font-mPlus2c text-left text-2xl font-bold tracking-wider">
                 簡単にレポートを共有
               </p>
               <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
@@ -355,12 +355,12 @@ const Index = () => {
             </div>
           </Reveal>
           <Reveal animation={Animation.FadeInRight}>
-            <div className="px-20">
+            <div className="px-10">
               <Image
-                src="/images/top_about.png"
-                alt="レポートのイメージ画像"
-                width={480}
-                height={360}
+                src="/images/top_illust_3.png"
+                alt="簡単にレポートを共有"
+                width={450}
+                height={300}
                 quality={90}
               />
             </div>
@@ -381,10 +381,10 @@ const Index = () => {
         <Reveal animation={Animation.FadeInUp}>
           <div className="mx-6">
             <Image
-              src="/images/top_about.png"
-              alt="レポートのイメージ画像"
-              width={480}
-              height={360}
+              src="/images/top_illust_sp_3.png"
+              alt="簡単にレポートを共有"
+              width={450}
+              height={300}
               quality={90}
             />
           </div>
@@ -393,8 +393,8 @@ const Index = () => {
       {isDesktopOrLaptop && (
         <div className="flex justify-center flex-row-reverse bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInRight}>
-            <div className="max-w-lg px-20 py-20">
-              <p className="font-mPlus2c text-left text-2xl font-bold mt-4 tracking-wider">
+            <div className="max-w-lg px-20 py-10">
+              <p className="font-mPlus2c text-left text-2xl font-bold tracking-wider">
                 自由自在にカスタマイズ
               </p>
               <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
@@ -403,12 +403,12 @@ const Index = () => {
             </div>
           </Reveal>
           <Reveal animation={Animation.FadeInLeft}>
-            <div className="px-20">
+            <div className="px-10">
               <Image
-                src="/images/top_about.png"
-                alt="レポートのイメージ画像"
-                width={480}
-                height={360}
+                src="/images/top_illust_4.png"
+                alt="自由自在にカスタマイズ"
+                width={450}
+                height={300}
                 quality={90}
               />
             </div>
@@ -429,10 +429,10 @@ const Index = () => {
         <Reveal animation={Animation.FadeInUp}>
           <div className="mx-6">
             <Image
-              src="/images/top_about.png"
-              alt="レポートのイメージ画像"
-              width={480}
-              height={360}
+              src="/images/top_illust_sp_4.png"
+              alt="自由自在にカスタマイズ"
+              width={450}
+              height={300}
               quality={90}
             />
           </div>
