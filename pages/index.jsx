@@ -115,7 +115,7 @@ const Index = () => {
           <Reveal animation={Animation.FadeInUp}>
             <div className="flex flex-col lg:flex lg:flex-row">
               <div className="max-w-lg">
-                <p className="font-mPlus2c text-xl font-bold mb-4 tracking-wide lg:tracking-wider lg:px-10">
+                <p className="font-mPlus2c text-xl font-bold mb-4 tracking-wide lg:tracking-wider lg:px-5">
                   Facebook広告レポート
                 </p>
                 <div className="lg:px-5">
@@ -125,20 +125,20 @@ const Index = () => {
                         src="/images/top_facebook.png"
                         alt="Facebook広告レポートイメージ画像"
                         width={540}
-                        height={560}
+                        height={540}
                         quality={90}
                       />
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
+                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-5">
                   Facebook・Instagram広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
                 </p>
               </div>
               <div className="max-w-lg">
-                <p className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-10">
+                <p className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
                   LINE広告レポート
                 </p>
                 <div className="lg:px-5">
@@ -148,13 +148,13 @@ const Index = () => {
                         src="/images/top_line.png"
                         alt="LINE広告レポートイメージ画像"
                         width={540}
-                        height={560}
+                        height={540}
                         quality={90}
                       />
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
+                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-5">
                   LINE広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
@@ -165,7 +165,7 @@ const Index = () => {
           <Reveal animation={Animation.FadeInUp}>
             <div className="flex flex-col lg:flex-row">
               <div className="max-w-lg">
-                <p className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-10">
+                <p className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
                   TikTok広告レポート
                 </p>
                 <div className="lg:px-5">
@@ -175,20 +175,20 @@ const Index = () => {
                         src="/images/top_tiktok.png"
                         alt="TikTok広告レポートイメージ画像"
                         width={540}
-                        height={560}
+                        height={540}
                         quality={90}
                       />
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
+                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-5">
                   TikTok広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
                 </p>
               </div>
               <div className="max-w-lg">
-                <h2 className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-10">
+                <h2 className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
                   Google & YouTube広告レポート
                 </h2>
                 <div className="lg:px-5">
@@ -198,13 +198,13 @@ const Index = () => {
                         src="/images/top_google_and_youtube.png"
                         alt="Google & YouTube広告レポートイメージ画像"
                         width={540}
-                        height={560}
+                        height={540}
                         quality={90}
                       />
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-10">
+                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-5">
                   Google広告/YouTube広告のレポートが作成可能です。 Looker
                   Studioのデフォルト機能を利用してメディアパフォーマンスを自動で取得します。
                 </p>
