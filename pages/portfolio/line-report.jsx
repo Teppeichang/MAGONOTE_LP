@@ -52,7 +52,7 @@ const LineReport = () => {
         description="LINE広告のレポートが作成可能です。 独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。 APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。"
       />
       <BreadCrumb lists={lists} />
-      <Reveal animation={Animation.FadeInUp}>
+      <Reveal animation={Animation.FadeInUp} delay={300}>
         <div className="flex flex-col justify-center mx-6 mt-20 lg:flex lg:flex-row lg:justify-center lg:mx-10">
           <div className="flex flex-col max-w-xl lg:mr-7">
             <p className="font-mPlus2c font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">
@@ -84,7 +84,7 @@ const LineReport = () => {
           </div>
         </div>
       </Reveal>
-      <Reveal animation={Animation.FadeInUp}>
+      <Reveal animation={Animation.FadeInUp} delay={300}>
         <div className="flex flex-col justify-center mx-6 lg:flex lg:flex-row lg:justify-center lg:mx-10">
           <div className="flex flex-col max-w-xl lg:mr-10">
             <p className="font-mPlus2c font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">
@@ -121,7 +121,7 @@ const LineReport = () => {
           </div>
         </div>
       </Reveal>
-      <Reveal animation={Animation.FadeInUp}>
+      <Reveal animation={Animation.FadeInUp} delay={300}>
         <div className="flex flex-col justify-center mx-6 mb-20 lg:flex lg:flex-row lg:justify-center lg:mx-10">
           <div className="flex flex-col max-w-xl lg:mr-7">
             <p className="font-mPlus2c font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">
