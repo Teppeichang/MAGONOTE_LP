@@ -37,7 +37,7 @@ const PrivacyPolicy = () => {
         ]}
       />
       <BreadCrumb lists={lists} />
-      <div className="min-h-screen px-10 lg:px-20">
+      <div className="min-h-screen mx-10 lg:mx-20">
         <div className="my-10">
           <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
             プライバシーポリシー
