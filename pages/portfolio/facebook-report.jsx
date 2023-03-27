@@ -65,10 +65,12 @@ const FacebookReport = () => {
               <li>広告クリエイティブレポート付き</li>
               <li>広告代理店向けの手数料設定</li>
             </ul>
-            <Link href={"/trial"}>
-              <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white w-64 h-12 mt-4 font-bold rounded-full tracking-wide transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-90 transition-transform lg:tracking-wider">
-                デモレポートを見る
-              </button>
+            <Link href={"https://lookerstudio.google.com/u/0/reporting/a5ee2631-8453-4084-a126-e9ff949e8fae/page/7x5DD"}>
+              <a target="_blank">
+                <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white w-64 h-12 mt-4 font-bold rounded-full tracking-wide transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-90 transition-transform lg:tracking-wider">
+                  デモレポートを見る
+                </button>
+              </a>
             </Link>
           </div>
           <div className="mt-5 lg:ml-7">
