@@ -42,7 +42,7 @@ const Index = () => {
           />
         </div>
       </div>
-      <div className="bg-purple-800 w-screen h-44 lg:h-80"></div>
+      <div className="bg-purple-800 h-44 lg:h-80"></div>
       {isDesktopOrLaptop && (
         <div className="flex flex-row justify-center bg-slate-50 pt-20">
           <Reveal animation={Animation.SlideInLeft} delay={300}>
@@ -219,7 +219,7 @@ const Index = () => {
         </Link>
       </div>
       <Reveal animation={Animation.FadeIn} delay={300}>
-        <div className="flex flex-col items-center bg-gradient-to-r from-purple-800 to-purple-600 lg:w-screen">
+        <div className="flex flex-col items-center bg-gradient-to-r from-purple-800 to-purple-600">
           <p className="font-mPlus2c font-bold text-center text-2xl text-white mt-14 mx-4 tracking-wide lg:tracking-wider lg:mt-20 lg:mx-0">
             今すぐ無料でレポートを自動化し、改善アクションに時間を使おう
           </p>
