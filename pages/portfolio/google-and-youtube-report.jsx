@@ -54,7 +54,7 @@ const GoogleAndYouTubeReport = () => {
         description="Google広告/YouTube広告のレポートが作成可能です。 Looker Studioのデフォルト機能を利用してメディアパフォーマンスを自動で取得します。"
       />
       <BreadCrumb lists={lists} />
-      <Reveal animation={Animation.FadeInUp} delay={300}>
+      <Reveal animation={Animation.FadeInUp} delay={500}>
         <div className="flex flex-col justify-center mx-6 mt-20 lg:flex lg:flex-row lg:justify-center lg:mx-10">
           <div className="flex flex-col max-w-xl lg:mr-7">
             <p className="font-mPlus2c font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">
@@ -88,7 +88,7 @@ const GoogleAndYouTubeReport = () => {
           </div>
         </div>
       </Reveal>
-      <Reveal animation={Animation.FadeInUp} delay={300}>
+      <Reveal animation={Animation.FadeInUp} delay={500}>
         <div className="flex flex-col justify-center mx-6 lg:flex lg:flex-row lg:justify-center lg:mx-10">
           <div className="flex flex-col max-w-xl lg:mr-14">
             <p className="font-mPlus2c font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">
@@ -125,7 +125,7 @@ const GoogleAndYouTubeReport = () => {
           </div>
         </div>
       </Reveal>
-      <Reveal animation={Animation.FadeInUp} delay={300}>
+      <Reveal animation={Animation.FadeInUp} delay={500}>
         <div className="flex flex-col justify-center mx-6 mb-20 lg:flex lg:flex-row lg:justify-center lg:mx-10">
           <div className="flex flex-col max-w-xl lg:mr-7">
             <p className="font-mPlus2c font-bold text-xl py-5 tracking-wide lg:tracking-wider lg:text-2xl">

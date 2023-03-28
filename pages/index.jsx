@@ -11,7 +11,7 @@ const Index = () => {
   });
   return (
     <Layout>
-      <div className="animate__animated animate__fadeIn animate__delay-1s flex flex-col justify-center items-start bg-slate-50 py-40 mx-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-0 lg:mx-0 lg:mt-52 lg:mb-72">
+      <div className="animate__animated animate__fadeIn animate__delay-500ms flex flex-col justify-center items-start bg-slate-50 py-40 mx-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-0 lg:mx-0 lg:mt-52 lg:mb-72">
         <p className="font-mPlus2c font-bold text-3xl pb-4 tracking-wide lg:tracking-wider lg:text-5xl lg:text-center lg:pb-2">
           完全無料で
           <br className="lg:hidden" />
@@ -32,7 +32,7 @@ const Index = () => {
         </Link>
       </div>
       <div className="flex justify-center items-center">
-        <div className="animate__animated animate__fadeInUp animate__delay-1s absolute mx-6">
+        <div className="animate__animated animate__fadeInUp animate__delay-500ms absolute mx-6">
           <Image
             src="/images/top_first.png"
             alt="レポートのイメージ画像"
@@ -45,7 +45,7 @@ const Index = () => {
       <div className="bg-purple-800 h-44 lg:h-80"></div>
       {isDesktopOrLaptop && (
         <div className="flex flex-row justify-center bg-slate-50 pt-20">
-          <Reveal animation={Animation.SlideInLeft} delay={300}>
+          <Reveal animation={Animation.SlideInLeft} delay={500}>
             <Image
               src="/images/top_about.png"
               alt="レポートのイメージ画像"
@@ -54,7 +54,7 @@ const Index = () => {
               quality={90}
             />
           </Reveal>
-          <Reveal animation={Animation.SlideInRight} delay={300}>
+          <Reveal animation={Animation.SlideInRight} delay={500}>
             <div className="flex flex-col max-w-lg my-12 ml-10">
               <p className="font-mPlus2c font-bold text-left text-4xl tracking-wider">
                 カスタマイズ可能な豊富な
@@ -82,7 +82,7 @@ const Index = () => {
         </div>
       )}
       <div className="flex flex-col justify-center items-center bg-slate-50 pt-24 mx-6 lg:hidden">
-        <Reveal animation={Animation.FadeInUp} delay={300}>
+        <Reveal animation={Animation.FadeInUp} delay={400}>
           <Image
             src="/images/top_about.png"
             alt="レポートのイメージ画像"
@@ -91,7 +91,7 @@ const Index = () => {
             quality={90}
           />
         </Reveal>
-        <Reveal animation={Animation.FadeInUp} delay={300}>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
           <div className="flex flex-col max-w-lg mt-8">
             <p className="font-mPlus2c font-bold text-center text-3xl tracking-wide">
               カスタマイズ可能な豊富なテンプレート
@@ -106,13 +106,13 @@ const Index = () => {
         </Reveal>
       </div>
       <div className="flex flex-col justify-center items-center bg-slate-50 mt-28 mx-6 py-10 lg:mt-20 lg:py-20 lg:mx-0">
-        <Reveal animation={Animation.FadeIn} delay={300}>
+        <Reveal animation={Animation.FadeIn} delay={500}>
           <p className="font-mPlus2c font-bold text-center text-3xl tracking-wide lg:tracking-wider lg:text-4xl">
             利用できるレポートのテンプレート
           </p>
         </Reveal>
         <div className="py-10">
-          <Reveal animation={Animation.FadeInUp} delay={300}>
+          <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="flex flex-col lg:flex lg:flex-row">
               <div className="max-w-lg">
                 <p className="font-mPlus2c text-xl font-bold mb-4 tracking-wide lg:tracking-wider lg:px-5">
@@ -162,7 +162,7 @@ const Index = () => {
               </div>
             </div>
           </Reveal>
-          <Reveal animation={Animation.FadeInUp} delay={300}>
+          <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="flex flex-col lg:flex-row">
               <div className="max-w-lg">
                 <p className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
@@ -218,7 +218,7 @@ const Index = () => {
           </button>
         </Link>
       </div>
-      <Reveal animation={Animation.FadeIn} delay={300}>
+      <Reveal animation={Animation.FadeIn} delay={500}>
         <div className="flex flex-col items-center bg-gradient-to-r from-purple-800 to-purple-600">
           <p className="font-mPlus2c font-bold text-center text-2xl text-white mt-14 mx-4 tracking-wide lg:tracking-wider lg:mt-20 lg:mx-0">
             今すぐ無料でレポートを自動化し、改善アクションに時間を使おう
@@ -230,7 +230,7 @@ const Index = () => {
           </Link>
         </div>
       </Reveal>
-      <Reveal animation={Animation.FadeIn} delay={300}>
+      <Reveal animation={Animation.FadeIn} delay={500}>
         <div className="flex flex-col justify-center items-center bg-slate-50 mt-20 mx-6 lg:px-20 lg:mx-0">
           <p className="font-mPlus2c font-bold text-center text-3xl tracking-wide lg:tracking-wider lg:text-4xl">
             マーケティング担当者自らがノーコードで使える機能
@@ -244,7 +244,7 @@ const Index = () => {
       </Reveal>
       {isDesktopOrLaptop && (
         <div className="flex flex-row justify-center bg-slate-50 mt-4">
-          <Reveal animation={Animation.FadeInLeft} delay={300}>
+          <Reveal animation={Animation.FadeInLeft} delay={500}>
             <div className="max-w-lg px-5 py-20">
               <p className="font-mPlus2c text-2xl font-bold tracking-wider text-left">
                 すべてのデータを一元化
@@ -255,7 +255,7 @@ const Index = () => {
               </p>
             </div>
           </Reveal>
-          <Reveal animation={Animation.FadeInRight} delay={300}>
+          <Reveal animation={Animation.FadeInRight} delay={500}>
             <div className="px-5 pt-10">
               <Image
                 src="/images/top_illust_1.png"
@@ -269,7 +269,7 @@ const Index = () => {
         </div>
       )}
       <div className="flex flex-col-reverse bg-slate-50 mt-4 lg:hidden">
-        <Reveal animation={Animation.FadeInUp} delay={300}>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
           <div className="max-w-lg mx-6">
             <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
               すべてのデータを一元化
@@ -280,7 +280,7 @@ const Index = () => {
             </p>
           </div>
         </Reveal>
-        <Reveal animation={Animation.FadeInUp} delay={300}>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
           <div className="mx-6">
             <Image
               src="/images/top_illust_sp_1.png"
@@ -294,7 +294,7 @@ const Index = () => {
       </div>
       {isDesktopOrLaptop && (
         <div className="flex justify-center flex-row-reverse bg-slate-50 mt-4">
-          <Reveal animation={Animation.FadeInRight} delay={300}>
+          <Reveal animation={Animation.FadeInRight} delay={500}>
             <div className="max-w-lg px-5 py-10">
               <p className="font-mPlus2c text-left text-2xl font-bold tracking-wider">
                 手間なくレポート作成
@@ -305,7 +305,7 @@ const Index = () => {
               </p>
             </div>
           </Reveal>
-          <Reveal animation={Animation.FadeInLeft} delay={300}>
+          <Reveal animation={Animation.FadeInLeft} delay={500}>
             <div className="px-5">
               <Image
                 src="/images/top_illust_2.png"
@@ -319,7 +319,7 @@ const Index = () => {
         </div>
       )}
       <div className="flex flex-col-reverse bg-slate-50 mt-4 lg:hidden">
-        <Reveal animation={Animation.FadeInUp} delay={300}>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
           <div className="max-w-lg mx-6">
             <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
               手間なくレポート作成
@@ -330,7 +330,7 @@ const Index = () => {
             </p>
           </div>
         </Reveal>
-        <Reveal animation={Animation.FadeInUp} delay={300}>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
           <div className="mx-6">
             <Image
               src="/images/top_illust_sp_2.png"
@@ -344,7 +344,7 @@ const Index = () => {
       </div>
       {isDesktopOrLaptop && (
         <div className="flex flex-row justify-center bg-slate-50 mt-4">
-          <Reveal animation={Animation.FadeInLeft} delay={300}>
+          <Reveal animation={Animation.FadeInLeft} delay={500}>
             <div className="max-w-lg px-5 py-10">
               <p className="font-mPlus2c text-left text-2xl font-bold tracking-wider">
                 簡単にレポートを共有
@@ -354,7 +354,7 @@ const Index = () => {
               </p>
             </div>
           </Reveal>
-          <Reveal animation={Animation.FadeInRight} delay={300}>
+          <Reveal animation={Animation.FadeInRight} delay={500}>
             <div className="px-5">
               <Image
                 src="/images/top_illust_3.png"
@@ -368,7 +368,7 @@ const Index = () => {
         </div>
       )}
       <div className="flex flex-col-reverse bg-slate-50 mt-4 lg:hidden">
-        <Reveal animation={Animation.FadeInUp} delay={300}>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
           <div className="max-w-lg mx-6">
             <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
               簡単にレポートを共有
@@ -378,7 +378,7 @@ const Index = () => {
             </p>
           </div>
         </Reveal>
-        <Reveal animation={Animation.FadeInUp} delay={300}>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
           <div className="mx-6">
             <Image
               src="/images/top_illust_sp_3.png"
@@ -392,7 +392,7 @@ const Index = () => {
       </div>
       {isDesktopOrLaptop && (
         <div className="flex justify-center flex-row-reverse bg-slate-50 mt-4">
-          <Reveal animation={Animation.FadeInRight} delay={300}>
+          <Reveal animation={Animation.FadeInRight} delay={500}>
             <div className="max-w-lg px-5 py-10">
               <p className="font-mPlus2c text-left text-2xl font-bold tracking-wider">
                 自由自在にカスタマイズ
@@ -402,7 +402,7 @@ const Index = () => {
               </p>
             </div>
           </Reveal>
-          <Reveal animation={Animation.FadeInLeft} delay={300}>
+          <Reveal animation={Animation.FadeInLeft} delay={500}>
             <div className="px-5">
               <Image
                 src="/images/top_illust_4.png"
@@ -416,7 +416,7 @@ const Index = () => {
         </div>
       )}
       <div className="flex flex-col-reverse bg-slate-50 mt-4 lg:hidden">
-        <Reveal animation={Animation.FadeInUp} delay={300}>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
           <div className="max-w-lg mx-6">
             <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
               自由自在にカスタマイズ
@@ -426,7 +426,7 @@ const Index = () => {
             </p>
           </div>
         </Reveal>
-        <Reveal animation={Animation.FadeInUp} delay={300}>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
           <div className="mx-6">
             <Image
               src="/images/top_illust_sp_4.png"
