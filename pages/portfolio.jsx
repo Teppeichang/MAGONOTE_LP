@@ -42,7 +42,7 @@ const Portfolio = () => {
       />
       <BreadCrumb lists={lists} />
       <div className="min-h-screen">
-        <div className="animate__animated animate__fadeIn mt-10 mx-6 lg:mx-0">
+        <div className="animate__animated animate__fadeIn animate__delay-500ms mt-10 mx-6 lg:mx-0">
           <p className="font-mPlus2c text-2xl font-bold mb-1 tracking-wide lg:tracking-wider lg:mb-2 lg:text-5xl lg:text-center">
             レポートテンプレート
           </p>
@@ -55,7 +55,7 @@ const Portfolio = () => {
         </div>
         <div className="my-10 mx-6 lg:mx-10">
           <div className="flex flex-col justify-center items-center lg:flex lg:flex-row lg:flex-wrap">
-            <Reveal animation={Animation.FadeInUp} delay={300}>
+            <Reveal animation={Animation.FadeInUp} delay={500}>
               <div className="flex flex-col max-w-lg lg:m-5">
                 <Link href={"/portfolio/facebook-report"}>
                   <a className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
@@ -75,7 +75,7 @@ const Portfolio = () => {
                 </Link>
               </div>
             </Reveal>
-            <Reveal animation={Animation.FadeInUp} delay={300}>
+            <Reveal animation={Animation.FadeInUp} delay={500}>
               <div className="flex flex-col max-w-lg mt-4 lg:m-5">
                 <Link href={"/portfolio/line-report"}>
                   <a className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
@@ -98,7 +98,7 @@ const Portfolio = () => {
             </Reveal>
           </div>
           <div className="flex flex-col justify-center items-center lg:flex lg:flex-row lg:flex-wrap">
-            <Reveal animation={Animation.FadeInUp} delay={300}>
+            <Reveal animation={Animation.FadeInUp} delay={500}>
               <div className="flex flex-col max-w-lg mt-4 lg:m-5">
                 <Link href={"/portfolio/tiktok-report"}>
                   <a className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
@@ -119,7 +119,7 @@ const Portfolio = () => {
                 </Link>
               </div>
             </Reveal>
-            <Reveal animation={Animation.FadeInUp} delay={300}>
+            <Reveal animation={Animation.FadeInUp} delay={500}>
               <div className="flex flex-col max-w-lg mt-4 lg:m-5">
                 <Link href={"/portfolio/google-and-youtube-report"}>
                   <a className="font-mPlus2c font-bold text-xl mb-4 tracking-wide lg:tracking-wider">
