@@ -11,7 +11,7 @@ const Index = () => {
   });
   return (
     <Layout>
-      <div className="animate__animated animate__fadeIn animate__delay-1s flex flex-col justify-center items-start bg-slate-50 py-40 mx-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-0 lg:mx-0 lg:mt-64 lg:mb-72">
+      <div className="animate__animated animate__fadeIn animate__delay-1s flex flex-col justify-center items-start bg-slate-50 py-40 mx-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-0 lg:mx-0 lg:mt-52 lg:mb-72">
         <p className="font-mPlus2c font-bold text-3xl pb-4 tracking-wide lg:tracking-wider lg:text-5xl lg:text-center lg:pb-2">
           完全無料で
           <br className="lg:hidden" />
