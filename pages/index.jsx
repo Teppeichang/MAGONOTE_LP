@@ -11,7 +11,7 @@ const Index = () => {
   });
   return (
     <Layout>
-      <div className="animate__animated animate__fadeIn animate__delay-1s flex flex-col justify-center items-start bg-slate-50 py-40 mx-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-0 lg:mx-0 lg:mt-64 lg:mb-72">
+      <div className="animate__animated animate__fadeIn animate__delay-1s flex flex-col justify-center items-start bg-slate-50 py-40 mx-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-0 lg:mx-0 lg:mt-52 lg:mb-72">
         <p className="font-mPlus2c font-bold text-3xl pb-4 tracking-wide lg:tracking-wider lg:text-5xl lg:text-center lg:pb-2">
           完全無料で
           <br className="lg:hidden" />
@@ -26,7 +26,7 @@ const Index = () => {
           レポート対応メディアは順次追加予定
         </p>
         <Link href={"/trial"}>
-          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-90 transition-transform font-bold py-2 px-4 rounded-full mt-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16">
+          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-90 transition-transform font-bold py-2 px-4 rounded-full mt-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16 lg:mt-7">
             今すぐ無料で始める
           </button>
         </Link>
@@ -42,7 +42,7 @@ const Index = () => {
           />
         </div>
       </div>
-      <div className="bg-purple-800 w-screen h-44 lg:h-80"></div>
+      <div className="bg-purple-800 h-44 lg:h-80"></div>
       {isDesktopOrLaptop && (
         <div className="flex flex-row justify-center bg-slate-50 pt-20">
           <Reveal animation={Animation.SlideInLeft} delay={300}>
@@ -71,7 +71,7 @@ const Index = () => {
                 />
                 <p className="font-mPlus2c font-bold ml-3 tracking-wider">About</p>
               </div>
-              <p className="font-mPlus2c font-medium mt-10 tracking-wider leading-loose">
+              <p className="font-mPlus2c font-medium mt-6 tracking-wider leading-loose">
                 MAGONOTEは、マーケティング担当者のデータ集計やレポート作成に
                 かかる時間を短縮し、改善アクションに時間を使えるように作成された
                 マーケティングレポート自動化サービスです。Looker Studioで描写しており、
@@ -219,7 +219,7 @@ const Index = () => {
         </Link>
       </div>
       <Reveal animation={Animation.FadeIn} delay={300}>
-        <div className="flex flex-col items-center bg-gradient-to-r from-purple-800 to-purple-600 lg:w-screen">
+        <div className="flex flex-col items-center bg-gradient-to-r from-purple-800 to-purple-600">
           <p className="font-mPlus2c font-bold text-center text-2xl text-white mt-14 mx-4 tracking-wide lg:tracking-wider lg:mt-20 lg:mx-0">
             今すぐ無料でレポートを自動化し、改善アクションに時間を使おう
           </p>
@@ -245,18 +245,18 @@ const Index = () => {
       {isDesktopOrLaptop && (
         <div className="flex flex-row justify-center bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInLeft} delay={300}>
-            <div className="max-w-lg px-20 py-20">
+            <div className="max-w-lg px-5 py-20">
               <p className="font-mPlus2c text-2xl font-bold tracking-wider text-left">
                 すべてのデータを一元化
               </p>
-              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
+              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider leading-loose">
                 それぞれの管理画面に毎回ログインしてデータをダウンロードしてコピー＆ペーストを繰り返すような面倒な業務はもう卒業。
-                MAGONOTEならAPIを通じて各媒体のデータを毎日自動的に取得するので、日々のデータ更新作業をそのものを無くす事できます。
+                MAGONOTEならAPIを通じて各媒体のデータを毎日自動的に取得するので、日々のデータ更新作業をそのものを無くす事ができます。
               </p>
             </div>
           </Reveal>
           <Reveal animation={Animation.FadeInRight} delay={300}>
-            <div className="px-10 pt-10">
+            <div className="px-5 pt-10">
               <Image
                 src="/images/top_illust_1.png"
                 alt="すべてのデータを一元化"
@@ -276,7 +276,7 @@ const Index = () => {
             </p>
             <p className="font-mPlus2c font-medium mt-2 text-base tracking-wide">
               それぞれの管理画面に毎回ログインしてデータをダウンロードしてコピー＆ペーストを繰り返すような面倒な業務はもう卒業。
-              MAGONOTEならAPIを通じて各媒体のデータを毎日自動的に取得するので、日々のデータ更新作業をそのものを無くす事できます。
+              MAGONOTEならAPIを通じて各媒体のデータを毎日自動的に取得するので、日々のデータ更新作業をそのものを無くす事ができます。
             </p>
           </div>
         </Reveal>
@@ -295,18 +295,18 @@ const Index = () => {
       {isDesktopOrLaptop && (
         <div className="flex justify-center flex-row-reverse bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInRight} delay={300}>
-            <div className="max-w-lg px-20 py-10">
+            <div className="max-w-lg px-5 py-10">
               <p className="font-mPlus2c text-left text-2xl font-bold tracking-wider">
                 手間なくレポート作成
               </p>
-              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
+              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider leading-loose">
                 レポートやダッシュボードのテンプレートがあらかじめ用意されているので、毎回ゼロから新しいレポートを作る必要はありません。テンプレートを選び、権限を付与してMAGONOTEに依頼するだけで、1営業日で完成したレポートが手元に届きます。
                 そのレポートをベースに必要に応じてカスタマイズしてご利用ください。
               </p>
             </div>
           </Reveal>
           <Reveal animation={Animation.FadeInLeft} delay={300}>
-            <div className="px-10">
+            <div className="px-5">
               <Image
                 src="/images/top_illust_2.png"
                 alt="手間なくレポート作成"
@@ -345,17 +345,17 @@ const Index = () => {
       {isDesktopOrLaptop && (
         <div className="flex flex-row justify-center bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInLeft} delay={300}>
-            <div className="max-w-lg px-20 py-10">
+            <div className="max-w-lg px-5 py-10">
               <p className="font-mPlus2c text-left text-2xl font-bold tracking-wider">
                 簡単にレポートを共有
               </p>
-              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
+              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wide leading-loose">
                 レポートやダッシュボードは、社内メンバーやクライアントを招待すれば、招待されたメンバーは常に最新にアップデートされたデータが確認でき、また共同で編集することもできます。
               </p>
             </div>
           </Reveal>
           <Reveal animation={Animation.FadeInRight} delay={300}>
-            <div className="px-10">
+            <div className="px-5">
               <Image
                 src="/images/top_illust_3.png"
                 alt="簡単にレポートを共有"
@@ -393,17 +393,17 @@ const Index = () => {
       {isDesktopOrLaptop && (
         <div className="flex justify-center flex-row-reverse bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInRight} delay={300}>
-            <div className="max-w-lg px-20 py-10">
+            <div className="max-w-lg px-5 py-10">
               <p className="font-mPlus2c text-left text-2xl font-bold tracking-wider">
                 自由自在にカスタマイズ
               </p>
-              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider">
+              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wider leading-loose">
                 レポートやダッシュボードは一度作成したものを変更なしで利用し続ける方法では浸透しない場合が多く、活用されるものにするためには利用ユーザーの声を随時反映していくことが重要です。MAGONOTEは、LookerStudio（旧Googleデータポータル）やGoogleスプレッドシートなどの既に利用者が多くまたノーコードで使えるサービスを活用することで、誰でも簡単にカスタマイズできるようにしています。
               </p>
             </div>
           </Reveal>
           <Reveal animation={Animation.FadeInLeft} delay={300}>
-            <div className="px-10">
+            <div className="px-5">
               <Image
                 src="/images/top_illust_4.png"
                 alt="自由自在にカスタマイズ"

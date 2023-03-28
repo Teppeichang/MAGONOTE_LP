@@ -79,7 +79,7 @@ function Header(props) {
 
   return (
     <header>
-      <div className="fixed left-5 right-5 z-10 rounded-full bg-white border border-black mt-10 lg:left-20 lg:right-20 lg:mt-20">
+      <div className="fixed left-5 right-5 z-10 rounded-full bg-white border border-black mt-10 lg:left-20 lg:right-20 lg:mt-10">
         <Toolbar className="flex flex-row-reverse justify-between lg:flex lg:flex-row lg:justify-between lg:py-4">
           <IconButton
             className="text-purple-800 p-0"
