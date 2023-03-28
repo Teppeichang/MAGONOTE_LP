@@ -71,7 +71,7 @@ const Index = () => {
                 />
                 <p className="font-mPlus2c font-bold ml-3 tracking-wider">About</p>
               </div>
-              <p className="font-mPlus2c font-medium mt-10 tracking-wider leading-loose">
+              <p className="font-mPlus2c font-medium mt-6 tracking-wider leading-loose">
                 MAGONOTEは、マーケティング担当者のデータ集計やレポート作成に
                 かかる時間を短縮し、改善アクションに時間を使えるように作成された
                 マーケティングレポート自動化サービスです。Looker Studioで描写しており、
