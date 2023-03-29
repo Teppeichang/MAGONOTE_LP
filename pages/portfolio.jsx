@@ -63,7 +63,7 @@ const Portfolio = () => {
                   </a>
                 </Link>
                 <Link href={"/portfolio/facebook-report"}>
-                  <a>
+                  <a className="active:scale-95 active:delay-75 hover:scale-105 transition-transform">
                     <Image
                       src="/images/top_facebook.png"
                       width={540}
@@ -83,7 +83,7 @@ const Portfolio = () => {
                   </a>
                 </Link>
                 <Link href={"/portfolio/line-report"}>
-                  <a>
+                  <a className="active:scale-95 active:delay-75 hover:scale-105 transition-transform">
                     <Image
                       src="/images/top_line.png"
                       alt="LINE広告レポート"
@@ -106,7 +106,7 @@ const Portfolio = () => {
                   </a>
                 </Link>
                 <Link href={"/portfolio/tiktok-report"}>
-                  <a>
+                  <a className="active:scale-95 active:delay-75 hover:scale-105 transition-transform">
                     <Image
                       src="/images/top_tiktok.png"
                       alt="TikTok広告レポート"
@@ -127,7 +127,7 @@ const Portfolio = () => {
                   </a>
                 </Link>
                 <Link href={"/portfolio/google-and-youtube-report"}>
-                  <a>
+                  <a className="active:scale-95 active:delay-75 hover:scale-105 transition-transform">
                     <Image
                       src="/images/top_google_and_youtube.png"
                       alt="Google & YouTube広告レポート"
