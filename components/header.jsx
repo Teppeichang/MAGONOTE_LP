@@ -54,7 +54,7 @@ function Header(props) {
         </Link>
         <Link href={"/trial"}>
           <button
-            className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-90 transition-transform font-bold my-6 py-2 rounded-full  w-44 tracking-wide lg:tracking-wider"
+            className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold my-6 py-2 rounded-full w-44 tracking-wide lg:tracking-wider"
             data-testid="header-trial-link"
           >
             無料で始める
@@ -132,7 +132,7 @@ function Header(props) {
             </Link>
             <Link href={"/trial"}>
               <button
-                className="font-mPlus2c bg-purple-800 border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border active:border-purple-800 active:scale-90 transition-transform font-bold py-2 rounded-full ml-4 w-48 tracking-wide lg:tracking-wider"
+                className="font-mPlus2c bg-purple-800 border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 rounded-full ml-4 w-48 tracking-wide lg:tracking-wider"
                 data-testid="header-trial-link"
               >
                 無料で始める

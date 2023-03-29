@@ -26,7 +26,7 @@ const Index = () => {
           レポート対応メディアは順次追加予定
         </p>
         <Link href={"/trial"}>
-          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-90 transition-transform font-bold py-2 px-4 rounded-full mt-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16 lg:mt-7">
+          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full mt-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16 lg:mt-7">
             今すぐ無料で始める
           </button>
         </Link>
@@ -118,7 +118,7 @@ const Index = () => {
                 <p className="font-mPlus2c text-xl font-bold mb-4 tracking-wide lg:tracking-wider lg:px-5">
                   Facebook広告レポート
                 </p>
-                <div className="lg:px-5">
+                <div className="active:scale-95 active:delay-75 hover:scale-105 transition-transform lg:px-5">
                   <Link href={"portfolio/facebook-report"}>
                     <a>
                       <Image
@@ -131,7 +131,7 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-5">
+                <p className="font-mPlus2c font-medium pb-10 mt-4 tracking-wide lg:tracking-wider lg:px-5">
                   Facebook・Instagram広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
@@ -141,7 +141,7 @@ const Index = () => {
                 <p className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
                   LINE広告レポート
                 </p>
-                <div className="lg:px-5">
+                <div className="active:scale-95 active:delay-75 hover:scale-105 transition-transform lg:px-5">
                   <Link href={"/portfolio/line-report"}>
                     <a>
                       <Image
@@ -154,7 +154,7 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-5">
+                <p className="font-mPlus2c font-medium pb-10 mt-4 tracking-wide lg:tracking-wider lg:px-5">
                   LINE広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
@@ -168,7 +168,7 @@ const Index = () => {
                 <p className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
                   TikTok広告レポート
                 </p>
-                <div className="lg:px-5">
+                <div className="active:scale-95 active:delay-75 hover:scale-105 transition-transform lg:px-5">
                   <Link href={"/portfolio/tiktok-report"}>
                     <a>
                       <Image
@@ -181,7 +181,7 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-5">
+                <p className="font-mPlus2c font-medium pb-10 mt-4 tracking-wide lg:tracking-wider lg:px-5">
                   TikTok広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
@@ -191,7 +191,7 @@ const Index = () => {
                 <h2 className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
                   Google & YouTube広告レポート
                 </h2>
-                <div className="lg:px-5">
+                <div className="active:scale-95 active:delay-75 hover:scale-105 transition-transform lg:px-5">
                   <Link href={"/portfolio/google-and-youtube-report"}>
                     <a>
                       <Image
@@ -204,7 +204,7 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 tracking-wide lg:tracking-wider lg:px-5">
+                <p className="font-mPlus2c font-medium pb-10 mt-4 tracking-wide lg:tracking-wider lg:px-5">
                   Google広告/YouTube広告のレポートが作成可能です。 Looker
                   Studioのデフォルト機能を利用してメディアパフォーマンスを自動で取得します。
                 </p>
@@ -213,7 +213,7 @@ const Index = () => {
           </Reveal>
         </div>
         <Link href={"/portfolio"}>
-          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-90 transition-transform font-bold py-2 px-4 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider lg:mb-10">
+          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider lg:mb-10">
             レポートを見る
           </button>
         </Link>
@@ -224,7 +224,7 @@ const Index = () => {
             今すぐ無料でレポートを自動化し、改善アクションに時間を使おう
           </p>
           <Link href={"/trial"}>
-            <button className="font-mPlus2c bg-white text-purple-800 font-bold py-2 px-4 rounded-full mt-8 mb-14 w-52 transform active:scale-90 transition-transform tracking-wide lg:tracking-wider lg:mb-20">
+            <button className="font-mPlus2c bg-white text-purple-800 font-bold py-2 px-4 rounded-full mt-8 mb-14 w-52 transform active:scale-95 active:delay-75 hover:scale-105 transition-transform tracking-wide lg:tracking-wider lg:mb-20">
               今すぐ無料で始める
             </button>
           </Link>
