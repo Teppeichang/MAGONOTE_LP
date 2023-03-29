@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="lg:flex lg:justify-center">
         <div className="pt-24 px-16 lg:pt-48 lg:mr-96">
           <Image
-          src="/images/footer_logo_wh.svg"
+          src="/images/footer_logo.svg"
           alt="MAGONOTEロゴ"
           width={257}
           height={40}

@@ -9,6 +9,14 @@ const Index = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1024px)",
   });
+
+  const isTablet = useMediaQuery({
+    query: "(max-width: 1023px)",
+  });
+
+  const isMobile = useMediaQuery({
+    query: "(max-width: 800px)",
+  });
   return (
     <Layout>
       <div className="animate__animated animate__fadeIn animate__delay-500ms flex flex-col justify-center items-start bg-slate-50 py-40 mx-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:py-0 lg:mx-0 lg:mt-52 lg:mb-72">
@@ -26,22 +34,54 @@ const Index = () => {
           レポート対応メディアは順次追加予定
         </p>
         <Link href={"/trial"}>
-          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full mt-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16 lg:mt-7">
+          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full my-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16 lg:mt-7">
             今すぐ無料で始める
           </button>
         </Link>
       </div>
-      <div className="flex justify-center items-center">
-        <div className="animate__animated animate__fadeInUp animate__delay-500ms absolute mx-6">
-          <Image
-            src="/images/top_first.png"
-            alt="レポートのイメージ画像"
-            width={1140}
-            height={480}
-            quality={90}
-          />
+
+      {isDesktopOrLaptop && (
+        <div className="flex justify-center items-center">
+          <div className="animate__animated animate__fadeInUp animate__delay-500ms absolute mx-6">
+            <Image
+              src="/images/top_first_pc.png"
+              alt="レポートのイメージ画像"
+              width={1140}
+              height={480}
+              quality={90}
+            />
+          </div>
         </div>
-      </div>
+      )}
+
+      {isTablet && !isMobile && (
+        <div className="flex justify-center items-center">
+          <div className="animate__animated animate__fadeInUp animate__delay-500ms absolute mx-6">
+            <Image
+              src="/images/top_first_pc.png"
+              alt="レポートのイメージ画像"
+              width={1060}
+              height={400}
+              quality={90}
+            />
+          </div>
+        </div>
+      )}
+
+      {isMobile && (
+        <div className="flex justify-center items-center">
+          <div className="animate__animated animate__fadeInUp animate__delay-500ms absolute mx-6 mb-10">
+            <Image
+              src="/images/top_first_sp.png"
+              alt="レポートのイメージ画像"
+              width={342}
+              height={190}
+              quality={90}
+            />
+          </div>
+        </div>
+      )}
+
       <div className="bg-purple-800 h-44 lg:h-80"></div>
 
       {isDesktopOrLaptop && (
@@ -123,15 +163,16 @@ const Index = () => {
                 <p className="font-mPlus2c text-xl font-bold mb-4 tracking-wide lg:tracking-wider lg:px-5">
                   Facebook広告レポート
                 </p>
-                <div className="active:scale-95 active:delay-75 hover:scale-105 transition-transform lg:px-5">
+                <div className="lg:px-5">
                   <Link href={"portfolio/facebook-report"}>
                     <a>
                       <Image
-                        src="/images/top_facebook.png"
+                        src="/images/top_facebook.jpg"
                         alt="Facebook広告レポートイメージ画像"
                         width={540}
-                        height={540}
+                        height={400}
                         quality={90}
+                        className="active:scale-95 active:delay-75 hover:scale-105 transition-transform"
                       />
                     </a>
                   </Link>
@@ -146,15 +187,16 @@ const Index = () => {
                 <p className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
                   LINE広告レポート
                 </p>
-                <div className="active:scale-95 active:delay-75 hover:scale-105 transition-transform lg:px-5">
+                <div className="lg:px-5">
                   <Link href={"/portfolio/line-report"}>
                     <a>
                       <Image
-                        src="/images/top_line.png"
+                        src="/images/top_line.jpg"
                         alt="LINE広告レポートイメージ画像"
                         width={540}
-                        height={540}
+                        height={400}
                         quality={90}
+                        className="active:scale-95 active:delay-75 hover:scale-105 transition-transform"
                       />
                     </a>
                   </Link>
@@ -173,15 +215,16 @@ const Index = () => {
                 <p className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
                   TikTok広告レポート
                 </p>
-                <div className="active:scale-95 active:delay-75 hover:scale-105 transition-transform lg:px-5">
+                <div className="lg:px-5">
                   <Link href={"/portfolio/tiktok-report"}>
                     <a>
                       <Image
-                        src="/images/top_tiktok.png"
+                        src="/images/top_tiktok.jpg"
                         alt="TikTok広告レポートイメージ画像"
                         width={540}
-                        height={540}
+                        height={400}
                         quality={90}
+                        className="active:scale-95 active:delay-75 hover:scale-105 transition-transform"
                       />
                     </a>
                   </Link>
@@ -196,15 +239,16 @@ const Index = () => {
                 <h2 className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
                   Google & YouTube広告レポート
                 </h2>
-                <div className="active:scale-95 active:delay-75 hover:scale-105 transition-transform lg:px-5">
+                <div className="lg:px-5">
                   <Link href={"/portfolio/google-and-youtube-report"}>
                     <a>
                       <Image
-                        src="/images/top_google_and_youtube.png"
+                        src="/images/top_ga_yt.jpg"
                         alt="Google & YouTube広告レポートイメージ画像"
                         width={540}
-                        height={540}
+                        height={400}
                         quality={90}
+                        className="active:scale-95 active:delay-75 hover:scale-105 transition-transform"
                       />
                     </a>
                   </Link>

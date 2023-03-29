@@ -75,7 +75,7 @@ const LineReport = () => {
           </div>
           <div className="mt-5 lg:ml-7">
             <Image
-              src="/images/line_report_template_3.png"
+              src="/images/line_report_template_1.jpg"
               alt="LINEレポートテンプレート_キャンペーン"
               width={600}
               height={450}
@@ -112,7 +112,7 @@ const LineReport = () => {
           </div>
           <div className="mt-5 lg:ml-10">
             <Image
-              src="/images/line_report_template_4.png"
+              src="/images/line_report_template_2.jpg"
               alt="LINEレポートテンプレート_広告グループ"
               width={600}
               height={450}
@@ -145,7 +145,7 @@ const LineReport = () => {
           </div>
           <div className="mt-5 lg:ml-7">
             <Image
-              src="/images/line_report_template_5.png"
+              src="/images/line_report_template_3.jpg"
               alt="LINEレポート_広告クリエイティブ"
               width={600}
               height={450}
