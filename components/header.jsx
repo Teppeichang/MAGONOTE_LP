@@ -7,13 +7,26 @@ import IconButton from "@mui/material/IconButton";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import Toolbar from "@mui/material/Toolbar";
+import { useMediaQuery } from "react-responsive";
 
 function Header(props) {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1024px)",
+  });
+
+  const isTablet = useMediaQuery({
+    query: "(max-width: 1023px)",
+  });
+
+  const isMobile = useMediaQuery({
+    query: "(max-width: 800px)",
+  })
+
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
+    setDrawerOpen(!drawerOpen);
   };
 
   const drawer = (
@@ -79,84 +92,155 @@ function Header(props) {
 
   return (
     <header>
-      <div className="fixed left-5 right-5 z-10 rounded-full bg-white border border-black mt-10 lg:left-20 lg:right-20 lg:mt-10">
-        <Toolbar className="flex flex-row-reverse justify-between lg:flex lg:flex-row lg:justify-between lg:py-4">
-          <IconButton
-            className="text-purple-800 p-0"
-            aria-label="open drawer"
-            onClick={handleDrawerToggle}
-            sx={{ display: { sm: "none" } }}
-          >
-            <MenuRoundedIcon sx={{ width: 48, height: 40 }} className="text-purple-800 p-0" />
-          </IconButton>
-          <div className="relative w-40 h-6 lg:w-64 lg:h-10">
-            <Link href={"/"}>
-              <a>
-                <Image src="/images/header_logo.svg" alt="MAGONOTE" layout="fill" />
-              </a>
-            </Link>
-          </div>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Link href={"/"}>
-              <a
-                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
-                data-testid="header-home-link"
-              >
-                ホーム
-              </a>
-            </Link>
-            <Link href={"/portfolio"}>
-              <a
-                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
-                data-testid="header-portfolio-link"
-              >
-                レポートギャラリー
-              </a>
-            </Link>
-            <Link href={"https://next-report.jp/"}>
-              <a
-                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
-                target="_blank"
-                data-testid="header-blog-link"
-              >
-                ブログ
-              </a>
-            </Link>
-            <Link href={"/contact"}>
-              <a
-                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
-                data-testid="header-contact-link"
-              >
-                お問い合わせ
-              </a>
-            </Link>
-            <Link href={"/trial"}>
-              <button
-                className="font-mPlus2c bg-purple-800 border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 rounded-full ml-4 w-48 tracking-wide lg:tracking-wider"
-                data-testid="header-trial-link"
-              >
-                無料で始める
-              </button>
-            </Link>
+      {isDesktopOrLaptop && (
+        <div className="fixed left-5 right-5 z-10 rounded-full bg-white border border-black mt-10 lg:left-20 lg:right-20 lg:mt-10">
+          <Toolbar className="flex flex-row-reverse justify-between lg:flex lg:flex-row lg:justify-between lg:py-4">
+            <div className="relative w-40 h-6 lg:w-52 lg:h-10">
+              <Link href={"/"}>
+                <a>
+                  <Image src="/images/header_logo.svg" alt="MAGONOTE" layout="fill" />
+                </a>
+              </Link>
+            </div>
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Link href={"/"}>
+                <a
+                  className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
+                  data-testid="header-home-link"
+                >
+                  ホーム
+                </a>
+              </Link>
+              <Link href={"/portfolio"}>
+                <a
+                  className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
+                  data-testid="header-portfolio-link"
+                >
+                  レポートギャラリー
+                </a>
+              </Link>
+              <Link href={"https://next-report.jp/"}>
+                <a
+                  className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
+                  target="_blank"
+                  data-testid="header-blog-link"
+                >
+                  ブログ
+                </a>
+              </Link>
+              <Link href={"/contact"}>
+                <a
+                  className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
+                  data-testid="header-contact-link"
+                >
+                  お問い合わせ
+                </a>
+              </Link>
+              <Link href={"/trial"}>
+                <button
+                  className="font-mPlus2c bg-purple-800 border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 rounded-full ml-4 lg:w-40 tracking-wide lg:tracking-wider"
+                  data-testid="header-trial-link"
+                >
+                  無料で始める
+                </button>
+              </Link>
+            </Box>
+          </Toolbar>
+        </div>
+      )}
+
+      {isTablet&&!isMobile &&  (
+        <div className="fixed left-5 right-5 z-10 rounded-full bg-white border border-black mt-10">
+          <Toolbar className="flex flex-row justify-between py-4">
+            <div className="relative w-40 h-6">
+              <Link href={"/"}>
+                <a>
+                  <Image src="/images/header_logo.svg" alt="MAGONOTE" layout="fill" />
+                </a>
+              </Link>
+            </div>
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Link href={"/"}>
+                <a
+                  className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
+                  data-testid="header-home-link"
+                >
+                  ホーム
+                </a>
+              </Link>
+              <Link href={"/portfolio"}>
+                <a
+                  className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
+                  data-testid="header-portfolio-link"
+                >
+                  レポートギャラリー
+                </a>
+              </Link>
+              <Link href={"https://next-report.jp/"}>
+                <a
+                  className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
+                  target="_blank"
+                  data-testid="header-blog-link"
+                >
+                  ブログ
+                </a>
+              </Link>
+              <Link href={"/contact"}>
+                <a
+                  className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
+                  data-testid="header-contact-link"
+                >
+                  お問い合わせ
+                </a>
+              </Link>
+              <Link href={"/trial"}>
+                <button
+                  className="font-mPlus2c bg-purple-800 border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold p-2 rounded-full ml-2 tracking-wide"
+                  data-testid="header-trial-link"
+                >
+                  無料で始める
+                </button>
+              </Link>
+            </Box>
+          </Toolbar>
+        </div>
+      )}
+
+      {isMobile && (
+        <div className="fixed left-5 right-5 z-10 rounded-full bg-white border border-black mt-10">
+          <Toolbar className="flex flex-row-reverse justify-between">
+            <IconButton
+              className="text-purple-800 p-0"
+              aria-label="open drawer"
+              onClick={handleDrawerToggle}
+            >
+              <MenuRoundedIcon sx={{ width: 48, height: 40 }} className="text-purple-800 p-0" />
+            </IconButton>
+            <div className="relative w-40 h-6">
+              <Link href={"/"}>
+                <a>
+                  <Image src="/images/header_logo.svg" alt="MAGONOTE" layout="fill" />
+                </a>
+              </Link>
+            </div>
+          </Toolbar>
+          <Box component="nav" className="container">
+            <Drawer
+              container={container}
+              variant="temporary"
+              anchor="top"
+              open={drawerOpen}
+              onClose={handleDrawerToggle}
+              ModalProps={{ keepMounted: true }}
+              sx={{
+                "& .MuiDrawer-paper": { boxSizing: "border-box" },
+              }}
+            >
+              {drawer}
+            </Drawer>
           </Box>
-        </Toolbar>
-        <Box component="nav" className="container">
-          <Drawer
-            container={container}
-            variant="temporary"
-            anchor="top"
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            ModalProps={{ keepMounted: true }}
-            sx={{
-              display: { xs: "block", sm: "none" },
-              "& .MuiDrawer-paper": { boxSizing: "border-box" },
-            }}
-          >
-            {drawer}
-          </Drawer>
-        </Box>
-      </div>
+        </div>
+      )}
     </header>
   );
 }
