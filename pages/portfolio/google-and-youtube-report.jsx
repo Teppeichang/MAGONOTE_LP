@@ -79,7 +79,7 @@ const GoogleAndYouTubeReport = () => {
           </div>
           <div className="mt-5 lg:ml-7">
             <Image
-              src="/images/google_and_youtube_report_template_3.png"
+              src="/images/ga_yt_report_template_1.jpg"
               alt="Google&YouTubeレポートテンプレート_キャンペーン"
               width={600}
               height={450}
@@ -116,7 +116,7 @@ const GoogleAndYouTubeReport = () => {
           </div>
           <div className="mt-5 lg:ml-12">
             <Image
-              src="/images/google_and_youtube_report_template_4.png"
+              src="/images/ga_yt_report_template_2.jpg"
               alt="Google&YouTubeレポートテンプレート_広告グループ"
               width={600}
               height={450}
@@ -149,7 +149,7 @@ const GoogleAndYouTubeReport = () => {
           </div>
           <div className="mt-5 lg:ml-7">
             <Image
-              src="/images/google_and_youtube_report_template_5.png"
+              src="/images/ga_yt_report_template_3.jpg"
               alt="Google&YouTubeレポート_検索キーワード"
               width={600}
               height={450}

@@ -75,7 +75,7 @@ const FacebookReport = () => {
           </div>
           <div className="mt-5 lg:ml-7">
             <Image
-              src="/images/fb_report_template_3.png"
+              src="/images/fb_report_template_1.jpg"
               alt="Facebookレポートテンプレート_キャンペーン"
               width={600}
               height={450}
@@ -112,7 +112,7 @@ const FacebookReport = () => {
           </div>
           <div className="mt-5 lg:ml-10">
             <Image
-              src="/images/fb_report_template_4.png"
+              src="/images/fb_report_template_2.jpg"
               alt="Facebookレポートテンプレート_広告セット"
               width={590}
               height={450}
@@ -145,7 +145,7 @@ const FacebookReport = () => {
           </div>
           <div className="mt-5 lg:ml-7">
             <Image
-              src="/images/fb_report_template_5.png"
+              src="/images/fb_report_template_3.jpg"
               alt="Facebookレポート_広告クリエイティブ"
               width={600}
               height={450}
