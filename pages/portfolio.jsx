@@ -14,12 +14,12 @@ const Portfolio = () => {
   return (
     <Layout>
       <NextSeo
-        title="MAGONOTE レポートギャラリー"
+        title="レポートテンプレート ギャラリー"
         description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 レポートギャラリー"
         canonical="https://magonote.shop/portfolio"
         openGraph={{
           type: "website",
-          title: "MAGONOTE レポートギャラリー",
+          title: "レポートテンプレート ギャラリー",
           description:
             "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 レポートギャラリー",
           siteName: "MAGONOTE",

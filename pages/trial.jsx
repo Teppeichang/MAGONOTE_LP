@@ -5,12 +5,12 @@ const Trial = () => {
   return (
     <Layout>
       <NextSeo
-        title="MAGONOTE 無料トライアル申し込みフォーム"
+        title="無料トライアルお申し込み"
         description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 の無料トライアル申し込みフォーム"
         canonical="https://magonote.shop/trial"
         openGraph={{
           type: "website",
-          title: "MAGONOTE 無料トライアル申し込みフォーム",
+          title: "無料トライアルお申し込み",
           description:
             "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 の無料トライアル申し込みフォーム",
           siteName: "MAGONOTE",

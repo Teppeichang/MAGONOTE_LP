@@ -10,12 +10,12 @@ const Terms = () => {
   return (
     <Layout>
       <NextSeo
-        title="MAGONOTE 利用規約"
+        title="利用規約"
         description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 の利用規約"
         canonical="https://magonote.shop/terms"
         openGraph={{
           type: "website",
-          title: "MAGONOTE 利用規約",
+          title: "利用規約",
           description:
             "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 の利用規約",
           siteName: "MAGONOTE",

@@ -15,12 +15,12 @@ const TikTokReport = () => {
   return (
     <Layout>
       <NextSeo
-        title="MAGONOTE TikTok広告レポート"
+        title="TikTok広告レポート"
         description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 TikTok広告レポート概要"
         canonical="https://magonote.shop/portfolio/tiktok-report"
         openGraph={{
           type: "website",
-          title: "MAGONOTE TikTok広告レポート概要",
+          title: "TikTok広告レポート",
           description:
             "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 TikTok広告レポート概要",
           siteName: "MAGONOTE",
