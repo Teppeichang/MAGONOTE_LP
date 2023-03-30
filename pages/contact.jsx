@@ -11,12 +11,12 @@ const Contact = () => {
   return (
     <Layout>
       <NextSeo
-        title="MAGONOTE お問い合わせフォーム"
+        title="お問い合わせ"
         description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 に関するお問い合わせフォーム"
         canonical="https://magonote.shop/contact"
         openGraph={{
           type: "website",
-          title: "MAGONOTE お問い合わせフォーム",
+          title: "お問い合わせ",
           description:
             "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 に関するお問い合わせフォーム",
           siteName: "MAGONOTE",

@@ -15,12 +15,12 @@ const GoogleAndYouTubeReport = () => {
   return (
     <Layout>
       <NextSeo
-        title="MAGONOTE Google&YouTube広告レポート"
+        title="Google&YouTube広告レポート"
         description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 Google&YouTube広告レポート概要"
         canonical="https://magonote.shop/portfolio/google-and-youtube-report"
         openGraph={{
           type: "website",
-          title: "MAGONOTE Google&YouTube広告レポート概要",
+          title: "Google&YouTube広告レポート",
           description:
             "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 Google&YouTube広告レポート概要",
           siteName: "MAGONOTE",

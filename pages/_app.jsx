@@ -14,13 +14,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
-        defaultTitle="MAGONOTE"
+        defaultTitle="MAGONOTE | 完全無料の広告レポート作成サービス"
         canonical="https://magonote.shop"
-        description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」"
+        description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 完全無料でマーケティングレポートをご提供"
         openGraph={{
           type: "website",
-          title: "MAGONOTE",
-          description: "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」",
+          title: "MAGONOTE | 完全無料の広告レポート作成サービス",
+          description: "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 完全無料でマーケティングレポートをご提供",
           siteName: "MAGONOTE",
           url: "https://magonote.shop",
           images: [

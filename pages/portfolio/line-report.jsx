@@ -15,12 +15,12 @@ const LineReport = () => {
   return (
     <Layout>
       <NextSeo
-        title="MAGONOTE LINE広告レポート"
+        title="LINE広告レポート"
         description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 LINE広告レポート概要"
         canonical="https://magonote.shop/portfolio/line-report"
         openGraph={{
           type: "website",
-          title: "MAGONOTE LINE広告レポート概要",
+          title: "LINE広告レポート",
           description:
             "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 LINE広告レポート概要",
           siteName: "MAGONOTE",

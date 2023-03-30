@@ -15,12 +15,12 @@ const FacebookReport = () => {
   return (
     <Layout>
       <NextSeo
-        title="MAGONOTE Facebook広告レポート"
+        title="Facebook広告レポート"
         description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 Facebook広告レポート概要"
         canonical="https://magonote.shop/portfolio/facebook-report"
         openGraph={{
           type: "website",
-          title: "MAGONOTE Facebook広告レポート概要",
+          title: "Facebook広告レポート",
           description:
             "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 Facebook広告レポート概要",
           siteName: "MAGONOTE",

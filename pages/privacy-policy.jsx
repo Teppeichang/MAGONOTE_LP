@@ -10,12 +10,12 @@ const PrivacyPolicy = () => {
   return (
     <Layout>
       <NextSeo
-        title="MAGONOTE プライバシーポリシー"
+        title="プライバシーポリシー"
         description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 プライバシーポリシー"
         canonical="https://magonote.shop/privacy-policy"
         openGraph={{
           type: "website",
-          title: "MAGONOTE プライバシーポリシー",
+          title: "プライバシーポリシー",
           description:
             "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 プライバシーポリシー",
           siteName: "MAGONOTE",
