@@ -203,7 +203,7 @@ function Header(props) {
               </Link>
               <Link href={"/trial"}>
                 <button
-                  className="font-mPlus2c bg-purple-800 border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold p-2 rounded-full ml-2 tracking-wide"
+                  className="font-mPlus2c bg-purple-800 border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-3 rounded-full ml-2 tracking-wide"
                   data-testid="header-trial-link"
                 >
                   無料で始める
