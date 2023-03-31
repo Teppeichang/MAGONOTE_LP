@@ -15,7 +15,7 @@ const Index = () => {
   });
 
   const isMobile = useMediaQuery({
-    query: "(max-width: 800px)",
+    query: "(max-width: 500px)",
   });
   return (
     <Layout>
@@ -47,7 +47,7 @@ const Index = () => {
               src="/images/top_first_pc.png"
               alt="レポートのイメージ画像"
               width={1140}
-              height={480}
+              height={560}
               quality={90}
             />
           </div>
@@ -322,7 +322,7 @@ const Index = () => {
       )}
 
       {!isDesktopOrLaptop && (
-        <div className="flex flex-col-reverse bg-slate-50 mt-4">
+        <div className="flex flex-col-reverse items-center bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="max-w-lg mx-6">
               <p className="font-mPlus2c text-center text-2xl font-bold mt-4 mb-2 tracking-wide">
@@ -376,7 +376,7 @@ const Index = () => {
       )}
 
       {!isDesktopOrLaptop && (
-        <div className="flex flex-col-reverse bg-slate-50 mt-4">
+        <div className="flex flex-col-reverse items-center bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="max-w-lg mx-6">
               <p className="font-mPlus2c text-center text-2xl font-bold mt-4 mb-2 tracking-wide">
@@ -429,7 +429,7 @@ const Index = () => {
       )}
 
       {!isDesktopOrLaptop && (
-        <div className="flex flex-col-reverse bg-slate-50 mt-4">
+        <div className="flex flex-col-reverse items-center bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="max-w-lg mx-6">
               <p className="font-mPlus2c text-center text-2xl font-bold mt-4 mb-2 tracking-wide">
@@ -481,7 +481,7 @@ const Index = () => {
       )}
 
       {!isDesktopOrLaptop && (
-        <div className="flex flex-col-reverse bg-slate-50 mt-4">
+        <div className="flex flex-col-reverse items-center bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="max-w-lg mx-6">
               <p className="font-mPlus2c text-center text-2xl font-bold mt-4 mb-2 tracking-wide">

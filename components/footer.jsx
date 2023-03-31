@@ -5,8 +5,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bottom-0 bg-slate-700 w-screen mt-32">
-      <div className="lg:flex lg:justify-center">
-        <div className="pt-24 px-16 lg:pt-48 lg:mr-24">
+      <div className="text-center lg:flex lg:justify-center">
+        <div className="pt-24 px-16 lg:pt-44 lg:mr-24">
           <Image
           src="/images/footer_logo.svg"
           alt="MAGONOTEロゴ"
