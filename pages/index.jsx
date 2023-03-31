@@ -124,7 +124,7 @@ const Index = () => {
       )}
 
       {!isDesktopOrLaptop && (
-        <div className="flex flex-col justify-center items-center bg-slate-50 pt-24 mx-6">
+        <div className="flex flex-col justify-center items-center bg-slate-50 pt-20 mx-6">
           <Reveal animation={Animation.FadeInUp} delay={400}>
             <Image
               src="/images/top_about.png"
@@ -150,17 +150,17 @@ const Index = () => {
         </div>
       )}
 
-      <div className="flex flex-col justify-center items-center bg-slate-50 mt-28 mx-6 py-10 lg:mt-20 lg:mx-0 lg:py-0">
+      <div className="flex flex-col justify-center items-center bg-slate-50 mt-32 mx-6 lg:mt-20 lg:mx-0">
         <Reveal animation={Animation.FadeIn} delay={500}>
           <p className="font-mPlus2c font-bold text-center text-3xl tracking-wide lg:tracking-wider lg:text-4xl">
             利用できるレポートのテンプレート
           </p>
         </Reveal>
-        <div className="pt-10">
+        <div className="pt-4 lg:pt-10">
           <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="flex flex-col lg:flex lg:flex-row">
-              <div className="max-w-lg">
-                <p className="font-mPlus2c text-xl font-bold mb-4 tracking-wide lg:tracking-wider lg:px-5">
+              <div className="max-w-lg ">
+                <p className="font-mPlus2c text-xl font-bold mb-2 tracking-wide lg:tracking-wider lg:px-5 lg:mb-4">
                   Facebook広告レポート
                 </p>
                 <div className="lg:px-5">
@@ -177,14 +177,14 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 mt-2 tracking-wide lg:tracking-wider lg:px-5 lg:pb-0">
+                <p className="font-mPlus2c font-medium pb-8 mt-2 tracking-wide lg:tracking-wider lg:px-5 lg:pb-0">
                   Facebook・Instagram広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
                 </p>
               </div>
               <div className="max-w-lg">
-                <p className="font-mPlus2c text-xl font-bold mb-4 tracking-wide lg:tracking-wider lg:px-5">
+                <p className="font-mPlus2c text-xl font-bold mb-2 tracking-wide lg:tracking-wider lg:px-5">
                   LINE広告レポート
                 </p>
                 <div className="lg:px-5">
@@ -201,7 +201,7 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 mt-2 tracking-wide lg:tracking-wider lg:px-5 lg:pb-0">
+                <p className="font-mPlus2c font-medium pb-8 mt-2 tracking-wide lg:tracking-wider lg:px-5 lg:pb-0">
                   LINE広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
@@ -229,7 +229,7 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 mt-2 tracking-wide lg:tracking-wider lg:px-5 lg:pb-0">
+                <p className="font-mPlus2c font-medium pb-8 mt-2 tracking-wide lg:tracking-wider lg:px-5 lg:pb-0">
                   TikTok広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
@@ -253,7 +253,7 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 mt-2 tracking-wide lg:tracking-wider lg:px-5 lg:pb-0">
+                <p className="font-mPlus2c font-medium mt-2 tracking-wide lg:tracking-wider lg:px-5">
                   Google広告/YouTube広告のレポートが作成可能です。 Looker
                   Studioのデフォルト機能を利用してメディアパフォーマンスを自動で取得します。
                 </p>
@@ -263,7 +263,7 @@ const Index = () => {
         </div>
         <Reveal animation={Animation.FadeInUp} delay={500}>
           <Link href={"/portfolio"}>
-            <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider lg:mt-7">
+            <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 mt-7 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider">
               レポートを見る
             </button>
           </Link>
@@ -286,7 +286,7 @@ const Index = () => {
           <p className="font-mPlus2c font-bold text-center text-3xl tracking-wide lg:tracking-wider lg:text-4xl">
             マーケティング担当者自らがノーコードで使える機能
           </p>
-          <p className="font-mPlus2c font-medium text-center mt-4 tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c font-medium text-center mt-2 mb-4 tracking-wide lg:tracking-wider lg:mt-4 lg:mb-0">
             実務を理解したマーケティング担当者自らがノーコードで使える機能を活用して
             <br />
             スマートにビジネスを成長させましょう。
@@ -325,10 +325,10 @@ const Index = () => {
         <div className="flex flex-col-reverse bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="max-w-lg mx-6">
-              <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
+              <p className="font-mPlus2c text-center text-2xl font-bold mt-4 mb-2 tracking-wide">
                 すべてのデータを一元化
               </p>
-              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wide">
+              <p className="font-mPlus2c font-medium mb-8 tracking-wide">
                 それぞれの管理画面に毎回ログインしてデータをダウンロードしてコピー＆ペーストを繰り返すような面倒な業務はもう卒業。
                 MAGONOTEならAPIを通じて各媒体のデータを毎日自動的に取得するので、日々のデータ更新作業をそのものを無くす事ができます。
               </p>
@@ -379,10 +379,10 @@ const Index = () => {
         <div className="flex flex-col-reverse bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="max-w-lg mx-6">
-              <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
+              <p className="font-mPlus2c text-center text-2xl font-bold mt-4 mb-2 tracking-wide">
                 手間なくレポート作成
               </p>
-              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wide">
+              <p className="font-mPlus2c font-medium mb-8 tracking-wide">
                 レポートやダッシュボードのテンプレートがあらかじめ用意されているので、毎回ゼロから新しいレポートを作る必要はありません。テンプレートを選び、権限を付与してMAGONOTEに依頼するだけで、1営業日で完成したレポートが手元に届きます。
                 そのレポートをベースに必要に応じてカスタマイズしてご利用ください。
               </p>
@@ -432,10 +432,10 @@ const Index = () => {
         <div className="flex flex-col-reverse bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="max-w-lg mx-6">
-              <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
+              <p className="font-mPlus2c text-center text-2xl font-bold mt-4 mb-2 tracking-wide">
                 簡単にレポートを共有
               </p>
-              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wide">
+              <p className="font-mPlus2c font-medium mb-8 tracking-wide">
                 レポートやダッシュボードは、社内メンバーやクライアントを招待すれば、招待されたメンバーは常に最新にアップデートされたデータが確認でき、また共同で編集することもできます。
               </p>
             </div>
@@ -484,10 +484,10 @@ const Index = () => {
         <div className="flex flex-col-reverse bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="max-w-lg mx-6">
-              <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
+              <p className="font-mPlus2c text-center text-2xl font-bold mt-4 mb-2 tracking-wide">
                 自由自在にカスタマイズ
               </p>
-              <p className="font-mPlus2c font-medium mt-2 text-base tracking-wide">
+              <p className="font-mPlus2c font-medium tracking-wide">
                 レポートやダッシュボードは一度作成したものを変更なしで利用し続ける方法では浸透しない場合が多く、活用されるものにするためには利用ユーザーの声を随時反映していくことが重要です。MAGONOTEは、LookerStudio（旧Googleデータポータル）やGoogleスプレッドシートなどの既に利用者が多くまたノーコードで使えるサービスを活用することで、誰でも簡単にカスタマイズできるようにしています。
               </p>
             </div>
