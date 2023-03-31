@@ -261,11 +261,13 @@ const Index = () => {
             </div>
           </Reveal>
         </div>
-        <Link href={"/portfolio"}>
-          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider lg:mb-10">
-            レポートを見る
-          </button>
-        </Link>
+        <Reveal animation={Animation.FadeInUp} delay={500}>
+          <Link href={"/portfolio"}>
+            <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider lg:mb-10">
+              レポートを見る
+            </button>
+          </Link>
+        </Reveal>
       </div>
       <Reveal animation={Animation.FadeIn} delay={500}>
         <div className="flex flex-col items-center bg-gradient-to-r from-purple-800 to-purple-600">
