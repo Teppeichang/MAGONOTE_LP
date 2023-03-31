@@ -20,7 +20,7 @@ function Header(props) {
 
   const isMobile = useMediaQuery({
     query: "(max-width: 800px)",
-  })
+  });
 
   const { window } = props;
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -42,6 +42,14 @@ function Header(props) {
         />
       </div>
       <div className="flex flex-col justify-center items-left mt-4 mx-auto">
+        <Link href={"/"}>
+          <a
+            className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider hover:text-purple-800"
+            data-testid="header-portfolio-link-sp"
+          >
+            ホーム
+          </a>
+        </Link>
         <Link href={"/portfolio"}>
           <a
             className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider hover:text-purple-800"
@@ -149,7 +157,7 @@ function Header(props) {
         </div>
       )}
 
-      {isTablet&&!isMobile &&  (
+      {isTablet && !isMobile && (
         <div className="fixed left-5 right-5 z-10 rounded-full bg-white border border-black mt-10">
           <Toolbar className="flex flex-row justify-between py-4">
             <div className="relative w-40 h-6">
