@@ -150,13 +150,13 @@ const Index = () => {
         </div>
       )}
 
-      <div className="flex flex-col justify-center items-center bg-slate-50 mt-28 mx-6 py-10 lg:mt-20 lg:py-20 lg:mx-0">
+      <div className="flex flex-col justify-center items-center bg-slate-50 mt-28 mx-6 py-10 lg:mt-20 lg:mx-0 lg:py-0">
         <Reveal animation={Animation.FadeIn} delay={500}>
           <p className="font-mPlus2c font-bold text-center text-3xl tracking-wide lg:tracking-wider lg:text-4xl">
             利用できるレポートのテンプレート
           </p>
         </Reveal>
-        <div className="py-10">
+        <div className="pt-10">
           <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="flex flex-col lg:flex lg:flex-row">
               <div className="max-w-lg">
@@ -177,14 +177,14 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 mt-4 tracking-wide lg:tracking-wider lg:px-5">
+                <p className="font-mPlus2c font-medium pb-10 mt-2 tracking-wide lg:tracking-wider lg:px-5 lg:pb-0">
                   Facebook・Instagram広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
                 </p>
               </div>
               <div className="max-w-lg">
-                <p className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
+                <p className="font-mPlus2c text-xl font-bold mb-4 tracking-wide lg:tracking-wider lg:px-5">
                   LINE広告レポート
                 </p>
                 <div className="lg:px-5">
@@ -201,7 +201,7 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 mt-4 tracking-wide lg:tracking-wider lg:px-5">
+                <p className="font-mPlus2c font-medium pb-10 mt-2 tracking-wide lg:tracking-wider lg:px-5 lg:pb-0">
                   LINE広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
@@ -210,9 +210,9 @@ const Index = () => {
             </div>
           </Reveal>
           <Reveal animation={Animation.FadeInUp} delay={500}>
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col lg:flex-row lg:pt-8">
               <div className="max-w-lg">
-                <p className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
+                <p className="font-mPlus2c text-xl font-bold mb-4 tracking-wide lg:tracking-wider lg:px-5">
                   TikTok広告レポート
                 </p>
                 <div className="lg:px-5">
@@ -229,14 +229,14 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 mt-4 tracking-wide lg:tracking-wider lg:px-5">
+                <p className="font-mPlus2c font-medium pb-10 mt-2 tracking-wide lg:tracking-wider lg:px-5 lg:pb-0">
                   TikTok広告のレポートが作成可能です。
                   独自開発したアプリケーションを介してメディアパフォーマンスを自動で取得します。
                   APIで取得可能な数値を全取得しておりますので、詳細数値の可視化も可能です。
                 </p>
               </div>
               <div className="max-w-lg">
-                <h2 className="font-mPlus2c text-xl font-bold mb-5 tracking-wide lg:tracking-wider lg:px-5">
+                <h2 className="font-mPlus2c text-xl font-bold mb-4 tracking-wide lg:tracking-wider lg:px-5">
                   Google & YouTube広告レポート
                 </h2>
                 <div className="lg:px-5">
@@ -253,7 +253,7 @@ const Index = () => {
                     </a>
                   </Link>
                 </div>
-                <p className="font-mPlus2c font-medium pb-10 mt-4 tracking-wide lg:tracking-wider lg:px-5">
+                <p className="font-mPlus2c font-medium pb-10 mt-2 tracking-wide lg:tracking-wider lg:px-5 lg:pb-0">
                   Google広告/YouTube広告のレポートが作成可能です。 Looker
                   Studioのデフォルト機能を利用してメディアパフォーマンスを自動で取得します。
                 </p>
@@ -263,7 +263,7 @@ const Index = () => {
         </div>
         <Reveal animation={Animation.FadeInUp} delay={500}>
           <Link href={"/portfolio"}>
-            <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider lg:mb-10">
+            <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider lg:mt-7">
               レポートを見る
             </button>
           </Link>
@@ -275,7 +275,7 @@ const Index = () => {
             今すぐ無料でレポートを自動化し、改善アクションに時間を使おう
           </p>
           <Link href={"/trial"}>
-            <button className="font-mPlus2c bg-white text-purple-800 font-bold py-2 px-4 rounded-full mt-8 mb-14 w-52 transform active:scale-95 active:delay-75 hover:scale-105 transition-transform tracking-wide lg:tracking-wider lg:mb-20">
+            <button className="font-mPlus2c bg-white text-purple-800 font-bold py-2 px-4 rounded-full mt-8 mb-14 w-52 transform active:scale-95 active:delay-75 hover:scale-105 transition-transform tracking-wide lg:w-96 lg:h-16 lg:text-2xl lg:tracking-wider lg:mb-20">
               今すぐ無料で始める
             </button>
           </Link>
@@ -295,7 +295,7 @@ const Index = () => {
       </Reveal>
 
       {isDesktopOrLaptop && (
-        <div className="flex flex-row justify-center bg-slate-50 mt-4">
+        <div className="flex flex-row justify-center bg-slate-50 mt-4 mb-20">
           <Reveal animation={Animation.FadeInLeft} delay={500}>
             <div className="max-w-lg px-5 py-20">
               <p className="font-mPlus2c text-2xl font-bold tracking-wider text-left">
@@ -322,7 +322,7 @@ const Index = () => {
       )}
 
       {!isDesktopOrLaptop && (
-        <div className="flex flex-col-reverse bg-slate-50 mt-4 lg:hidden">
+        <div className="flex flex-col-reverse bg-slate-50 mt-4">
           <Reveal animation={Animation.FadeInUp} delay={500}>
             <div className="max-w-lg mx-6">
               <p className="font-mPlus2c text-center text-2xl font-bold mt-4 tracking-wide">
@@ -349,7 +349,7 @@ const Index = () => {
       )}
 
       {isDesktopOrLaptop && (
-        <div className="flex justify-center flex-row-reverse bg-slate-50 mt-4">
+        <div className="flex justify-center flex-row-reverse bg-slate-50 mb-20">
           <Reveal animation={Animation.FadeInRight} delay={500}>
             <div className="max-w-lg px-5 py-10">
               <p className="font-mPlus2c text-left text-2xl font-bold tracking-wider">
@@ -403,7 +403,7 @@ const Index = () => {
       )}
 
       {isDesktopOrLaptop && (
-        <div className="flex flex-row justify-center bg-slate-50 mt-4">
+        <div className="flex flex-row justify-center bg-slate-50 mb-20">
           <Reveal animation={Animation.FadeInLeft} delay={500}>
             <div className="max-w-lg px-5 py-10">
               <p className="font-mPlus2c text-left text-2xl font-bold tracking-wider">

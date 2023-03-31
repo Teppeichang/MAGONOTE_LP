@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bottom-0 bg-slate-700 w-screen mt-20">
+    <footer className="bottom-0 bg-slate-700 w-screen mt-32">
       <div className="lg:flex lg:justify-center">
-        <div className="pt-24 px-16 lg:pt-48 lg:mr-96">
+        <div className="pt-24 px-16 lg:pt-48 lg:mr-24">
           <Image
           src="/images/footer_logo.svg"
           alt="MAGONOTEロゴ"
@@ -32,7 +32,7 @@ const Footer = () => {
             </Link>
           </List>
         </div>
-        <div className="flex flex-col px-24 pt-9 text-center lg:text-left lg:pt-24 lg:ml-20 ">
+        <div className="flex flex-col px-24 pt-9 text-center lg:text-left lg:pt-24">
           <p className="font-mPlus2c text-white text-xl font-semibold tracking-wide lg:tracking-wider">運営会社</p>
           <List sx={{ display: "flex", flexDirection: "column" }}>
             <Link href={"https://corp.next-stage.biz/"}>
