@@ -34,7 +34,7 @@ const Index = () => {
           レポート対応メディアは順次追加予定
         </p>
         <Link href={"/trial"}>
-          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full my-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16 lg:mt-7">
+          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform focus:bg-white focus:text-purple-800 focus:border-solid focus:border focus:border-purple-800 focus:scale-95 focus:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full my-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16 lg:mt-7">
             今すぐ無料で始める
           </button>
         </Link>
@@ -263,7 +263,7 @@ const Index = () => {
         </div>
         <Reveal animation={Animation.FadeInUp} delay={500}>
           <Link href={"/portfolio"}>
-            <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 mt-7 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider">
+            <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform focus:bg-white focus:text-purple-800 focus:border-solid focus:border focus:border-purple-800 focus:scale-95 focus:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 mt-7 rounded-full w-44 mb-32 tracking-wide lg:tracking-wider">
               レポートを見る
             </button>
           </Link>
