@@ -66,10 +66,12 @@ const LineReport = () => {
               <li>広告代理店向けの手数料設定</li>
             </ul>
             <Link href={"https://lookerstudio.google.com/u/0/reporting/a5ee2631-8453-4084-a126-e9ff949e8fae/page/p_qy46hn752c"}>
-              <a target="_blank">
-                <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white w-64 h-12 mt-4 font-bold rounded-full tracking-wide transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-90 transition-transform lg:tracking-wider">
-                  デモレポートを見る
-                </button>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mPlus2c text-center bg-purple-800 border-solid border border-purple-800 text-white w-64 h-12 mt-4 py-3 font-bold rounded-full tracking-wide transform focus:bg-white focus:text-purple-800 focus:border-solid focus:border focus:border-purple-800 focus:scale-95 focus:delay-75 hover:scale-105 transition-transform lg:tracking-wider"
+              >
+                デモレポートを見る
               </a>
             </Link>
           </div>

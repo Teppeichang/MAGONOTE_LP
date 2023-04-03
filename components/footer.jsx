@@ -22,7 +22,7 @@ const Footer = () => {
               <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" data-testid="footer-portfolio-link">レポートギャラリー</a>
             </Link>
             <Link href={"https://next-report.jp/"}>
-              <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" target="_blank" data-testid="footer-blog-link">ブログ</a>
+              <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" target="_blank" rel="noopener noreferrer" data-testid="footer-blog-link">ブログ</a>
             </Link>
             <Link href={"/contact"}>
               <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" data-testid="footer-contact-link">お問い合わせ</a>
@@ -36,12 +36,12 @@ const Footer = () => {
           <p className="font-mPlus2c text-white text-xl font-semibold tracking-wide lg:tracking-wider">運営会社</p>
           <List sx={{ display: "flex", flexDirection: "column" }}>
             <Link href={"https://corp.next-stage.biz/"}>
-              <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" target="_blank" data-testid="footer-company-link">
+              <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" target="_blank" rel="noopener noreferrer" data-testid="footer-company-link">
                 会社概要(運営会社)
               </a>
             </Link>
             <Link href={"https://corp.next-stage.biz/recruit/"}>
-              <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" target="_blank" data-testid="footer-recruit-link">
+              <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" target="_blank" rel="noopener noreferrer" data-testid="footer-recruit-link">
                 採用情報
               </a>
             </Link>
