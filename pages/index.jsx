@@ -28,7 +28,7 @@ const Index = () => {
           をご提供
         </p>
         <p className="font-mPlus2c font-medium  tracking-wide lg:tracking-wider lg:text-center lg:text-xl">
-          アクセス解析・広告・SNSまで幅広いレポートに対応完全無料ですぐはじめられます。
+          アクセス解析・広告・SNSまで幅広いレポートに対応。完全無料ですぐはじめられます。
         </p>
         <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider lg:text-center lg:text-xl">
           レポート対応メディアは順次追加予定
