@@ -47,7 +47,7 @@ const Index = () => {
               src="/images/top_first_pc.png"
               alt="レポートのイメージ画像"
               width={1140}
-              height={560}
+              height={480}
               quality={90}
             />
           </div>
@@ -60,7 +60,7 @@ const Index = () => {
             <Image
               src="/images/top_first_pc.png"
               alt="レポートのイメージ画像"
-              width={1060}
+              width={1000}
               height={400}
               quality={90}
             />
