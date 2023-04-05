@@ -1,4 +1,4 @@
-import List from "@mui/material/List";
+import { Box } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,8 +16,8 @@ const Footer = () => {
           />
         </div>
         <div className="flex flex-col px-24 pt-9 text-center lg:text-left lg:pt-24 lg:px-0">
-          <p className="font-mPlus2c text-white text-xl font-semibold tracking-wide lg:tracking-wider">サービス</p>
-          <List sx={{ display: "flex", flexDirection: "column" }}>
+          <p className="font-mPlus2c text-white text-xl font-semibold tracking-wide pb-4 lg:pb-8 lg:tracking-wider">サービス</p>
+          <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Link href={"/portfolio"}>
               <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" data-testid="footer-portfolio-link">レポートギャラリー</a>
             </Link>
@@ -30,11 +30,11 @@ const Footer = () => {
             <Link href={"/trial"}>
               <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" data-testid="footer-trial-link">無料トライアル</a>
             </Link>
-          </List>
+          </Box>
         </div>
         <div className="flex flex-col px-24 pt-9 text-center lg:text-left lg:pt-24">
-          <p className="font-mPlus2c text-white text-xl font-semibold tracking-wide lg:tracking-wider">運営会社</p>
-          <List sx={{ display: "flex", flexDirection: "column" }}>
+          <p className="font-mPlus2c text-white text-xl font-semibold tracking-wide pb-4 lg:pb-8 lg:tracking-wider">運営会社</p>
+          <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Link href={"https://corp.next-stage.biz/"}>
               <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" target="_blank" rel="noopener noreferrer" data-testid="footer-company-link">
                 会社概要(運営会社)
@@ -55,7 +55,7 @@ const Footer = () => {
                 利用規約
               </a>
             </Link>
-          </List>
+          </Box>
         </div>
       </div>
       <div className="pb-6 mt-16">
