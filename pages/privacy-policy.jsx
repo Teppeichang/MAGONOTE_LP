@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import BreadCrumb from "../components/breadCrumb";
+import { NextSeo, BreadcrumbJsonLd } from "next-seo";
 
 const PrivacyPolicy = () => {
   const lists = [
@@ -8,33 +9,72 @@ const PrivacyPolicy = () => {
   ];
   return (
     <Layout>
+      <NextSeo
+        title="プライバシーポリシー"
+        description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 プライバシーポリシー"
+        canonical="https://magonote.shop/privacy-policy"
+        openGraph={{
+          type: "website",
+          title: "プライバシーポリシー",
+          description:
+            "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 プライバシーポリシー",
+          siteName: "MAGONOTE",
+          url: "https://magonote.shop/privacy-policy",
+        }}
+      />
+      <BreadcrumbJsonLd
+        itemListElements={[
+          {
+            position: 1,
+            name: "トップページ",
+            item: "https://magonote.shop",
+          },
+          {
+            position: 2,
+            name: "プライバシーポリシー",
+            item: "https://magonote.shop/privacy-policy",
+          },
+        ]}
+      />
       <BreadCrumb lists={lists} />
-      <div className="min-h-screen px-10 lg:px-20">
+      <div className="min-h-screen mx-10 lg:mx-24">
         <div className="my-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">プライバシーポリシー</p>
-          <p className="font-mPlus2c tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            プライバシーポリシー
+          </p>
+          <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider">
             株式会社Next
             Stage（以下、「当社」といいます。）は、本ウェブサイト上で提供するサービス（以下、「本サービス」といいます。）におけるユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます。）を定めます。
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">第1条（個人情報）</p>
-          <p className="font-mPlus2c tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            第1条（個人情報）
+          </p>
+          <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider">
             「個人情報」とは、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって当該情報に含まれる氏名、生年月日、住所、電話番号、連絡先その他の記述等により特定の個人を識別できる情報及び容貌、指紋、声紋にかかるデータ、及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">第2条（個人情報の収集方法）</p>
-          <p className="font-mPlus2c tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            第2条（個人情報の収集方法）
+          </p>
+          <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider">
             当社は、ユーザーが利用登録をする際に氏名、生年月日、住所、電話番号、メールアドレス、銀行口座番号、クレジットカード番号、運転免許証番号などの個人情報をお尋ねすることがあります。また、ユーザーと提携先などとの間でなされたユーザーの個人情報を含む取引記録や決済に関する情報を,当社の提携先（情報提供元、広告主、広告配信先などを含みます。以下、｢提携先｣といいます。）などから収集することがあります。
           </p>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">第3条（個人情報を収集・利用する目的）</p>
-          <p className="font-mPlus2c mb-2 tracking-wide lg:tracking-wider">当社が個人情報を収集・利用する目的は、以下のとおりです。</p>
-          <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            第3条（個人情報を収集・利用する目的）
+          </p>
+          <p className="font-mPlus2c font-medium mb-2 tracking-wide lg:tracking-wider">
+            当社が個人情報を収集・利用する目的は、以下のとおりです。
+          </p>
+          <ul className="font-mPlus2c font-medium list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">当社サービスの提供・運営のため</li>
-            <li className="-indent-6">ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）</li>
+            <li className="-indent-6">
+              ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）
+            </li>
             <li className="-indent-6">
               ユーザーが利用中のサービスの新機能、更新情報、キャンペーン等及び当社が提供する他のサービスの案内のメールを送付するため
             </li>
@@ -50,8 +90,10 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">第4条（利用目的の変更）</p>
-          <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            第4条（利用目的の変更）
+          </p>
+          <ul className="font-mPlus2c font-medium list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               当社は、利用目的が変更前と関連性を有すると合理的に認められる場合に限り、個人情報の利用目的を変更するものとします。
             </li>
@@ -61,12 +103,14 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">第5条（個人情報の第三者提供）</p>
-          <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            第5条（個人情報の第三者提供）
+          </p>
+          <ul className="font-mPlus2c font-medium list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               当社は、次に掲げる場合を除いてあらかじめユーザーの同意を得ることなく、第三者に個人情報を提供することはありません。ただし、個人情報保護法その他の法令で認められる場合を除きます。
             </li>
-            <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
+            <ul className="font-mPlus2c font-medium list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
               <li className="-indent-6">
                 人の生命、身体または財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき
               </li>
@@ -81,19 +125,23 @@ const PrivacyPolicy = () => {
               </li>
               <li className="-indent-6">第三者に提供されるデータの項目</li>
               <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
-                <li className="-indent-6">第三者への提供の手段または方法</li >
-                <li className="-indent-6">本人の求めに応じて個人情報の第三者への提供を停止すること</li>
+                <li className="-indent-6">第三者への提供の手段または方法</li>
+                <li className="-indent-6">
+                  本人の求めに応じて個人情報の第三者への提供を停止すること
+                </li>
                 <li className="-indent-6">本人の求めを受け付ける方法</li>
               </ul>
             </ul>
             <li className="-indent-6">
               前項の定めにかかわらず、次に掲げる場合には当該情報の提供先は第三者に該当しないものとします。
             </li>
-            <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
+            <ul className="font-mPlus2c font-medium list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
               <li className="-indent-6">
                 当社が利用目的の達成に必要な範囲内において個人情報の取扱いの全部または一部を委託する場合
               </li>
-              <li className="-indent-6">合併その他の事由による事業の承継に伴って個人情報が提供される場合</li>
+              <li className="-indent-6">
+                合併その他の事由による事業の承継に伴って個人情報が提供される場合
+              </li>
               <li className="-indent-6">
                 個人情報を特定の者との間で共同して利用する場合であって、その旨並びに共同して利用される個人情報の項目，共同して利用する者の範囲，利用する者の利用目的および当該個人情報の管理について責任を有する者の氏名または名称についてあらかじめ本人に通知し、または本人が容易に知り得る状態に置いた場合
               </li>
@@ -101,14 +149,20 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">第6条（個人情報の開示）</p>
-          <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            第6条（個人情報の開示）
+          </p>
+          <ul className="font-mPlus2c font-medium list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               当社は、本人から個人情報の開示を求められたときは本人に対し、遅滞なくこれを開示します。ただし、開示することにより次のいずれかに該当する場合は、その全部または一部を開示しないこともあり、開示しない決定をした場合にはその旨を遅滞なく通知します。なお、個人情報の開示に際しては、1件あたり1,000円の手数料を申し受けます。
             </li>
-            <li className="-indent-6">本人または第三者の生命、身体、財産その他の権利利益を害するおそれがある場合</li>
-            <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
-              <li className="-indent-6">当社の業務の適正な実施に著しい支障を及ぼすおそれがある場合</li>
+            <li className="-indent-6">
+              本人または第三者の生命、身体、財産その他の権利利益を害するおそれがある場合
+            </li>
+            <ul className="font-mPlus2c font-medium list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
+              <li className="-indent-6">
+                当社の業務の適正な実施に著しい支障を及ぼすおそれがある場合
+              </li>
               <li className="-indent-6">その他法令に違反することとなる場合</li>
               <li className="-indent-6">
                 前項の定めにかかわらず、履歴情報および特性情報などの個人情報以外の情報については、原則として開示いたしません。
@@ -117,8 +171,10 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">第7条（個人情報の訂正および削除）</p>
-          <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            第7条（個人情報の訂正および削除）
+          </p>
+          <ul className="font-mPlus2c font-medium list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               ユーザーは、当社の保有する自己の個人情報が誤った情報である場合には当社が定める手続きにより、当社に対して個人情報の訂正、追加または削除（以下、「訂正等」といいます。）を請求することができます。
             </li>
@@ -131,8 +187,10 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">第8条（個人情報の利用停止等）</p>
-          <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            第8条（個人情報の利用停止等）
+          </p>
+          <ul className="font-mPlus2c font-medium list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               当社は、本人から個人情報が利用目的の範囲を超えて取り扱われているという理由、または不正の手段により取得されたものであるという理由により、その利用の停止または消去（以下、「利用停止等」といいます。）を求められた場合には、遅滞なく必要な調査を行います。
             </li>
@@ -148,8 +206,10 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">第9条（プライバシーポリシーの変更）</p>
-          <ul className="font-mPlus2c list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            第9条（プライバシーポリシーの変更）
+          </p>
+          <ul className="font-mPlus2c font-medium list-disc list-inside ml-7 tracking-wide lg:tracking-wider">
             <li className="-indent-6">
               本ポリシーの内容は、法令その他本ポリシーに別段の定めのある事項を除いて、ユーザーに通知することなく変更することができるものとします。
             </li>
@@ -159,11 +219,19 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
         <div className="mb-10">
-          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">第10条（お問い合わせ窓口）</p>
-          <p className="font-mPlus2c tracking-wide lg:tracking-wider">本ポリシーに関するお問い合わせは、下記の窓口までお願いいたします。</p>
-          <p className="font-mPlus2c tracking-wide lg:tracking-wider">住所：〒114-0003 東京都北区豊島1-15-3 セントラル王子901</p>
-          <p className="font-mPlus2c tracking-wide lg:tracking-wider">社名：株式会社Next Stage</p>
-          <p className="font-mPlus2c tracking-wide lg:tracking-wider">メールアドレス：info@next-stage.biz</p>
+          <p className="font-mPlus2c text-2xl font-bold mb-2 tracking-wide lg:tracking-wider">
+            第10条（お問い合わせ窓口）
+          </p>
+          <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider">
+            本ポリシーに関するお問い合わせは、下記の窓口までお願いいたします。
+          </p>
+          <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider">
+            住所：〒114-0003 東京都北区豊島1-15-3 セントラル王子901
+          </p>
+          <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider">社名：株式会社Next Stage</p>
+          <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider">
+            メールアドレス：info@next-stage.biz
+          </p>
         </div>
       </div>
     </Layout>

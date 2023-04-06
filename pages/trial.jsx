@@ -1,8 +1,22 @@
 import Layout from "../components/layout";
+import { NextSeo } from "next-seo";
 
 const Trial = () => {
   return (
     <Layout>
+      <NextSeo
+        title="無料トライアルお申し込み"
+        description="株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 の無料トライアル申し込みフォーム"
+        canonical="https://magonote.shop/trial"
+        openGraph={{
+          type: "website",
+          title: "無料トライアルお申し込み",
+          description:
+            "株式会社Next Stageの広告レポート作成サービス「MAGONOTE」 の無料トライアル申し込みフォーム",
+          siteName: "MAGONOTE",
+          url: "https://magonote.shop/trial",
+        }}
+      />
       <div className="flex justify-center items-center min-h-screen">
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLScKREohNiPNDe_VlnHQrMRNKOLjgN8a4WugwKB9yTeJvKcdbw/viewform?embedded=true"
