@@ -24,12 +24,8 @@ const Footer = () => {
             <Link href={"https://next-report.jp/"}>
               <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" target="_blank" rel="noopener noreferrer" data-testid="footer-blog-link">ブログ</a>
             </Link>
-            <Link href={"/contact"}>
-              <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" data-testid="footer-contact-link">お問い合わせ</a>
-            </Link>
-            <Link href={"/trial"}>
-              <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" data-testid="footer-trial-link">無料トライアル</a>
-            </Link>
+            <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" data-testid="footer-contact-link">お問い合わせ</a>
+            <a className="font-mPlus2c text-white py-2 tracking-wide lg:tracking-wider" data-testid="footer-trial-link">無料トライアル</a>
           </Box>
         </div>
         <div className="flex flex-col px-24 pt-9 text-center lg:text-left lg:pt-24">
