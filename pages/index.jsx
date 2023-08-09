@@ -33,11 +33,9 @@ const Index = () => {
         <p className="font-mPlus2c font-medium tracking-wide lg:tracking-wider lg:text-center lg:text-xl">
           レポート対応メディアは順次追加予定
         </p>
-        <Link href={"/trial"}>
-          <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform focus:bg-white focus:text-purple-800 focus:border-solid focus:border focus:border-purple-800 focus:scale-95 focus:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full my-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16 lg:mt-7">
-            今すぐ無料で始める
-          </button>
-        </Link>
+        <button className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full my-6 tracking-wide lg:tracking-wider lg:text-2xl lg:w-96 lg:h-16 lg:mt-7">
+          今すぐ無料で始める
+        </button>
       </div>
 
       {isDesktopOrLaptop && (
@@ -274,11 +272,9 @@ const Index = () => {
           <p className="font-mPlus2c font-bold text-center text-2xl text-white mt-14 tracking-wide lg:tracking-wider lg:mt-20 lg:mx-0">
             今すぐ無料でレポートを自動化し、改善アクションに時間を使おう
           </p>
-          <Link href={"/trial"}>
-            <button className="font-mPlus2c bg-white text-purple-800 font-bold py-2 px-4 rounded-full mt-8 mb-14 w-52 transform active:scale-95 active:delay-75 hover:scale-105 transition-transform tracking-wide lg:w-96 lg:h-16 lg:text-2xl lg:tracking-wider lg:mb-20">
-              今すぐ無料で始める
-            </button>
-          </Link>
+          <button className="font-mPlus2c bg-white text-purple-800 font-bold py-2 px-4 rounded-full mt-8 mb-14 w-52 transform active:scale-95 active:delay-75 hover:scale-105 transition-transform tracking-wide lg:w-96 lg:h-16 lg:text-2xl lg:tracking-wider lg:mb-20">
+            今すぐ無料で始める
+          </button>
         </div>
       </Reveal>
       <Reveal animation={Animation.FadeIn} delay={500}>

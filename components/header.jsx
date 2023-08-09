@@ -68,22 +68,18 @@ function Header(props) {
             ブログ
           </a>
         </Link>
-        <Link href={"/contact"}>
-          <a
-            className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider hover:text-purple-800"
-            data-testid="header-contact-link-sp"
-          >
-            お問い合わせ
-          </a>
-        </Link>
-        <Link href={"/trial"}>
-          <button
-            className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform focus:bg-white focus:text-purple-800 focus:border-solid focus:border focus:border-purple-800 focus:scale-95 focus:delay-75 hover:scale-105 transition-transform font-bold my-6 py-2 rounded-full w-44 tracking-wide lg:tracking-wider"
-            data-testid="header-trial-link"
-          >
-            無料で始める
-          </button>
-        </Link>
+        <a
+          className="font-mPlus2c text-black font-bold my-6 tracking-wide lg:tracking-wider hover:text-purple-800"
+          data-testid="header-contact-link-sp"
+        >
+          お問い合わせ
+        </a>
+        <button
+          className="font-mPlus2c bg-purple-800 border-solid border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border-solid active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold my-6 py-2 rounded-full w-44 tracking-wide lg:tracking-wider"
+          data-testid="header-trial-link"
+        >
+          無料で始める
+        </button>
       </div>
       <div className="flex justify-center items-center mt-20">
         <Link href={"/"}>
@@ -138,22 +134,18 @@ function Header(props) {
                   ブログ
                 </a>
               </Link>
-              <Link href={"/contact"}>
-                <a
-                  className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
-                  data-testid="header-contact-link"
-                >
-                  お問い合わせ
-                </a>
-              </Link>
-              <Link href={"/trial"}>
-                <button
-                  className="font-mPlus2c bg-purple-800 border border-purple-800 text-white transform focus:bg-white focus:text-purple-800 focus:border focus:border-purple-800 focus:scale-95 focus:delay-75 hover:scale-105 transition-transform font-bold py-2 rounded-full ml-4 lg:w-40 tracking-wide lg:tracking-wider"
-                  data-testid="header-trial-link"
-                >
-                  無料で始める
-                </button>
-              </Link>
+              <a
+                className="font-mPlus2c text-black font-semibold px-2 tracking-wide lg:tracking-wider hover:text-purple-800"
+                data-testid="header-contact-link"
+              >
+                お問い合わせ
+              </a>
+              <button
+                className="font-mPlus2c bg-purple-800 border border-purple-800 text-white transform active:bg-white active:text-purple-800 active:border active:border-purple-800 active:scale-95 active:delay-75 hover:scale-105 transition-transform font-bold py-2 rounded-full ml-4 lg:w-40 tracking-wide lg:tracking-wider"
+                data-testid="header-trial-link"
+              >
+                無料で始める
+              </button>
             </Box>
           </Toolbar>
         </div>
