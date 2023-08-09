@@ -1,17 +1,19 @@
-# メモ
-## ブランチについて
+## MAGONOTE | 完全無料の広告レポート作成サービス
+※お問い合わせフォーム・デモレポートのリンクやボタンはモックアップとなっております※  
+https://magonote.shop/
 
-```
-main - 本番環境(Product)用
-staging - ステージング環境(Staging)用
-develop - 実装&ローカル環境動作確認用
-```
-
-developで実装→stagingへマージ→staging環境動作確認→mainへマージ
+![image](https://user-images.githubusercontent.com/65349790/230283977-f4a5d276-2b0f-4dd0-ba32-168efe61fdcd.png)
 
 ## 使用技術
-Next.js(12.3.3)  
-Docker(w/ Node.js LTS(*), React 18.2.0)  
+- Next.js(12.3.3)
+- React(18.2.0)
+- Node.js(18.12.1)
+- Docker
+- MUI
+- Tailwind CSS
+- Animate.css 
+- react-genie 
+- react-responsive 
+
+## デプロイ
 Netlify(Product&Staging)
-  
-(*)ver18.12.1(2022/12/29時点のLTS)
