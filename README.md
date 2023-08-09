@@ -1,6 +1,6 @@
 ## MAGONOTE | 完全無料の広告レポート作成サービス
 ※お問い合わせフォーム・デモレポートのリンクやボタンはモックアップとなっております※  
-https://magonote.shop/
+https://magonote.netlify.app/
 
 ![image](https://user-images.githubusercontent.com/65349790/230283977-f4a5d276-2b0f-4dd0-ba32-168efe61fdcd.png)
 
